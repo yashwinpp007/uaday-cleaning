@@ -4,24 +4,116 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #111827;
+  --font-raleway: 'Raleway', sans-serif;
+  --font-plus-jakarta: 'Plus Jakarta Sans', sans-serif;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-plus-jakarta), 'Plus Jakarta Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-raleway), 'Raleway', sans-serif;
+  font-weight: 800;
+  line-height: 1.05;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .dot-pattern {
+    background-image: radial-gradient(circle, #374151 1px, transparent 1px);
+    background-size: 24px 24px;
+    opacity: 0.04;
+  }
+
+  .btn-3d-green {
+    background: #5da832;
+    padding: 1.25rem 2.5rem;
+    border-radius: 1.5rem;
+    font-weight: 900;
+    font-family: var(--font-raleway), 'Raleway', sans-serif;
+    box-shadow: 0 8px 0 0 #3a7a10;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+  }
+
+  .btn-3d-green:active {
+    transform: translateY(4px);
+    box-shadow: none;
+  }
+
+  .btn-3d-yellow {
+    background: #ffd700;
+    padding: 1.25rem 2.5rem;
+    border-radius: 1.5rem;
+    font-weight: 900;
+    font-family: var(--font-raleway), 'Raleway', sans-serif;
+    box-shadow: 0 8px 0 0 #c9a800;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: #111827;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+  }
+
+  .btn-3d-yellow:active {
+    transform: translateY(4px);
+    box-shadow: none;
+  }
+
+  .card-bouncy {
+    background: #fff;
+    border-radius: 2.5rem;
+    padding: 1.5rem;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  }
+
+  .card-bouncy:hover {
+    transform: scale(1.04) rotate(0.8deg);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+  }
+}
+
+/* Prose styles for MDX blog content */
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  font-family: var(--font-raleway), 'Raleway', sans-serif;
+  font-weight: 800;
+  color: #111827;
+}
+
+.prose a {
+  color: #5da832;
+  text-decoration: underline;
+}
+
+.prose a:hover {
+  color: #3a7a10;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for carousel */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
