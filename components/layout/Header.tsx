@@ -133,9 +133,9 @@ export default function Header() {
 
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
-            <a href="tel:0412345678" className="flex items-center gap-2 text-sm font-semibold text-body-text hover:text-brand-green transition-colors">
+            <a href="tel:0414375051" className="flex items-center gap-2 text-sm font-semibold text-body-text hover:text-brand-green transition-colors">
               <Phone className="w-4 h-4" />
-              0412 345 678
+              0414 375 051
             </a>
             <Button3D href="/get-a-quote" size="sm">Get a Free Quote</Button3D>
           </div>
@@ -207,9 +207,9 @@ export default function Header() {
               </nav>
 
               <div className="p-6 border-t border-light-border space-y-3">
-                <a href="tel:0412345678" className="flex items-center justify-center gap-2 w-full py-3 rounded-2xl bg-brand-green-light text-brand-green font-semibold">
+                <a href="tel:0414375051" className="flex items-center justify-center gap-2 w-full py-3 rounded-2xl bg-brand-green-light text-brand-green font-semibold">
                   <Phone className="w-4 h-4" />
-                  Call 0412 345 678
+                  Call 0414 375 051
                 </a>
                 <Button3D href="/get-a-quote" className="w-full text-center">Get a Free Quote</Button3D>
               </div>

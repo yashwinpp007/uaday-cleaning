@@ -91,8 +91,8 @@ export default function ThankYouPage() {
           >
             <Star className="w-5 h-5" /> Leave Us a Review
           </a>
-          <a href="tel:0412345678" className="flex items-center gap-2 text-brand-green font-semibold">
-            <Phone className="w-5 h-5" /> 0412 345 678
+          <a href="tel:0414375051" className="flex items-center gap-2 text-brand-green font-semibold">
+            <Phone className="w-5 h-5" /> 0414 375 051
           </a>
         </motion.div>
 
@@ -103,7 +103,7 @@ export default function ThankYouPage() {
           className="mt-10 text-body-text text-sm"
         >
           Need something urgent? Call us directly on{' '}
-          <a href="tel:0412345678" className="text-brand-green font-semibold">0412 345 678</a>
+          <a href="tel:0414375051" className="text-brand-green font-semibold">0414 375 051</a>
         </motion.p>
       </div>
     </div>

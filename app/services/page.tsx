@@ -6,9 +6,9 @@ import FinalCTA from '@/components/sections/FinalCTA'
 import ServiceSchema from '@/components/schema/ServiceSchema'
 
 export const metadata: Metadata = {
-  title: 'Cleaning Services in West Melbourne | UaDay Cleaning',
+  title: 'Cleaning Services in Deanside | UaDay Cleaning',
   description:
-    'Professional residential, commercial, end of lease and deep cleaning services in West Melbourne. Eco-friendly, fully insured. View pricing and get a free quote.',
+    'Professional residential, commercial, end of lease and deep cleaning services in Deanside. Eco-friendly, fully insured. View pricing and get a free quote.',
   alternates: { canonical: 'https://uadaycleaning.com.au/services' },
 }
 
@@ -70,8 +70,8 @@ export default function ServicesPage() {
   return (
     <>
       <ServiceSchema
-        name="Cleaning Services West Melbourne"
-        description="Professional residential, commercial and end of lease cleaning services in West Melbourne, VIC."
+        name="Cleaning Services Deanside"
+        description="Professional residential, commercial and end of lease cleaning services in Deanside, VIC."
         url="https://uadaycleaning.com.au/services"
       />
 
@@ -80,7 +80,7 @@ export default function ServicesPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <span className="inline-block bg-brand-green text-white font-semibold text-sm px-4 py-2 rounded-full mb-5">All Services</span>
           <h1 className="font-heading font-900 text-dark-text text-5xl md:text-6xl mb-6">
-            Cleaning Services in<br />West Melbourne
+            Cleaning Services in<br />Deanside
           </h1>
           <p className="text-body-text text-xl max-w-2xl mx-auto mb-8">
             From regular home maintenance to full bond-back guarantees — we have the right cleaning solution for every situation.

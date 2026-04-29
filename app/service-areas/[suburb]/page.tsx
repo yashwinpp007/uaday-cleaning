@@ -118,8 +118,8 @@ export default function SuburbPage({ params }: Props) {
           <p className="text-body-text text-xl leading-relaxed mb-8 max-w-2xl">{data.blurb}</p>
           <div className="flex flex-wrap gap-4">
             <Button3D href="/get-a-quote" size="lg">Get a Free Quote</Button3D>
-            <a href="tel:0412345678" className="flex items-center gap-2 text-brand-green font-semibold">
-              <Phone className="w-5 h-5" /> 0412 345 678
+            <a href="tel:0414375051" className="flex items-center gap-2 text-brand-green font-semibold">
+              <Phone className="w-5 h-5" /> 0414 375 051
             </a>
           </div>
         </div>

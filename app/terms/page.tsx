@@ -79,7 +79,7 @@ export default function TermsPage() {
           <p>These Terms and Conditions are governed by the laws of Victoria, Australia. Any disputes shall be subject to the exclusive jurisdiction of the courts of Victoria.</p>
 
           <h2>12. Contact</h2>
-          <p>For questions about these Terms, contact us at <a href="mailto:hello@uadaycleaning.com.au">hello@uadaycleaning.com.au</a> or call 0412 345 678.</p>
+          <p>For questions about these Terms, contact us at <a href="mailto:uadaycleaning@gmail.com">uadaycleaning@gmail.com</a> or call 0414 375 051.</p>
         </div>
       </div>
     </div>

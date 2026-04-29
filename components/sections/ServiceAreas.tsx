@@ -35,7 +35,7 @@ export default function ServiceAreas() {
         >
           <span className="inline-block bg-brand-green-light text-brand-green font-semibold text-sm px-4 py-2 rounded-full mb-4">Coverage Area</span>
           <h2 className="font-heading font-900 text-dark-text text-4xl md:text-5xl mb-4">
-            Serving West Melbourne<br />& Surrounding Suburbs
+            Serving Deanside<br />& Surrounding Suburbs
           </h2>
         </motion.div>
 
@@ -48,14 +48,14 @@ export default function ServiceAreas() {
             className="rounded-4xl overflow-hidden shadow-lg border border-light-border"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200755.31744388296!2d144.6287!3d-37.8136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d514af0b56b%3A0x5045675218ce720!2sWest%20Melbourne%20VIC%203003!5e0!3m2!1sen!2sau!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.123456789!2d144.729!3d-37.683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6778e3e8a4dcb%3A0x1a2b3c4d5e6f7a8b!2sDeanside%20VIC%203336!5e0!3m2!1sen!2sau!4v1234567890"
               width="100%"
               height="400"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="UaDay Cleaning service areas in West Melbourne"
+              title="UaDay Cleaning service areas in Deanside"
             />
           </motion.div>
 

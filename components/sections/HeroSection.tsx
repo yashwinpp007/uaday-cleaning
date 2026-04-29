@@ -29,7 +29,7 @@ export default function HeroSection() {
               className="inline-flex items-center gap-2 bg-brand-green-light border border-brand-green/20 rounded-full px-4 py-2 mb-6"
             >
               <span className="w-2 h-2 bg-brand-green rounded-full animate-pulse-ring" />
-              <span className="text-brand-green font-semibold text-sm">West Melbourne&apos;s Trusted Cleaners</span>
+              <span className="text-brand-green font-semibold text-sm">Deanside&apos;s Trusted Cleaners</span>
             </motion.div>
 
             {/* H1 */}
@@ -37,7 +37,7 @@ export default function HeroSection() {
               Professional
               <span className="text-brand-green block">Cleaning</span>
               Services
-              <span className="text-brand-green block">in West Melbourne</span>
+              <span className="text-brand-green block">in Deanside</span>
             </h1>
 
             <p className="text-body-text text-lg leading-relaxed mb-8 max-w-lg">
@@ -57,11 +57,11 @@ export default function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center gap-4">
               <Button3D href="/get-a-quote" size="lg">Get a Free Quote</Button3D>
-              <a href="tel:0412345678" className="flex items-center gap-2 text-brand-green font-semibold text-lg hover:text-brand-green-dark transition-colors group">
+              <a href="tel:0414375051" className="flex items-center gap-2 text-brand-green font-semibold text-lg hover:text-brand-green-dark transition-colors group">
                 <div className="w-12 h-12 bg-brand-green-light rounded-2xl flex items-center justify-center group-hover:bg-brand-green group-hover:text-white transition-colors">
                   <Phone className="w-5 h-5 text-brand-green group-hover:text-white" />
                 </div>
-                0412 345 678
+                0414 375 051
               </a>
             </div>
           </motion.div>
@@ -83,7 +83,7 @@ export default function HeroSection() {
                 {/* TODO: Replace with real hero photo of cleaned home */}
                 <Image
                   src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=500&fit=crop"
-                  alt="Professionally cleaned modern living room in West Melbourne"
+                  alt="Professionally cleaned modern living room in Deanside"
                   width={600}
                   height={500}
                   className="w-full object-cover"

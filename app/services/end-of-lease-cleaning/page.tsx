@@ -9,9 +9,9 @@ import FAQSchema from '@/components/schema/FAQSchema'
 import ServiceSchema from '@/components/schema/ServiceSchema'
 
 export const metadata: Metadata = {
-  title: 'End of Lease Cleaning West Melbourne — Bond Back Guaranteed | UaDay',
+  title: 'End of Lease Cleaning Deanside — Bond Back Guaranteed | UaDay',
   description:
-    'End of lease cleaning in West Melbourne with a 100% bond-back guarantee. REIV-aligned checklists, carpet steam add-on available. Book at least 48hrs before inspection.',
+    'End of lease cleaning in Deanside with a 100% bond-back guarantee. REIV-aligned checklists, carpet steam add-on available. Book at least 48hrs before inspection.',
   alternates: { canonical: 'https://uadaycleaning.com.au/services/end-of-lease-cleaning' },
 }
 
@@ -50,8 +50,8 @@ export default function EndOfLeasePage() {
   return (
     <>
       <ServiceSchema
-        name="End of Lease Cleaning West Melbourne"
-        description="Bond-back guaranteed end of lease cleaning in West Melbourne. REIV-aligned checklists."
+        name="End of Lease Cleaning Deanside"
+        description="Bond-back guaranteed end of lease cleaning in Deanside. REIV-aligned checklists."
         url="https://uadaycleaning.com.au/services/end-of-lease-cleaning"
       />
       <FAQSchema items={faqs} />
@@ -74,15 +74,15 @@ export default function EndOfLeasePage() {
               </div>
 
               <h1 className="font-heading font-900 text-dark-text text-5xl md:text-6xl mb-5 leading-tight">
-                End of Lease Cleaning West Melbourne — Bond Back Guaranteed
+                End of Lease Cleaning Deanside — Bond Back Guaranteed
               </h1>
               <p className="text-body-text text-lg leading-relaxed mb-8">
                 Moving out? Our REIV-aligned end of lease cleaning service ensures your property meets every inspection standard — or we re-clean for free until you get your full bond back.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button3D href="/get-a-quote" size="lg">Book Now</Button3D>
-                <a href="tel:0412345678" className="flex items-center gap-2 text-brand-green font-semibold">
-                  <Phone className="w-5 h-5" /> 0412 345 678
+                <a href="tel:0414375051" className="flex items-center gap-2 text-brand-green font-semibold">
+                  <Phone className="w-5 h-5" /> 0414 375 051
                 </a>
               </div>
             </div>
@@ -90,7 +90,7 @@ export default function EndOfLeasePage() {
               {/* TODO: Replace with real EOL cleaning photo */}
               <Image
                 src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600&h=500&fit=crop"
-                alt="End of lease cleaning service West Melbourne"
+                alt="End of lease cleaning service Deanside"
                 width={600}
                 height={500}
                 className="rounded-4xl shadow-2xl object-cover w-full"

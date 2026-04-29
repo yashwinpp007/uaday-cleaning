@@ -41,7 +41,7 @@ export default function GalleryPage() {
           <span className="inline-block bg-brand-green text-white font-semibold text-sm px-4 py-2 rounded-full mb-5">Our Work</span>
           <h1 className="font-heading font-900 text-dark-text text-5xl md:text-6xl mb-5">Cleaning Gallery</h1>
           <p className="text-body-text text-xl max-w-2xl mx-auto mb-8">
-            See the results of our professional cleaning services across West Melbourne and surrounding suburbs.
+            See the results of our professional cleaning services across Deanside and surrounding suburbs.
           </p>
         </div>
       </section>

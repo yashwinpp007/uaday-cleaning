@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
           <p>We retain personal information for as long as necessary to provide our services and comply with legal obligations. Client records are typically retained for 7 years in accordance with Australian tax law.</p>
 
           <h2>9. Access and Correction</h2>
-          <p>You have the right to access the personal information we hold about you and to request corrections. To do so, contact us at <a href="mailto:hello@uadaycleaning.com.au">hello@uadaycleaning.com.au</a>.</p>
+          <p>You have the right to access the personal information we hold about you and to request corrections. To do so, contact us at <a href="mailto:uadaycleaning@gmail.com">uadaycleaning@gmail.com</a>.</p>
 
           <h2>10. Marketing Communications</h2>
           <p>We may send you marketing emails if you have opted in. You can unsubscribe at any time by clicking the &quot;unsubscribe&quot; link in any marketing email or by contacting us directly.</p>
@@ -80,9 +80,9 @@ export default function PrivacyPolicyPage() {
           <h2>12. Contact Us</h2>
           <p>For privacy-related enquiries, contact us at:</p>
           <ul>
-            <li>Email: <a href="mailto:hello@uadaycleaning.com.au">hello@uadaycleaning.com.au</a></li>
-            <li>Phone: 0412 345 678</li>
-            <li>Address: West Melbourne, VIC 3003</li>
+            <li>Email: <a href="mailto:uadaycleaning@gmail.com">uadaycleaning@gmail.com</a></li>
+            <li>Phone: 0414 375 051</li>
+            <li>Address: Deanside, VIC 3336</li>
           </ul>
           <p>If you are not satisfied with our response, you may contact the <a href="https://www.oaic.gov.au" target="_blank" rel="noopener noreferrer">Office of the Australian Information Commissioner (OAIC)</a>.</p>
         </div>

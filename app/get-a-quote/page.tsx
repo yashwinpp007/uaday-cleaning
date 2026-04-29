@@ -388,10 +388,10 @@ export default function GetAQuotePage() {
 
             <div className="bg-brand-green-light rounded-4xl p-6">
               <p className="font-heading font-800 text-dark-text text-lg mb-2">Prefer to Call?</p>
-              <a href="tel:0412345678" className="flex items-center gap-2 text-brand-green font-semibold text-xl">
-                <Phone className="w-5 h-5" /> 0412 345 678
+              <a href="tel:0414375051" className="flex items-center gap-2 text-brand-green font-semibold text-xl">
+                <Phone className="w-5 h-5" /> 0414 375 051
               </a>
-              <p className="text-body-text text-xs mt-2">Mon–Fri 7am–6pm, Sat–Sun 8am–4pm</p>
+              <p className="text-body-text text-xs mt-2">Mon–Sun: 8am – 10pm</p>
             </div>
           </div>
         </div>

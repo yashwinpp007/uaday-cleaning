@@ -46,7 +46,7 @@ export default function TestimonialsCarousel() {
           <h2 className="font-heading font-900 text-dark-text text-4xl md:text-5xl mb-4">
             What Our Clients Say
           </h2>
-          <p className="text-body-text text-lg">Trusted by hundreds of families and businesses across West Melbourne</p>
+          <p className="text-body-text text-lg">Trusted by hundreds of families and businesses across Deanside</p>
         </motion.div>
       </div>
 

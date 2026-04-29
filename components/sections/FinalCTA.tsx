@@ -30,19 +30,19 @@ export default function FinalCTA() {
             Ready for a<br />Spotless Home?
           </h2>
           <p className="text-white/80 text-lg mb-10 max-w-xl mx-auto">
-            Join 500+ satisfied customers across West Melbourne. Get your free, no-obligation quote today.
+            Join 500+ satisfied customers across Deanside. Get your free, no-obligation quote today.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-5">
             <Button3D href="/get-a-quote" size="lg">Get a Free Quote</Button3D>
             <a
-              href="tel:0412345678"
+              href="tel:0414375051"
               className="flex items-center gap-3 text-white font-semibold text-lg hover:text-brand-yellow transition-colors"
             >
               <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center">
                 <Phone className="w-5 h-5" />
               </div>
-              0412 345 678
+              0414 375 051
             </a>
           </div>
 

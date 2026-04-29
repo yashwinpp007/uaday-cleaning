@@ -3,9 +3,9 @@ import { Star, Quote, ExternalLink } from 'lucide-react'
 import FinalCTA from '@/components/sections/FinalCTA'
 
 export const metadata: Metadata = {
-  title: 'Customer Testimonials & Reviews | UaDay Cleaning West Melbourne',
+  title: 'Customer Testimonials & Reviews | UaDay Cleaning Deanside',
   description:
-    'Read real customer reviews for UaDay Cleaning. 4.9/5 rating from 500+ clients across West Melbourne. See why families and businesses trust us.',
+    'Read real customer reviews for UaDay Cleaning. 4.9/5 rating from 500+ clients across Deanside. See why families and businesses trust us.',
   alternates: { canonical: 'https://uadaycleaning.com.au/testimonials' },
 }
 
@@ -63,7 +63,7 @@ export default function TestimonialsPage() {
             <span className="font-heading font-900 text-dark-text text-5xl">4.9</span>
             <span className="text-body-text text-lg">/ 5</span>
           </div>
-          <p className="text-body-text text-lg">Based on 500+ verified reviews from West Melbourne families and businesses</p>
+          <p className="text-body-text text-lg">Based on 500+ verified reviews from Deanside families and businesses</p>
         </div>
       </section>
 
@@ -103,7 +103,7 @@ export default function TestimonialsPage() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <div className="bg-brand-green-light rounded-5xl p-10">
             <h2 className="font-heading font-900 text-dark-text text-3xl mb-4">Happy with Our Service?</h2>
-            <p className="text-body-text mb-6">We&apos;d be so grateful if you shared your experience. Your review helps other West Melbourne families find trusted cleaners.</p>
+            <p className="text-body-text mb-6">We&apos;d be so grateful if you shared your experience. Your review helps other Deanside families find trusted cleaners.</p>
             <a
               href="https://g.page/r/uaday-cleaning/review"
               target="_blank"

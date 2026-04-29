@@ -73,11 +73,11 @@ export default function Footer() {
               </div>
               <div>
                 <span className="font-heading font-800 text-white text-lg leading-tight block">UaDay Cleaning</span>
-                <span className="text-white/60 text-xs leading-tight block">West Melbourne, VIC</span>
+                <span className="text-white/60 text-xs leading-tight block">Deanside, VIC</span>
               </div>
             </Link>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
-              West Melbourne&apos;s trusted cleaning professionals. Eco-friendly, fully insured, and dedicated to making your space sparkle.
+              Deanside&apos;s trusted cleaning professionals. Eco-friendly, fully insured, and dedicated to making your space sparkle.
             </p>
             <div className="flex items-center gap-3">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 rounded-xl flex items-center justify-center hover:bg-brand-green transition-colors">
@@ -137,29 +137,28 @@ export default function Footer() {
             <h3 className="font-heading font-800 text-white text-lg mb-5">Contact</h3>
             <ul className="space-y-4">
               <li>
-                <a href="tel:0412345678" className="flex items-start gap-3 text-white/70 hover:text-white transition-colors group">
+                <a href="tel:0414375051" className="flex items-start gap-3 text-white/70 hover:text-white transition-colors group">
                   <Phone className="w-4 h-4 mt-0.5 flex-shrink-0 text-brand-green group-hover:text-brand-yellow" />
-                  <span className="text-sm">0412 345 678</span>
+                  <span className="text-sm">0414 375 051</span>
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@uadaycleaning.com.au" className="flex items-start gap-3 text-white/70 hover:text-white transition-colors group">
+                <a href="mailto:uadaycleaning@gmail.com" className="flex items-start gap-3 text-white/70 hover:text-white transition-colors group">
                   <Mail className="w-4 h-4 mt-0.5 flex-shrink-0 text-brand-green group-hover:text-brand-yellow" />
-                  <span className="text-sm">hello@uadaycleaning.com.au</span>
+                  <span className="text-sm">uadaycleaning@gmail.com</span>
                 </a>
               </li>
               <li>
                 <div className="flex items-start gap-3 text-white/70">
                   <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-brand-green" />
-                  <span className="text-sm">West Melbourne, VIC 3003</span>
+                  <span className="text-sm">Deanside, VIC 3336</span>
                 </div>
               </li>
               <li>
                 <div className="flex items-start gap-3 text-white/70">
                   <Clock className="w-4 h-4 mt-0.5 flex-shrink-0 text-brand-green" />
                   <div className="text-sm">
-                    <p>Mon–Fri: 7am – 6pm</p>
-                    <p>Sat–Sun: 8am – 4pm</p>
+                    <p>Mon–Sun: 8am – 10pm</p>
                   </div>
                 </div>
               </li>

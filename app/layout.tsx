@@ -20,11 +20,11 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: 'UaDay Cleaning | Professional Cleaning Services in West Melbourne',
+    default: 'UaDay Cleaning | Professional Cleaning Services in Deanside',
     template: '%s | UaDay Cleaning',
   },
   description:
-    'Professional residential, commercial & end of lease cleaning services in West Melbourne. Eco-friendly, fully insured, bond-back guaranteed. Get a free quote today!',
+    'Professional residential, commercial & end of lease cleaning services in Deanside. Eco-friendly, fully insured, bond-back guaranteed. Get a free quote today!',
   keywords: [
     'cleaning services west melbourne',
     'end of lease cleaning',
@@ -40,15 +40,15 @@ export const metadata: Metadata = {
     locale: 'en_AU',
     url: 'https://uadaycleaning.com.au',
     siteName: 'UaDay Cleaning',
-    title: 'UaDay Cleaning | Professional Cleaning Services in West Melbourne',
+    title: 'UaDay Cleaning | Professional Cleaning Services in Deanside',
     description:
-      'Professional residential, commercial & end of lease cleaning services in West Melbourne.',
+      'Professional residential, commercial & end of lease cleaning services in Deanside.',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'UaDay Cleaning | West Melbourne',
-    description: 'Professional cleaning services in West Melbourne.',
+    title: 'UaDay Cleaning | Deanside',
+    description: 'Professional cleaning services in Deanside.',
   },
   robots: {
     index: true,

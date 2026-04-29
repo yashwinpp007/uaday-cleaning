@@ -9,9 +9,9 @@ import FAQSchema from '@/components/schema/FAQSchema'
 import ServiceSchema from '@/components/schema/ServiceSchema'
 
 export const metadata: Metadata = {
-  title: 'Commercial Cleaning West Melbourne | UaDay Cleaning',
+  title: 'Commercial Cleaning Deanside | UaDay Cleaning',
   description:
-    'Professional commercial cleaning in West Melbourne. Offices, retail, medical centres & childcare. Flexible scheduling, fully insured. Get a free quote today.',
+    'Professional commercial cleaning in Deanside. Offices, retail, medical centres & childcare. Flexible scheduling, fully insured. Get a free quote today.',
   alternates: { canonical: 'https://uadaycleaning.com.au/services/commercial-cleaning' },
 }
 
@@ -35,8 +35,8 @@ export default function CommercialCleaningPage() {
   return (
     <>
       <ServiceSchema
-        name="Commercial Cleaning West Melbourne"
-        description="Professional commercial cleaning for offices, retail, medical centres and more in West Melbourne."
+        name="Commercial Cleaning Deanside"
+        description="Professional commercial cleaning for offices, retail, medical centres and more in Deanside."
         url="https://uadaycleaning.com.au/services/commercial-cleaning"
       />
       <FAQSchema items={faqs} />
@@ -52,15 +52,15 @@ export default function CommercialCleaningPage() {
                 <span className="text-brand-green text-sm font-semibold">Commercial Cleaning</span>
               </div>
               <h1 className="font-heading font-900 text-dark-text text-5xl md:text-6xl mb-5 leading-tight">
-                Commercial Cleaning West Melbourne
+                Commercial Cleaning Deanside
               </h1>
               <p className="text-body-text text-lg leading-relaxed mb-8">
-                A clean workplace is a productive one. We provide professional commercial cleaning services across West Melbourne — tailored to your industry, schedule, and standards.
+                A clean workplace is a productive one. We provide professional commercial cleaning services across Deanside — tailored to your industry, schedule, and standards.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button3D href="/get-a-quote" size="lg">Get a Free Quote</Button3D>
-                <a href="tel:0412345678" className="flex items-center gap-2 text-brand-green font-semibold">
-                  <Phone className="w-5 h-5" /> 0412 345 678
+                <a href="tel:0414375051" className="flex items-center gap-2 text-brand-green font-semibold">
+                  <Phone className="w-5 h-5" /> 0414 375 051
                 </a>
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function CommercialCleaningPage() {
               {/* TODO: Replace with real commercial cleaning photo */}
               <Image
                 src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=500&fit=crop"
-                alt="Professional commercial office cleaning in West Melbourne"
+                alt="Professional commercial office cleaning in Deanside"
                 width={600}
                 height={500}
                 className="rounded-4xl shadow-2xl object-cover w-full"

@@ -5,9 +5,9 @@ import Button3D from '@/components/ui/Button3D'
 import FinalCTA from '@/components/sections/FinalCTA'
 
 export const metadata: Metadata = {
-  title: 'About UaDay Cleaning | West Melbourne Cleaning Company',
+  title: 'About UaDay Cleaning | Deanside Cleaning Company',
   description:
-    'Learn about UaDay Cleaning — West Melbourne\'s trusted family-owned cleaning business. Our story, values, and commitment to the community.',
+    'Learn about UaDay Cleaning — Deanside\'s trusted family-owned cleaning business. Our story, values, and commitment to the community.',
   alternates: { canonical: 'https://uadaycleaning.com.au/about' },
 }
 
@@ -37,7 +37,7 @@ export default function AboutPage() {
                 Hard Work, Integrity, and a Fresh Start
               </h1>
               <p className="text-body-text text-lg leading-relaxed mb-8">
-                UaDay Cleaning was born from a simple belief: everyone deserves a clean, healthy home — and the people providing that service deserve to be treated with respect. We&apos;ve spent over 10 years building a reputation in West Melbourne that we&apos;re incredibly proud of.
+                UaDay Cleaning was born from a simple belief: everyone deserves a clean, healthy home — and the people providing that service deserve to be treated with respect. We&apos;ve spent over 10 years building a reputation in Deanside that we&apos;re incredibly proud of.
               </p>
               <Button3D href="/get-a-quote" size="lg">Book a Clean Today</Button3D>
             </div>
@@ -61,13 +61,13 @@ export default function AboutPage() {
           <h2 className="font-heading font-900 text-dark-text text-3xl md:text-4xl mb-6">Our Story</h2>
           <div className="space-y-4 text-body-text leading-relaxed text-lg">
             <p>
-              UaDay Cleaning was founded in 2014 by Sarah Johnson, a West Melbourne local who saw a gap in the market for reliable, trustworthy, and genuinely eco-friendly cleaning services.
+              UaDay Cleaning was founded in 2014 by Sarah Johnson, a Deanside local who saw a gap in the market for reliable, trustworthy, and genuinely eco-friendly cleaning services.
             </p>
             <p>
               Starting with just a van, a handful of products, and a commitment to doing things right, Sarah grew UaDay into a team of dedicated professionals who share the same values: integrity, quality, and care for the community we live in.
             </p>
             <p>
-              Today, we&apos;ve helped over 500 families and businesses across West Melbourne and the surrounding suburbs — from routine fortnightly cleans to complex end-of-lease jobs that reunite tenants with their full bond.
+              Today, we&apos;ve helped over 500 families and businesses across Deanside and the surrounding suburbs — from routine fortnightly cleans to complex end-of-lease jobs that reunite tenants with their full bond.
             </p>
             <p>
               We&apos;re proudly local, proudly independent, and proudly committed to the environment. Every product we use is certified eco-friendly, because we believe a clean home shouldn&apos;t come at the cost of a clean planet.
@@ -146,7 +146,7 @@ export default function AboutPage() {
             <Star className="w-12 h-12 text-brand-yellow mx-auto mb-4" />
             <h2 className="font-heading font-900 text-dark-text text-2xl mb-4">Community Commitment</h2>
             <p className="text-body-text leading-relaxed">
-              We give back to West Melbourne by partnering with local charities, offering discounted cleans to community organisations, and sourcing our products from Australian suppliers where possible. We&apos;re not just cleaners — we&apos;re your neighbours.
+              We give back to Deanside by partnering with local charities, offering discounted cleans to community organisations, and sourcing our products from Australian suppliers where possible. We&apos;re not just cleaners — we&apos;re your neighbours.
             </p>
           </div>
         </div>

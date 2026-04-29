@@ -9,9 +9,9 @@ import FAQSchema from '@/components/schema/FAQSchema'
 import ServiceSchema from '@/components/schema/ServiceSchema'
 
 export const metadata: Metadata = {
-  title: 'Deep Cleaning Service West Melbourne | UaDay Cleaning',
+  title: 'Deep Cleaning Service Deanside | UaDay Cleaning',
   description:
-    'Professional deep cleaning services in West Melbourne. Thorough room-by-room cleans, eco-friendly products. Perfect for spring cleans, post-renovation or pre-sale. Book online.',
+    'Professional deep cleaning services in Deanside. Thorough room-by-room cleans, eco-friendly products. Perfect for spring cleans, post-renovation or pre-sale. Book online.',
   alternates: { canonical: 'https://uadaycleaning.com.au/services/deep-cleaning' },
 }
 
@@ -45,8 +45,8 @@ export default function DeepCleaningPage() {
   return (
     <>
       <ServiceSchema
-        name="Deep Cleaning Service West Melbourne"
-        description="Professional deep cleaning services in West Melbourne. Thorough room-by-room cleans with eco-friendly products."
+        name="Deep Cleaning Service Deanside"
+        description="Professional deep cleaning services in Deanside. Thorough room-by-room cleans with eco-friendly products."
         url="https://uadaycleaning.com.au/services/deep-cleaning"
       />
       <FAQSchema items={faqs} />
@@ -66,7 +66,7 @@ export default function DeepCleaningPage() {
                 <span className="text-amber-700 font-semibold text-sm">The Ultimate Spring Clean</span>
               </span>
               <h1 className="font-heading font-900 text-dark-text text-5xl md:text-6xl mb-5 leading-tight">
-                Deep Cleaning Service West Melbourne
+                Deep Cleaning Service Deanside
               </h1>
               <p className="text-body-text text-lg leading-relaxed mb-4">
                 A deep clean is a thorough, top-to-bottom cleaning service that goes far beyond a standard maintenance clean. Our team works room-by-room to tackle built-up grime, appliance interiors, grout lines, and hard-to-reach areas — leaving your home completely refreshed.
@@ -76,8 +76,8 @@ export default function DeepCleaningPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button3D href="/get-a-quote" size="lg">Get a Free Quote</Button3D>
-                <a href="tel:0412345678" className="flex items-center gap-2 text-brand-green font-semibold">
-                  <Phone className="w-5 h-5" /> 0412 345 678
+                <a href="tel:0414375051" className="flex items-center gap-2 text-brand-green font-semibold">
+                  <Phone className="w-5 h-5" /> 0414 375 051
                 </a>
               </div>
             </div>
@@ -85,7 +85,7 @@ export default function DeepCleaningPage() {
               {/* TODO: Replace with real deep clean photo */}
               <Image
                 src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=500&fit=crop"
-                alt="Professional deep spring cleaning service West Melbourne"
+                alt="Professional deep spring cleaning service Deanside"
                 width={600}
                 height={500}
                 className="rounded-4xl shadow-2xl object-cover w-full"

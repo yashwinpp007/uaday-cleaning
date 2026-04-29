@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: 'How do I get a quote?',
-    answer: 'Getting a quote is easy. You can fill out our online quote form, call us on 0412 345 678, or email us. We\'ll get back to you within the hour with a transparent, no-obligation price.',
+    answer: 'Getting a quote is easy. You can fill out our online quote form, call us on 0414 375 051, or email us. We\'ll get back to you within the hour with a transparent, no-obligation price.',
   },
   {
     question: 'Can I book a same-day clean?',
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: 'What areas do you service?',
-    answer: 'We service all of West Melbourne and surrounding suburbs including Truganina, Hoppers Crossing, Werribee, Tarneit, Point Cook, Laverton, Altona Meadows, Williams Landing, and more.',
+    answer: 'We service all of Deanside and surrounding suburbs including Truganina, Hoppers Crossing, Werribee, Tarneit, Point Cook, Laverton, Altona Meadows, Williams Landing, and more.',
   },
 ]
 

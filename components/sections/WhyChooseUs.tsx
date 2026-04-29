@@ -25,7 +25,7 @@ const usps = [
   {
     icon: Heart,
     title: 'Locally Owned & Operated',
-    desc: 'We&apos;re a proud West Melbourne family business. We know the local community and care deeply about our reputation.',
+    desc: 'We&apos;re a proud Deanside family business. We know the local community and care deeply about our reputation.',
   },
 ]
 

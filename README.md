@@ -1,6 +1,6 @@
 # UaDay Cleaning — Website
 
-Professional cleaning company website for **UaDay Cleaning**, West Melbourne, VIC.
+Professional cleaning company website for **UaDay Cleaning**, Deanside, VIC.
 
 Built with Next.js 14 (App Router), TypeScript, Tailwind CSS, Framer Motion, and MDX.
 
@@ -197,4 +197,4 @@ To wire up GA4 tracking, add the Google Analytics script tag to `app/layout.tsx`
 
 ---
 
-**ABN:** 12 345 678 901 · **Phone:** 0412 345 678 · **Email:** hello@uadaycleaning.com.au
+**ABN:** 12 345 678 901 · **Phone:** 0414 375 051 · **Email:** uadaycleaning@gmail.com

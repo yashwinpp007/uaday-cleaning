@@ -5,13 +5,13 @@ import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react'
 import Button3D from '@/components/ui/Button3D'
 
 const hours = [
-  { day: 'Monday', hours: '7:00am – 6:00pm' },
-  { day: 'Tuesday', hours: '7:00am – 6:00pm' },
-  { day: 'Wednesday', hours: '7:00am – 6:00pm' },
-  { day: 'Thursday', hours: '7:00am – 6:00pm' },
-  { day: 'Friday', hours: '7:00am – 6:00pm' },
-  { day: 'Saturday', hours: '8:00am – 4:00pm' },
-  { day: 'Sunday', hours: '8:00am – 4:00pm' },
+  { day: 'Monday', hours: '8:00am – 10:00pm' },
+  { day: 'Tuesday', hours: '8:00am – 10:00pm' },
+  { day: 'Wednesday', hours: '8:00am – 10:00pm' },
+  { day: 'Thursday', hours: '8:00am – 10:00pm' },
+  { day: 'Friday', hours: '8:00am – 10:00pm' },
+  { day: 'Saturday', hours: '8:00am – 10:00pm' },
+  { day: 'Sunday', hours: '8:00am – 10:00pm' },
 ]
 
 export default function ContactPage() {
@@ -105,23 +105,23 @@ export default function ContactPage() {
                 <h3 className="font-heading font-800 text-dark-text text-xl mb-5">Contact Information</h3>
                 <ul className="space-y-4">
                   <li>
-                    <a href="tel:0412345678" className="flex items-center gap-3 text-body-text hover:text-brand-green transition-colors group">
+                    <a href="tel:0414375051" className="flex items-center gap-3 text-body-text hover:text-brand-green transition-colors group">
                       <div className="w-10 h-10 bg-brand-green rounded-xl flex items-center justify-center">
                         <Phone className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <p className="font-semibold text-dark-text">0412 345 678</p>
+                        <p className="font-semibold text-dark-text">0414 375 051</p>
                         <p className="text-xs">Call or SMS</p>
                       </div>
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:hello@uadaycleaning.com.au" className="flex items-center gap-3 text-body-text hover:text-brand-green transition-colors">
+                    <a href="mailto:uadaycleaning@gmail.com" className="flex items-center gap-3 text-body-text hover:text-brand-green transition-colors">
                       <div className="w-10 h-10 bg-brand-green rounded-xl flex items-center justify-center">
                         <Mail className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <p className="font-semibold text-dark-text">hello@uadaycleaning.com.au</p>
+                        <p className="font-semibold text-dark-text">uadaycleaning@gmail.com</p>
                         <p className="text-xs">We reply within the hour</p>
                       </div>
                     </a>
@@ -131,8 +131,8 @@ export default function ContactPage() {
                       <MapPin className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-dark-text">West Melbourne, VIC 3003</p>
-                      <p className="text-xs">Servicing all of West Melbourne</p>
+                      <p className="font-semibold text-dark-text">Deanside, VIC 3336</p>
+                      <p className="text-xs">Servicing all of Western Melbourne</p>
                     </div>
                   </li>
                 </ul>
@@ -161,14 +161,14 @@ export default function ContactPage() {
           {/* Map */}
           <div className="mt-12 rounded-4xl overflow-hidden shadow-lg border border-light-border">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200755.31744388296!2d144.6287!3d-37.8136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d514af0b56b%3A0x5045675218ce720!2sWest%20Melbourne%20VIC%203003!5e0!3m2!1sen!2sau!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.123456789!2d144.729!3d-37.683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6778e3e8a4dcb%3A0x1a2b3c4d5e6f7a8b!2sDeanside%20VIC%203336!5e0!3m2!1sen!2sau!4v1234567890"
               width="100%"
               height="350"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="UaDay Cleaning location in West Melbourne"
+              title="UaDay Cleaning location in Deanside"
             />
           </div>
         </div>
