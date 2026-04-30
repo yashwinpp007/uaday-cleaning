@@ -13,6 +13,8 @@ const testimonials = [
   { name: 'Anna K.', suburb: 'Truganina', stars: 5, quote: 'The deep clean they did before Christmas was outstanding. Even the oven looked brand new. Will definitely book again.' },
   { name: 'David W.', suburb: 'Laverton', stars: 5, quote: 'Professional, thorough, and incredibly friendly. Our office has never been cleaner — staff morale has genuinely improved!' },
   { name: 'Lisa P.', suburb: 'Altona Meadows', stars: 5, quote: 'Same-day booking was a lifesaver. They arrived within 2 hours and left the place spotless. Brilliant service!' },
+  { name: 'Sivananthakumar J.', suburb: 'Melbourne', stars: 5, quote: 'We hired this people for our house cleaning. They did really a good job. The owner Uthay is very easy to communicate and reliable.' },
+  { name: 'Ben Walsh', suburb: 'Melbourne', stars: 5, quote: 'Reliable and trustworthy people. Highly recommended.' },
 ]
 
 function StarRating({ count }: { count: number }) {

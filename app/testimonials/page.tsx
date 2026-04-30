@@ -19,6 +19,8 @@ const testimonials = [
   { name: 'Lisa P.', suburb: 'Altona Meadows', stars: 5, service: 'Residential', quote: 'Same-day booking was a lifesaver. They arrived within 2 hours and left the place spotless. I was hosting guests that evening and they saved me completely.' },
   { name: 'Tom B.', suburb: 'Williams Landing', stars: 5, service: 'End of Lease', quote: 'Second time using UaDay for end of lease. Got my bond back both times! The checklist they follow is incredibly thorough. Wouldn\'t use anyone else.' },
   { name: 'Grace N.', suburb: 'Deer Park', stars: 5, service: 'Residential', quote: 'Such a lovely team of cleaners. They go above and beyond every single time. My house is always gleaming when they\'re done. I genuinely look forward to cleaning day!' },
+  { name: 'Sivananthakumar J.', suburb: 'Melbourne', stars: 5, service: 'Residential', quote: 'We hired this people for our house cleaning. They did really a good job. I would recommend for their service and the owner Uthay is very easy to communicate and reliable guy.' },
+  { name: 'Ben Walsh', suburb: 'Melbourne', stars: 5, service: 'Residential', quote: 'Reliable and trustworthy people. Highly recommended.' },
 ]
 
 const aggregateSchema = {

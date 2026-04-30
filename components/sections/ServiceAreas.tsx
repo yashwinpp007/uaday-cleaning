@@ -10,6 +10,8 @@ const suburbs = [
   'Point Cook', 'Laverton', 'Altona Meadows', 'Williams Landing',
   'Deer Park', 'Sunshine', 'Footscray', 'Yarraville',
   'Williamstown', 'Newport', 'Altona', 'Brooklyn',
+  'Melbourne CBD', 'Toorak', 'South Yarra', 'Brunswick',
+  'Epping', 'Thomastown', 'Tullamarine',
 ]
 
 const suburbSlugs: Record<string, string> = {

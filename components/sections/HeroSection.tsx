@@ -37,7 +37,7 @@ export default function HeroSection() {
               Professional
               <span className="text-brand-green block">Cleaning</span>
               Services
-              <span className="text-brand-green block">in Deanside</span>
+              <span className="text-brand-green block">in Melbourne</span>
             </h1>
 
             <p className="text-body-text text-lg leading-relaxed mb-8 max-w-lg">

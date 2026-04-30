@@ -17,13 +17,6 @@ const values = [
   { icon: Shield, title: 'Trustworthiness', desc: 'Fully insured, background-checked cleaners you can trust in your home or office.' },
 ]
 
-const team = [
-  { name: 'Sarah Johnson', role: 'Founder & Head Cleaner', img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop&face', rotation: '-2deg' },
-  { name: 'Michael Chen', role: 'Commercial Lead', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&face', rotation: '1.5deg' },
-  { name: 'Emma Williams', role: 'EOL Specialist', img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&face', rotation: '-1deg' },
-  { name: 'David Park', role: 'Deep Clean Expert', img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&face', rotation: '2deg' },
-]
-
 export default function AboutPage() {
   return (
     <>
@@ -37,15 +30,15 @@ export default function AboutPage() {
                 Hard Work, Integrity, and a Fresh Start
               </h1>
               <p className="text-body-text text-lg leading-relaxed mb-8">
-                UaDay Cleaning was born from a simple belief: everyone deserves a clean, healthy home — and the people providing that service deserve to be treated with respect. We&apos;ve spent over 10 years building a reputation in Deanside that we&apos;re incredibly proud of.
+                UaDay Cleaning was born from a simple belief: everyone deserves a clean, healthy home — and the people providing that service deserve to be treated with respect.
               </p>
               <Button3D href="/get-a-quote" size="lg">Book a Clean Today</Button3D>
             </div>
             <div className="relative">
               {/* TODO: Replace with founder photo */}
               <Image
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&h=500&fit=crop"
-                alt="Sarah Johnson, founder of UaDay Cleaning"
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=500&fit=crop"
+                alt="Uthayan, founder of UaDay Cleaning"
                 width={600}
                 height={500}
                 className="rounded-4xl shadow-2xl object-cover w-full"
@@ -59,15 +52,21 @@ export default function AboutPage() {
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="font-heading font-900 text-dark-text text-3xl md:text-4xl mb-6">Our Story</h2>
-          <div className="space-y-4 text-body-text leading-relaxed text-lg">
+          <div className="space-y-6 text-body-text leading-relaxed text-lg">
+            <blockquote className="border-l-4 border-brand-green pl-6 italic text-dark-text">
+              <p className="mb-4">
+                After arriving in Australia and calling this beautiful country home, I founded uaDay Cleaning with a simple mission: to provide the most reliable and meticulous cleaning service in the community.
+              </p>
+              <p className="mb-4">
+                As someone who understands the value of a fresh start, I bring that same dedication to every home I enter. We don&apos;t just clean floors and surfaces; we care for your space so you can focus on what matters most to you.
+              </p>
+              <p className="mb-4">
+                When you hire us, you are supporting a local business built on the values of honesty, resilience, and premium Australian standards.
+              </p>
+              <footer className="font-heading font-800 text-brand-green not-italic mt-4">— Uthayan, Founder</footer>
+            </blockquote>
             <p>
-              UaDay Cleaning was founded in 2014 by Sarah Johnson, a Deanside local who saw a gap in the market for reliable, trustworthy, and genuinely eco-friendly cleaning services.
-            </p>
-            <p>
-              Starting with just a van, a handful of products, and a commitment to doing things right, Sarah grew UaDay into a team of dedicated professionals who share the same values: integrity, quality, and care for the community we live in.
-            </p>
-            <p>
-              Today, we&apos;ve helped over 500 families and businesses across Deanside and the surrounding suburbs — from routine fortnightly cleans to complex end-of-lease jobs that reunite tenants with their full bond.
+              Today, we&apos;ve helped over 500 families and businesses across Melbourne and the surrounding suburbs — from routine fortnightly cleans to complex end-of-lease jobs that reunite tenants with their full bond.
             </p>
             <p>
               We&apos;re proudly local, proudly independent, and proudly committed to the environment. Every product we use is certified eco-friendly, because we believe a clean home shouldn&apos;t come at the cost of a clean planet.
@@ -88,36 +87,6 @@ export default function AboutPage() {
                 </div>
                 <h3 className="font-heading font-800 text-dark-text text-xl mb-3">{v.title}</h3>
                 <p className="text-body-text text-sm leading-relaxed">{v.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="font-heading font-900 text-dark-text text-3xl md:text-4xl text-center mb-10">Meet the Team</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member) => (
-              <div
-                key={member.name}
-                className="text-center"
-                style={{ transform: `rotate(${member.rotation})` }}
-              >
-                <div className="bg-white rounded-3xl p-3 shadow-card-hover border border-light-border">
-                  <Image
-                    src={member.img}
-                    alt={`${member.name} - ${member.role} at UaDay Cleaning`}
-                    width={300}
-                    height={300}
-                    className="rounded-2xl w-full object-cover aspect-square"
-                  />
-                  <div className="pt-3 pb-2">
-                    <p className="font-heading font-800 text-dark-text text-sm">{member.name}</p>
-                    <p className="text-body-text text-xs">{member.role}</p>
-                  </div>
-                </div>
               </div>
             ))}
           </div>
@@ -146,7 +115,7 @@ export default function AboutPage() {
             <Star className="w-12 h-12 text-brand-yellow mx-auto mb-4" />
             <h2 className="font-heading font-900 text-dark-text text-2xl mb-4">Community Commitment</h2>
             <p className="text-body-text leading-relaxed">
-              We give back to Deanside by partnering with local charities, offering discounted cleans to community organisations, and sourcing our products from Australian suppliers where possible. We&apos;re not just cleaners — we&apos;re your neighbours.
+              We give back to our community by partnering with local charities, offering discounted cleans to community organisations, and sourcing our products from Australian suppliers where possible. We&apos;re not just cleaners — we&apos;re your neighbours.
             </p>
           </div>
         </div>

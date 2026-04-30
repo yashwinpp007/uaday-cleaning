@@ -25,6 +25,8 @@ const linkedSuburbs = [
 const otherSuburbs = [
   'Deer Park', 'Sunshine', 'Footscray', 'Yarraville', 'Williamstown',
   'Newport', 'Altona', 'Brooklyn', 'Laverton North', 'Derrimut',
+  'Melbourne CBD', 'Toorak', 'South Yarra', 'Brunswick',
+  'Epping', 'Thomastown', 'Tullamarine',
 ]
 
 export default function ServiceAreasPage() {
