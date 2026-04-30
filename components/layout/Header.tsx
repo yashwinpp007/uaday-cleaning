@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, ChevronDown, Home, Building2, Key, Sparkles, Phone } from 'lucide-react'
@@ -53,18 +54,15 @@ export default function Header() {
           } px-6 py-3 flex items-center justify-between`}
         >
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-brand-green rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-              <svg viewBox="0 0 40 40" fill="none" className="w-6 h-6">
-                <path d="M20 5C12 5 6 12 8 20C10 28 20 35 20 35C20 35 30 28 32 20C34 12 28 5 20 5Z" fill="white"/>
-                <path d="M20 5C20 5 20 20 30 25" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.5"/>
-                <circle cx="26" cy="12" r="3" fill="#ffd700"/>
-              </svg>
-            </div>
-            <div>
-              <span className="font-heading font-900 text-dark-text text-lg leading-tight block">UaDay</span>
-              <span className="font-body text-brand-green text-xs font-600 leading-tight block -mt-0.5">Cleaning</span>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="/images/logo.png"
+              alt="UaDay Cleaning"
+              width={140}
+              height={60}
+              className="h-12 w-auto object-contain group-hover:scale-105 transition-transform"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}

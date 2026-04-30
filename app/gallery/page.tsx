@@ -8,18 +8,20 @@ import Button3D from '@/components/ui/Button3D'
 import FinalCTA from '@/components/sections/FinalCTA'
 import BeforeAfterSlider from '@/components/ui/BeforeAfterSlider'
 
-const categories = ['All', 'Residential', 'Commercial', 'End of Lease']
+const categories = ['All', 'Residential', 'Commercial', 'End of Lease', 'Deep Clean']
 
-// TODO: Replace with real before/after photos
 const images = [
-  { id: 1, src: 'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600&h=500&fit=crop', alt: 'Spotless kitchen after professional clean', category: 'Residential', location: 'Tarneit', service: 'Deep Clean' },
-  { id: 2, src: 'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=600&h=500&fit=crop', alt: 'Sparkling bathroom after end of lease clean', category: 'End of Lease', location: 'Point Cook', service: 'End of Lease' },
-  { id: 3, src: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=500&fit=crop', alt: 'Clean modern office space', category: 'Commercial', location: 'Hoppers Crossing', service: 'Commercial' },
-  { id: 4, src: 'https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=600&h=500&fit=crop', alt: 'Pristine living room after residential clean', category: 'Residential', location: 'Werribee', service: 'Regular Clean' },
-  { id: 5, src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=500&fit=crop', alt: 'Gleaming lounge after deep clean', category: 'Residential', location: 'Truganina', service: 'Deep Clean' },
-  { id: 6, src: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=500&fit=crop', alt: 'Professional team cleaning', category: 'Commercial', location: 'Laverton', service: 'Commercial' },
-  { id: 7, src: 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?w=600&h=500&fit=crop', alt: 'Clean bedroom after end of lease', category: 'End of Lease', location: 'Altona Meadows', service: 'End of Lease' },
-  { id: 8, src: 'https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=600&h=500&fit=crop', alt: 'Spotless laundry room', category: 'Residential', location: 'Williams Landing', service: 'Regular Clean' },
+  { id: 1,  src: '/images/gallery/carpet-room.jpg',         alt: 'Carpet steam cleaned to perfection',            category: 'End of Lease', location: 'Truganina',        service: 'Carpet Steam Clean' },
+  { id: 2,  src: '/images/gallery/carpet-steam-closeup.jpg',alt: 'Professional carpet steam cleaning in progress', category: 'Residential',  location: 'Hoppers Crossing', service: 'Carpet Steam Clean' },
+  { id: 3,  src: '/images/gallery/tiles-mopped.jpg',        alt: 'Gleaming marble tiles after deep clean',        category: 'Residential',  location: 'Point Cook',       service: 'Deep Clean' },
+  { id: 4,  src: '/images/gallery/bathroom-bathtub.jpg',    alt: 'Spotless bathroom with bathtub and shower',     category: 'Residential',  location: 'Tarneit',          service: 'Regular Clean' },
+  { id: 5,  src: '/images/gallery/pressure-wash.jpg',       alt: 'Rangehood filters pressure washed clean',       category: 'Deep Clean',   location: 'Werribee',         service: 'Deep Clean' },
+  { id: 6,  src: '/images/gallery/oven-after.jpg',          alt: 'Oven restored to showroom condition',           category: 'Deep Clean',   location: 'Tarneit',          service: 'Oven Deep Clean' },
+  { id: 7,  src: '/images/gallery/bathroom-clean-1.jpg',    alt: 'End of lease bathroom — bond back ready',       category: 'End of Lease', location: 'Laverton',         service: 'End of Lease' },
+  { id: 8,  src: '/images/gallery/bathroom-clean-2.jpg',    alt: 'Sparkling bathroom after end of lease clean',   category: 'End of Lease', location: 'Altona Meadows',   service: 'End of Lease' },
+  { id: 9,  src: '/images/gallery/balcony-clean.jpg',       alt: 'CBD apartment balcony cleaned for inspection',  category: 'End of Lease', location: 'Melbourne CBD',    service: 'End of Lease' },
+  { id: 10, src: '/images/gallery/oven-clean-2.jpg',        alt: 'Thoroughly cleaned oven interior',              category: 'Deep Clean',   location: 'Deanside',         service: 'Oven Deep Clean' },
+  { id: 11, src: '/images/gallery/timber-floor.jpg',        alt: 'Polished timber floors gleaming after clean',   category: 'Residential',  location: 'Williamstown',     service: 'Deep Clean' },
 ]
 
 export default function GalleryPage() {
@@ -41,22 +43,22 @@ export default function GalleryPage() {
           <span className="inline-block bg-brand-green text-white font-semibold text-sm px-4 py-2 rounded-full mb-5">Our Work</span>
           <h1 className="font-heading font-900 text-dark-text text-5xl md:text-6xl mb-5">Cleaning Gallery</h1>
           <p className="text-body-text text-xl max-w-2xl mx-auto mb-8">
-            See the results of our professional cleaning services across Deanside and surrounding suburbs.
+            Real results from real jobs — see the UaDay difference across Melbourne and surrounding suburbs.
           </p>
         </div>
       </section>
 
-      {/* Before/After Slider */}
+      {/* Before / After Slider */}
       <section className="py-12 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="font-heading font-900 text-dark-text text-3xl text-center mb-8">Before & After</h2>
+          <h2 className="font-heading font-900 text-dark-text text-3xl text-center mb-3">Before &amp; After</h2>
+          <p className="text-center text-body-text mb-8">Drag the slider to reveal the transformation</p>
           <BeforeAfterSlider
-            beforeSrc="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&h=500&fit=crop"
-            afterSrc="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&h=500&fit=crop"
-            beforeAlt="Kitchen before professional cleaning"
-            afterAlt="Kitchen after professional cleaning by UaDay"
+            beforeSrc="/images/gallery/oven-before.jpg"
+            afterSrc="/images/gallery/oven-after.jpg"
+            beforeAlt="Oven before UaDay deep clean"
+            afterAlt="Oven after UaDay deep clean — spotless"
           />
-          <p className="text-center text-body-text text-sm mt-4">Drag the slider to reveal the transformation</p>
         </div>
       </section>
 
@@ -79,10 +81,7 @@ export default function GalleryPage() {
             ))}
           </div>
 
-          <motion.div
-            layout
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-          >
+          <motion.div layout className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <AnimatePresence>
               {filtered.map((img, i) => (
                 <motion.div
@@ -156,8 +155,8 @@ export default function GalleryPage() {
                 src={filtered[lightboxIndex].src}
                 alt={filtered[lightboxIndex].alt}
                 width={1200}
-                height={800}
-                className="rounded-4xl w-full object-cover max-h-[80vh]"
+                height={900}
+                className="rounded-4xl w-full object-contain max-h-[80vh]"
               />
               <div className="absolute bottom-4 left-4 bg-black/60 text-white text-sm px-4 py-2 rounded-2xl backdrop-blur-sm">
                 <p className="font-semibold">{filtered[lightboxIndex].service}</p>

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 
 function FacebookIcon() {
@@ -63,18 +64,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand Column */}
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center">
-                <svg viewBox="0 0 40 40" fill="none" className="w-6 h-6">
-                  <path d="M20 5C12 5 6 12 8 20C10 28 20 35 20 35C20 35 30 28 32 20C34 12 28 5 20 5Z" fill="white"/>
-                  <path d="M20 5C20 5 20 20 30 25" stroke="white" strokeWidth="2" strokeLinecap="round" opacity="0.6"/>
-                  <circle cx="26" cy="12" r="3" fill="#ffd700"/>
-                </svg>
-              </div>
-              <div>
-                <span className="font-heading font-800 text-white text-lg leading-tight block">UaDay Cleaning</span>
-                <span className="text-white/60 text-xs leading-tight block">Deanside, VIC</span>
-              </div>
+            <Link href="/" className="inline-block mb-4">
+              <Image
+                src="/images/logo.png"
+                alt="UaDay Cleaning"
+                width={160}
+                height={70}
+                className="h-14 w-auto object-contain brightness-0 invert"
+              />
             </Link>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               Deanside&apos;s trusted cleaning professionals. Eco-friendly, fully insured, and dedicated to making your space sparkle.
