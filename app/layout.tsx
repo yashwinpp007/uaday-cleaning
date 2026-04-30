@@ -20,17 +20,26 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: 'UaDay Cleaning | Professional Cleaning Services in Deanside',
+    default: "UaDay Cleaning | Melbourne's Professional Cleaning Service",
     template: '%s | UaDay Cleaning',
   },
   description:
-    'Professional residential, commercial & end of lease cleaning services in Deanside. Eco-friendly, fully insured, bond-back guaranteed. Get a free quote today!',
+    "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed. Serving Deanside, Tarneit, Point Cook, Werribee & surrounds. Get a free quote today!",
   keywords: [
+    'cleaning services melbourne',
     'cleaning services west melbourne',
-    'end of lease cleaning',
-    'residential cleaning',
-    'commercial cleaning',
+    'end of lease cleaning melbourne',
+    'residential cleaning melbourne',
+    'commercial cleaning melbourne',
     'bond back cleaning',
+    'deep cleaning melbourne',
+    'house cleaning tarneit',
+    'cleaning point cook',
+    'cleaning werribee',
+    'cleaning truganina',
+    'cleaning hoppers crossing',
+    'office cleaning melbourne',
+    'spring cleaning melbourne',
   ],
   authors: [{ name: 'UaDay Cleaning' }],
   creator: 'UaDay Cleaning',
@@ -44,16 +53,14 @@ export const metadata: Metadata = {
     locale: 'en_AU',
     url: 'https://uadaycleaning.com.au',
     siteName: 'UaDay Cleaning',
-    title: 'UaDay Cleaning | Professional Cleaning Services in Deanside',
+    title: "UaDay Cleaning | Melbourne's Professional Cleaning Service",
     description:
-      'Professional residential, commercial & end of lease cleaning services in Deanside.',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'UaDay Cleaning — Professional Cleaning Services in Melbourne' }],
+      "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed. Serving Deanside, Tarneit, Point Cook, Werribee & surrounds.",
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'UaDay Cleaning | Professional Cleaning Services in Melbourne',
-    description: 'Professional residential, commercial & end of lease cleaning in Deanside, Melbourne.',
-    images: ['/og-image.jpg'],
+    title: "UaDay Cleaning | Melbourne's Professional Cleaning Service",
+    description: "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed.",
   },
   robots: {
     index: true,
