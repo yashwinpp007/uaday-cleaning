@@ -9,7 +9,7 @@ import { CheckCircle, Star, Phone } from 'lucide-react'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-to-br from-brand-green-light via-white to-white overflow-hidden pt-24 pb-16">
+    <section className="relative min-h-screen flex items-center bg-gradient-to-br from-brand-green-light via-white to-white overflow-hidden pt-36 pb-16">
       <DotPattern />
       <FloatingBlobs />
 

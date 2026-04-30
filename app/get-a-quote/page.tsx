@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function GetAQuotePage() {
   return (
-    <div className="min-h-screen bg-off-white pt-28 pb-16">
+    <div className="min-h-screen bg-off-white pt-40 pb-16">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-10">
           <h1 className="font-heading font-900 text-dark-text text-4xl md:text-5xl mb-3">Get a Free Quote</h1>

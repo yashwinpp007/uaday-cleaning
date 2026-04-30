@@ -46,7 +46,7 @@ export default function ResidentialCleaningPage() {
       <FAQSchema items={faqs} />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-brand-green-light to-white overflow-hidden relative">
+      <section className="pt-40 pb-16 bg-gradient-to-br from-brand-green-light to-white overflow-hidden relative">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

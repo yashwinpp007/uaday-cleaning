@@ -13,7 +13,7 @@ const popularLinks = [
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-brand-green-light to-white flex items-center pt-24 pb-16">
+    <div className="min-h-screen bg-gradient-to-br from-brand-green-light to-white flex items-center pt-40 pb-16">
       <div className="max-w-3xl mx-auto px-4 text-center w-full">
         {/* Large 404 */}
         <div className="font-heading font-900 text-9xl text-brand-green/20 leading-none mb-4 select-none">

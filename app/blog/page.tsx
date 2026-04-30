@@ -22,7 +22,7 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-brand-green-light to-white">
+      <section className="pt-40 pb-16 bg-gradient-to-br from-brand-green-light to-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <span className="inline-block bg-brand-green text-white font-semibold text-sm px-4 py-2 rounded-full mb-5">Blog & Tips</span>
           <h1 className="font-heading font-900 text-dark-text text-5xl md:text-6xl mb-5">

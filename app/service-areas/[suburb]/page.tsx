@@ -99,7 +99,7 @@ export default function SuburbPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-brand-green-light to-white">
+      <section className="pt-40 pb-16 bg-gradient-to-br from-brand-green-light to-white">
         <div className="max-w-4xl mx-auto px-4">
           <nav className="flex items-center gap-2 text-sm text-body-text mb-5">
             <Link href="/" className="hover:text-brand-green">Home</Link>

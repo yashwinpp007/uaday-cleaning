@@ -25,7 +25,7 @@ export default function ThankYouPage() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-brand-green-light via-white to-white flex items-center pt-24 pb-16">
+    <div className="min-h-screen bg-gradient-to-br from-brand-green-light via-white to-white flex items-center pt-40 pb-16">
       <div className="max-w-3xl mx-auto px-4 text-center w-full">
         {/* Animated check */}
         <motion.div
