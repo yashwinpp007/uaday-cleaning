@@ -132,28 +132,6 @@ export default function DeepCleaningPage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-heading font-900 text-dark-text text-3xl md:text-4xl mb-4">Deep Clean Pricing</h2>
-          <p className="text-body-text mb-8">Pricing is based on property size and current condition. Get a personalised quote.</p>
-          <div className="grid sm:grid-cols-3 gap-6 mb-8">
-            {[
-              { size: '1–2 Bedrooms', from: 'From $180', duration: '4–5 hrs' },
-              { size: '3–4 Bedrooms', from: 'From $280', duration: '6–7 hrs' },
-              { size: '5+ Bedrooms', from: 'From $380', duration: '8+ hrs' },
-            ].map((p) => (
-              <div key={p.size} className="bg-off-white rounded-4xl p-6 border border-light-border">
-                <p className="font-heading font-800 text-dark-text text-lg mb-2">{p.size}</p>
-                <p className="text-brand-green font-bold text-2xl mb-1">{p.from}</p>
-                <p className="text-body-text text-sm">{p.duration}</p>
-              </div>
-            ))}
-          </div>
-          <Button3D href="/get-a-quote" size="lg">Get My Custom Quote</Button3D>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="py-16 bg-off-white">
         <div className="max-w-3xl mx-auto px-4">

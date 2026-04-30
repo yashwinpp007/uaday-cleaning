@@ -30,13 +30,6 @@ const checklist = [
   'Laundry: sink, tub, surfaces cleaned',
 ]
 
-const pricing = [
-  { size: '1 Bedroom / Studio', price: '$250–$320', duration: '3–4 hrs' },
-  { size: '2 Bedroom', price: '$320–$420', duration: '4–5 hrs' },
-  { size: '3 Bedroom', price: '$420–$550', duration: '5–7 hrs' },
-  { size: '4 Bedroom', price: '$550–$700', duration: '7–9 hrs' },
-  { size: '5 Bedroom +', price: 'POA', duration: 'Contact us' },
-]
 
 const faqs = [
   { question: 'What is the bond-back guarantee?', answer: 'If your real estate agent or property manager is not satisfied with our end of lease clean, we will return to the property and re-clean the specified areas at absolutely no charge to you — until you get your bond back.' },
@@ -125,37 +118,6 @@ export default function EndOfLeasePage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Pricing by property size */}
-      <section className="py-16 bg-off-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="font-heading font-900 text-dark-text text-3xl md:text-4xl text-center mb-3">Pricing by Property Size</h2>
-          <p className="text-body-text text-center mb-10">Indicative prices. Final quote confirmed after booking.</p>
-          <div className="bg-white rounded-5xl shadow-card overflow-hidden">
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-brand-green text-white">
-                    <th className="text-left p-5 font-heading font-700">Property Size</th>
-                    <th className="text-center p-5 font-heading font-700">Price Range</th>
-                    <th className="text-center p-5 font-heading font-700">Est. Duration</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {pricing.map((row, i) => (
-                    <tr key={row.size} className={i % 2 === 0 ? 'bg-white' : 'bg-off-white'}>
-                      <td className="p-5 font-semibold text-dark-text">{row.size}</td>
-                      <td className="p-5 text-center text-brand-green font-bold">{row.price}</td>
-                      <td className="p-5 text-center text-body-text text-sm">{row.duration}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p className="text-center text-body-text text-sm mt-4">Carpet steam cleaning add-on from $80. Oven deep clean from $50.</p>
         </div>
       </section>
 

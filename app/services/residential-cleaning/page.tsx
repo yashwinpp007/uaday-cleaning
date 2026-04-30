@@ -104,35 +104,6 @@ export default function ResidentialCleaningPage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="py-16 bg-off-white">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="font-heading font-900 text-dark-text text-3xl md:text-4xl text-center mb-3">Simple, Transparent Pricing</h2>
-          <p className="text-body-text text-center mb-10">Final pricing confirmed after booking. No hidden fees.</p>
-          <div className="grid sm:grid-cols-3 gap-6">
-            {[
-              { name: 'Regular Clean', price: 'From $80', desc: 'Ideal for fortnightly or weekly maintenance cleans.', features: ['2–3 bedrooms', '1–2 bathrooms', 'All standard areas'] },
-              { name: 'Standard Clean', price: 'From $120', desc: 'For larger homes or first-time clients.', features: ['3–4 bedrooms', '2 bathrooms', 'Laundry included'], popular: true },
-              { name: 'Large Home Clean', price: 'From $180', desc: 'For large or executive homes with extra areas.', features: ['5+ bedrooms', 'Multiple bathrooms', 'Additional areas'] },
-            ].map((plan) => (
-              <div key={plan.name} className={`rounded-5xl p-7 border-2 ${plan.popular ? 'bg-brand-green-light border-brand-green' : 'bg-white border-light-border'}`}>
-                {plan.popular && <span className="inline-block bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full mb-3">Most Popular</span>}
-                <h3 className="font-heading font-800 text-dark-text text-xl mb-1">{plan.name}</h3>
-                <p className="text-brand-green font-bold text-2xl mb-3">{plan.price}</p>
-                <p className="text-body-text text-sm mb-4">{plan.desc}</p>
-                <ul className="space-y-2">
-                  {plan.features.map((f) => (
-                    <li key={f} className="flex items-center gap-2 text-sm text-body-text">
-                      <CheckCircle className="w-4 h-4 text-brand-green" /> {f}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Eco Products */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
