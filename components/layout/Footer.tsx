@@ -2,33 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 
-function FacebookIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-    </svg>
-  )
-}
-
-function InstagramIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-    </svg>
-  )
-}
-
-function LinkedinIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
-      <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
-      <circle cx="4" cy="4" r="2" />
-    </svg>
-  )
-}
-
 const services = [
   { name: 'Residential Cleaning', href: '/services/residential-cleaning' },
   { name: 'Commercial Cleaning', href: '/services/commercial-cleaning' },
@@ -64,29 +37,20 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand Column */}
           <div>
-            <Link href="/" className="inline-block mb-4">
-              <Image
-                src="/images/logo.png"
-                alt="UaDay Cleaning"
-                width={160}
-                height={70}
-                className="h-14 w-auto object-contain brightness-0 invert"
-              />
+            <Link href="/" className="inline-block mb-5">
+              <div className="bg-white rounded-2xl px-3 py-2 inline-block">
+                <Image
+                  src="/images/logo.png"
+                  alt="UaDay Cleaning"
+                  width={160}
+                  height={70}
+                  className="h-14 w-auto object-contain"
+                />
+              </div>
             </Link>
-            <p className="text-white/70 text-sm leading-relaxed mb-6">
+            <p className="text-white/70 text-sm leading-relaxed">
               Deanside&apos;s trusted cleaning professionals. Eco-friendly, fully insured, and dedicated to making your space sparkle.
             </p>
-            <div className="flex items-center gap-3">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 rounded-xl flex items-center justify-center hover:bg-brand-green transition-colors">
-                <FacebookIcon />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 rounded-xl flex items-center justify-center hover:bg-brand-green transition-colors">
-                <InstagramIcon />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 rounded-xl flex items-center justify-center hover:bg-brand-green transition-colors">
-                <LinkedinIcon />
-              </a>
-            </div>
           </div>
 
           {/* Services */}
@@ -154,9 +118,7 @@ export default function Footer() {
               <li>
                 <div className="flex items-start gap-3 text-white/70">
                   <Clock className="w-4 h-4 mt-0.5 flex-shrink-0 text-brand-green" />
-                  <div className="text-sm">
-                    <p>Mon–Sun: 8am – 10pm</p>
-                  </div>
+                  <span className="text-sm">Mon–Sun: 8am – 10pm</span>
                 </div>
               </li>
             </ul>
@@ -179,7 +141,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-white/50 text-sm text-center sm:text-left">
-            © {new Date().getFullYear()} UaDay Cleaning. All rights reserved. ABN: 12 345 678 901
+            © {new Date().getFullYear()} UaDay Cleaning. All rights reserved.
           </div>
           <div className="flex items-center gap-4">
             <Link href="/privacy-policy" className="text-white/50 text-sm hover:text-white transition-colors">Privacy Policy</Link>
