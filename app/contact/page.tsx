@@ -1,8 +1,12 @@
-'use client'
+import type { Metadata } from 'next'
+import { Phone, Mail, MapPin, Clock } from 'lucide-react'
+import HubSpotForm from '@/components/ui/HubSpotForm'
 
-import { useState } from 'react'
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react'
-import Button3D from '@/components/ui/Button3D'
+export const metadata: Metadata = {
+  title: 'Contact UaDay Cleaning | Deanside VIC',
+  description: 'Get in touch with UaDay Cleaning. Call, email or send us a message. Servicing Deanside and surrounding suburbs.',
+  alternates: { canonical: 'https://uadaycleaning.com.au/contact' },
+}
 
 const hours = [
   { day: 'Monday', hours: '8:00am – 10:00pm' },
@@ -15,14 +19,6 @@ const hours = [
 ]
 
 export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false)
-  const [form, setForm] = useState({ name: '', email: '', phone: '', service: '', message: '' })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setSubmitted(true)
-  }
-
   return (
     <>
       <section className="pt-32 pb-16 bg-gradient-to-br from-brand-green-light to-white">
@@ -36,67 +32,10 @@ export default function ContactPage() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Form */}
+            {/* HubSpot Form */}
             <div>
-              {submitted ? (
-                <div className="bg-brand-green-light rounded-5xl p-10 text-center">
-                  <CheckCircle className="w-16 h-16 text-brand-green mx-auto mb-4" />
-                  <h2 className="font-heading font-900 text-dark-text text-2xl mb-3">Message Received!</h2>
-                  <p className="text-body-text">Thank you for getting in touch. We&apos;ll get back to you within the hour during business hours.</p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <h2 className="font-heading font-900 text-dark-text text-2xl mb-6">Send Us a Message</h2>
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <input
-                      type="text"
-                      placeholder="Your Name *"
-                      required
-                      value={form.name}
-                      onChange={(e) => setForm({ ...form, name: e.target.value })}
-                      className="w-full px-5 py-3.5 rounded-2xl border-2 border-light-border focus:border-brand-green outline-none text-dark-text"
-                    />
-                    <input
-                      type="email"
-                      placeholder="Email Address *"
-                      required
-                      value={form.email}
-                      onChange={(e) => setForm({ ...form, email: e.target.value })}
-                      className="w-full px-5 py-3.5 rounded-2xl border-2 border-light-border focus:border-brand-green outline-none text-dark-text"
-                    />
-                  </div>
-                  <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    value={form.phone}
-                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                    className="w-full px-5 py-3.5 rounded-2xl border-2 border-light-border focus:border-brand-green outline-none text-dark-text"
-                  />
-                  <select
-                    value={form.service}
-                    onChange={(e) => setForm({ ...form, service: e.target.value })}
-                    className="w-full px-5 py-3.5 rounded-2xl border-2 border-light-border focus:border-brand-green outline-none text-dark-text bg-white"
-                  >
-                    <option value="">Select a Service (optional)</option>
-                    <option>Residential Cleaning</option>
-                    <option>Commercial Cleaning</option>
-                    <option>End of Lease Cleaning</option>
-                    <option>Deep / Spring Cleaning</option>
-                    <option>General Enquiry</option>
-                  </select>
-                  <textarea
-                    placeholder="Your message... *"
-                    required
-                    rows={5}
-                    value={form.message}
-                    onChange={(e) => setForm({ ...form, message: e.target.value })}
-                    className="w-full px-5 py-3.5 rounded-2xl border-2 border-light-border focus:border-brand-green outline-none text-dark-text resize-none"
-                  />
-                  <Button3D type="submit" size="md">
-                    Send Message <Send className="w-4 h-4 inline ml-2" />
-                  </Button3D>
-                </form>
-              )}
+              <h2 className="font-heading font-900 text-dark-text text-2xl mb-6">Send Us a Message</h2>
+              <HubSpotForm />
             </div>
 
             {/* Info */}
