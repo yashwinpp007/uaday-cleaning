@@ -35,6 +35,10 @@ export const metadata: Metadata = {
   authors: [{ name: 'UaDay Cleaning' }],
   creator: 'UaDay Cleaning',
   metadataBase: new URL('https://uadaycleaning.com.au'),
+  icons: {
+    icon: '/icon.png',
+    apple: '/icon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_AU',
@@ -43,12 +47,13 @@ export const metadata: Metadata = {
     title: 'UaDay Cleaning | Professional Cleaning Services in Deanside',
     description:
       'Professional residential, commercial & end of lease cleaning services in Deanside.',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'UaDay Cleaning — Professional Cleaning Services in Melbourne' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'UaDay Cleaning | Deanside',
-    description: 'Professional cleaning services in Deanside.',
+    title: 'UaDay Cleaning | Professional Cleaning Services in Melbourne',
+    description: 'Professional residential, commercial & end of lease cleaning in Deanside, Melbourne.',
+    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,
