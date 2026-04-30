@@ -7,8 +7,16 @@ export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
 export default async function Image() {
-  const logoBuffer = readFileSync(join(process.cwd(), 'public/images/logo.png'))
-  const logoSrc = `data:image/png;base64,${logoBuffer.toString('base64')}`
+  // Read logo from public directory and convert to data URI
+  // Buffer approach is reliable on Node.js runtime (default for opengraph-image)
+  let logoSrc: string
+  try {
+    const buf = readFileSync(join(process.cwd(), 'public', 'images', 'logo-og.png'))
+    logoSrc = `data:image/png;base64,${buf.toString('base64')}`
+  } catch {
+    // Fallback to production URL if filesystem read fails
+    logoSrc = 'https://uadaycleaning.com.au/images/logo.png'
+  }
 
   return new ImageResponse(
     (
@@ -50,24 +58,26 @@ export default async function Image() {
           }}
         />
 
-        {/* Logo container */}
+        {/* Logo on white card */}
         <div
           style={{
             background: 'white',
             borderRadius: '24px',
-            padding: '20px 36px',
+            padding: '24px 48px',
             marginBottom: '36px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            boxShadow: '0 8px 40px rgba(0,0,0,0.18)',
+            boxShadow: '0 8px 40px rgba(0,0,0,0.2)',
           }}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={logoSrc}
-            alt="UaDay Cleaning"
-            style={{ height: '90px', width: 'auto', objectFit: 'contain' }}
+            alt="UaDay Cleaning Logo"
+            width={280}
+            height={120}
+            style={{ objectFit: 'contain', display: 'block' }}
           />
         </div>
 
@@ -103,7 +113,7 @@ export default async function Image() {
           Residential · Commercial · End of Lease · Deep Clean
         </div>
 
-        {/* Trust badges row */}
+        {/* Trust badges */}
         <div style={{ display: 'flex', gap: '20px' }}>
           {['✓ Fully Insured', '✓ Bond-Back Guarantee', '✓ 5-Star Rated'].map((badge) => (
             <div
