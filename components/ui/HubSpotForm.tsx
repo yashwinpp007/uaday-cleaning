@@ -1,7 +1,7 @@
 'use client'
 
 import Script from 'next/script'
-import { useCallback, useRef } from 'react'
+import { useCallback, useEffect, useRef } from 'react'
 
 declare global {
   interface Window {
@@ -29,6 +29,14 @@ export default function HubSpotForm() {
       target: `#${id}`,
     })
   }, [])
+
+  // If the HubSpot script was already loaded by a previous page visit
+  // (client-side navigation), onLoad won't fire — initialise immediately.
+  useEffect(() => {
+    if (window.hbspt) {
+      createForm()
+    }
+  }, [createForm])
 
   return (
     <>
