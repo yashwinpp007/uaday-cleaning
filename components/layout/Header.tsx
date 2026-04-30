@@ -51,16 +51,16 @@ export default function Header() {
         <div
           className={`bg-white/90 backdrop-blur-xl border border-light-border transition-all duration-300 ${
             scrolled ? 'rounded-2xl shadow-lg' : 'rounded-3xl shadow-md'
-          } px-6 py-3 flex items-center justify-between`}
+          } px-6 py-2 flex items-center justify-between`}
         >
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <Image
               src="/images/logo.png"
               alt="UaDay Cleaning"
-              width={140}
-              height={60}
-              className="h-12 w-auto object-contain group-hover:scale-105 transition-transform"
+              width={200}
+              height={200}
+              className="h-20 w-auto object-contain group-hover:scale-105 transition-transform"
               priority
             />
           </Link>
