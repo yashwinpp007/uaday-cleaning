@@ -1,11 +1,15 @@
 import { ImageResponse } from 'next/og'
+import { readFileSync } from 'fs'
+import { join } from 'path'
 
-export const runtime = 'edge'
 export const alt = 'UaDay Cleaning — Melbourne Professional Cleaning Service'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
 export default async function Image() {
+  const logoBuffer = readFileSync(join(process.cwd(), 'public/images/logo.png'))
+  const logoSrc = `data:image/png;base64,${logoBuffer.toString('base64')}`
+
   return new ImageResponse(
     (
       <div
@@ -61,7 +65,7 @@ export default async function Image() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://uadaycleaning.com.au/images/logo.png"
+            src={logoSrc}
             alt="UaDay Cleaning"
             style={{ height: '90px', width: 'auto', objectFit: 'contain' }}
           />
