@@ -102,9 +102,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:udaycleaning@gmail.com" className="flex items-start gap-3 text-white/70 hover:text-white transition-colors group">
+                <a href="mailto:support@udaycleaning.com.au" className="flex items-start gap-3 text-white/70 hover:text-white transition-colors group">
                   <Mail className="w-4 h-4 mt-0.5 flex-shrink-0 text-brand-green group-hover:text-brand-yellow" />
-                  <span className="text-sm">udaycleaning@gmail.com</span>
+                  <span className="text-sm">support@udaycleaning.com.au</span>
                 </a>
               </li>
               <li>

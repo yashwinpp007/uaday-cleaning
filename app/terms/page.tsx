@@ -79,7 +79,7 @@ export default function TermsPage() {
           <p>These Terms and Conditions are governed by the laws of Victoria, Australia. Any disputes shall be subject to the exclusive jurisdiction of the courts of Victoria.</p>
 
           <h2>12. Contact</h2>
-          <p>For questions about these Terms, contact us at <a href="mailto:udaycleaning@gmail.com">udaycleaning@gmail.com</a> or call 0420 203 336.</p>
+          <p>For questions about these Terms, contact us at <a href="mailto:support@udaycleaning.com.au">support@udaycleaning.com.au</a> or call 0420 203 336.</p>
         </div>
       </div>
     </div>

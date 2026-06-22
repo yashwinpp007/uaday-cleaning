@@ -55,12 +55,12 @@ export default function ContactPage() {
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:udaycleaning@gmail.com" className="flex items-center gap-3 text-body-text hover:text-brand-green transition-colors">
+                    <a href="mailto:support@udaycleaning.com.au" className="flex items-center gap-3 text-body-text hover:text-brand-green transition-colors">
                       <div className="w-10 h-10 bg-brand-green rounded-xl flex items-center justify-center">
                         <Mail className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <p className="font-semibold text-dark-text">udaycleaning@gmail.com</p>
+                        <p className="font-semibold text-dark-text">support@udaycleaning.com.au</p>
                         <p className="text-xs">We reply within the hour</p>
                       </div>
                     </a>

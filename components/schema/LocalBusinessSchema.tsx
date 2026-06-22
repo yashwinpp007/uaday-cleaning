@@ -9,7 +9,7 @@ export default function LocalBusinessSchema() {
         description: 'Professional residential, commercial and end of lease cleaning services in Deanside, VIC.',
         url: 'https://udaycleaning.com.au',
         telephone: '+61420203336',
-        email: 'udaycleaning@gmail.com',
+        email: 'support@udaycleaning.com.au',
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'Deanside',
