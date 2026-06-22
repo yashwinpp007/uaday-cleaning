@@ -4,12 +4,12 @@ export default function LocalBusinessSchema() {
     '@graph': [
       {
         '@type': 'LocalBusiness',
-        '@id': 'https://uadaycleaning.com.au/#business',
-        name: 'UaDay Cleaning',
+        '@id': 'https://udaycleaning.com.au/#business',
+        name: 'UDAY Cleaning',
         description: 'Professional residential, commercial and end of lease cleaning services in Deanside, VIC.',
-        url: 'https://uadaycleaning.com.au',
-        telephone: '+61414375051',
-        email: 'uadaycleaning@gmail.com',
+        url: 'https://udaycleaning.com.au',
+        telephone: '+61420203336',
+        email: 'udaycleaning@gmail.com',
         address: {
           '@type': 'PostalAddress',
           streetAddress: 'Deanside',
@@ -27,8 +27,8 @@ export default function LocalBusinessSchema() {
           { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], opens: '08:00', closes: '22:00' },
         ],
         priceRange: '$$',
-        image: 'https://uadaycleaning.com.au/og-image.jpg',
-        sameAs: ['https://facebook.com/uadaycleaning', 'https://instagram.com/uadaycleaning'],
+        image: 'https://udaycleaning.com.au/og-image.jpg',
+        sameAs: ['https://facebook.com/udaycleaning', 'https://instagram.com/udaycleaning'],
         aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: '4.9',
@@ -53,10 +53,10 @@ export default function LocalBusinessSchema() {
       },
       {
         '@type': 'WebSite',
-        '@id': 'https://uadaycleaning.com.au/#website',
-        url: 'https://uadaycleaning.com.au',
-        name: 'UaDay Cleaning',
-        publisher: { '@id': 'https://uadaycleaning.com.au/#business' },
+        '@id': 'https://udaycleaning.com.au/#website',
+        url: 'https://udaycleaning.com.au',
+        name: 'UDAY Cleaning',
+        publisher: { '@id': 'https://udaycleaning.com.au/#business' },
       },
     ],
   }

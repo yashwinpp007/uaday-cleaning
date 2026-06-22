@@ -6,10 +6,10 @@ import { getAllPosts } from '@/lib/blog'
 import FinalCTA from '@/components/sections/FinalCTA'
 
 export const metadata: Metadata = {
-  title: 'Cleaning Tips & Blog | UaDay Cleaning Deanside',
+  title: 'Cleaning Tips & Blog | UDAY Cleaning Deanside',
   description:
-    'Expert cleaning tips, end of lease guides, and home care advice from Deanside\'s professional cleaners. Read the UaDay Cleaning blog.',
-  alternates: { canonical: 'https://uadaycleaning.com.au/blog' },
+    'Expert cleaning tips, end of lease guides, and home care advice from Deanside\'s professional cleaners. Read the UDAY Cleaning blog.',
+  alternates: { canonical: 'https://udaycleaning.com.au/blog' },
 }
 
 const categories = ['All', 'Residential', 'End of Lease', 'Cleaning Tips', 'Commercial']

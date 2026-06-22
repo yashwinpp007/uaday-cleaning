@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | UaDay Cleaning',
-  description: 'UaDay Cleaning privacy policy — how we collect, use, and protect your personal information.',
-  alternates: { canonical: 'https://uadaycleaning.com.au/privacy-policy' },
+  title: 'Privacy Policy | UDAY Cleaning',
+  description: 'UDAY Cleaning privacy policy — how we collect, use, and protect your personal information.',
+  alternates: { canonical: 'https://udaycleaning.com.au/privacy-policy' },
   robots: { index: false },
 }
 
@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
 
         <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-dark-text prose-p:text-body-text prose-p:leading-relaxed prose-a:text-brand-green">
           <h2>1. About This Policy</h2>
-          <p>UaDay Cleaning (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is committed to protecting your privacy in accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs). This policy explains how we collect, use, disclose, and manage your personal information.</p>
+          <p>UDAY Cleaning (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is committed to protecting your privacy in accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs). This policy explains how we collect, use, disclose, and manage your personal information.</p>
 
           <h2>2. What Information We Collect</h2>
           <p>We collect personal information that is necessary to provide our cleaning services, including:</p>
@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
           <p>We retain personal information for as long as necessary to provide our services and comply with legal obligations. Client records are typically retained for 7 years in accordance with Australian tax law.</p>
 
           <h2>9. Access and Correction</h2>
-          <p>You have the right to access the personal information we hold about you and to request corrections. To do so, contact us at <a href="mailto:uadaycleaning@gmail.com">uadaycleaning@gmail.com</a>.</p>
+          <p>You have the right to access the personal information we hold about you and to request corrections. To do so, contact us at <a href="mailto:udaycleaning@gmail.com">udaycleaning@gmail.com</a>.</p>
 
           <h2>10. Marketing Communications</h2>
           <p>We may send you marketing emails if you have opted in. You can unsubscribe at any time by clicking the &quot;unsubscribe&quot; link in any marketing email or by contacting us directly.</p>
@@ -80,8 +80,8 @@ export default function PrivacyPolicyPage() {
           <h2>12. Contact Us</h2>
           <p>For privacy-related enquiries, contact us at:</p>
           <ul>
-            <li>Email: <a href="mailto:uadaycleaning@gmail.com">uadaycleaning@gmail.com</a></li>
-            <li>Phone: 0414 375 051</li>
+            <li>Email: <a href="mailto:udaycleaning@gmail.com">udaycleaning@gmail.com</a></li>
+            <li>Phone: 0420 203 336</li>
             <li>Address: Deanside, VIC 3336</li>
           </ul>
           <p>If you are not satisfied with our response, you may contact the <a href="https://www.oaic.gov.au" target="_blank" rel="noopener noreferrer">Office of the Australian Information Commissioner (OAIC)</a>.</p>

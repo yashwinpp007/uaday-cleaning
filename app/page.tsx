@@ -12,10 +12,10 @@ import FinalCTA from '@/components/sections/FinalCTA'
 import LocalBusinessSchema from '@/components/schema/LocalBusinessSchema'
 
 export const metadata: Metadata = {
-  title: 'Professional Cleaning Services in Deanside | UaDay Cleaning',
+  title: 'Professional Cleaning Services in Deanside | UDAY Cleaning',
   description:
     'Deanside\'s trusted professional cleaning services. Residential, commercial & end of lease cleaning. Eco-friendly, fully insured, bond-back guaranteed. Get a free quote today!',
-  alternates: { canonical: 'https://uadaycleaning.com.au' },
+  alternates: { canonical: 'https://udaycleaning.com.au' },
 }
 
 export default function HomePage() {

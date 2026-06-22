@@ -7,7 +7,7 @@ import SectionWrapper from '@/components/ui/SectionWrapper'
 
 const testimonials = [
   { name: 'Sarah M.', suburb: 'Tarneit', stars: 5, quote: 'Absolutely amazing service! Our home has never looked this clean. The team was punctual, thorough, and so professional.' },
-  { name: 'James L.', suburb: 'Point Cook', stars: 5, quote: 'Used UaDay for our end of lease clean and got our full bond back. The attention to detail was incredible — worth every cent.' },
+  { name: 'James L.', suburb: 'Point Cook', stars: 5, quote: 'Used UDAY for our end of lease clean and got our full bond back. The attention to detail was incredible — worth every cent.' },
   { name: 'Emily R.', suburb: 'Werribee', stars: 5, quote: 'I love that they use eco-friendly products. My kids and pets are safe and the house smells fresh without harsh chemicals.' },
   { name: 'Michael T.', suburb: 'Hoppers Crossing', stars: 5, quote: 'Regular fortnightly clean and they never miss a spot. Reliable, trustworthy, and always on time. Highly recommend!' },
   { name: 'Anna K.', suburb: 'Truganina', stars: 5, quote: 'The deep clean they did before Christmas was outstanding. Even the oven looked brand new. Will definitely book again.' },

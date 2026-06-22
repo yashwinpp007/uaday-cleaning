@@ -9,10 +9,10 @@ import FAQSchema from '@/components/schema/FAQSchema'
 import ServiceSchema from '@/components/schema/ServiceSchema'
 
 export const metadata: Metadata = {
-  title: 'Commercial Cleaning Deanside | UaDay Cleaning',
+  title: 'Commercial Cleaning Deanside | UDAY Cleaning',
   description:
     'Professional commercial cleaning in Deanside. Offices, retail, medical centres & childcare. Flexible scheduling, fully insured. Get a free quote today.',
-  alternates: { canonical: 'https://uadaycleaning.com.au/services/commercial-cleaning' },
+  alternates: { canonical: 'https://udaycleaning.com.au/services/commercial-cleaning' },
 }
 
 const industries = [
@@ -37,7 +37,7 @@ export default function CommercialCleaningPage() {
       <ServiceSchema
         name="Commercial Cleaning Deanside"
         description="Professional commercial cleaning for offices, retail, medical centres and more in Deanside."
-        url="https://uadaycleaning.com.au/services/commercial-cleaning"
+        url="https://udaycleaning.com.au/services/commercial-cleaning"
       />
       <FAQSchema items={faqs} />
 
@@ -59,8 +59,8 @@ export default function CommercialCleaningPage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button3D href="/get-a-quote" size="lg">Get a Free Quote</Button3D>
-                <a href="tel:0414375051" className="flex items-center gap-2 text-brand-green font-semibold">
-                  <Phone className="w-5 h-5" /> 0414 375 051
+                <a href="tel:0420203336" className="flex items-center gap-2 text-brand-green font-semibold">
+                  <Phone className="w-5 h-5" /> 0420 203 336
                 </a>
               </div>
             </div>

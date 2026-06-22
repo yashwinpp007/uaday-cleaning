@@ -57,7 +57,7 @@ export default function ServiceAreas() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="UaDay Cleaning service areas in Deanside"
+              title="UDAY Cleaning service areas in Deanside"
             />
           </motion.div>
 

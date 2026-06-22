@@ -5,10 +5,10 @@ import Button3D from '@/components/ui/Button3D'
 import FinalCTA from '@/components/sections/FinalCTA'
 
 export const metadata: Metadata = {
-  title: 'About UaDay Cleaning | Deanside Cleaning Company',
+  title: 'About UDAY Cleaning | Deanside Cleaning Company',
   description:
-    'Learn about UaDay Cleaning — Deanside\'s trusted family-owned cleaning business. Our story, values, and commitment to the community.',
-  alternates: { canonical: 'https://uadaycleaning.com.au/about' },
+    'Learn about UDAY Cleaning — Deanside\'s trusted family-owned cleaning business. Our story, values, and commitment to the community.',
+  alternates: { canonical: 'https://udaycleaning.com.au/about' },
 }
 
 const values = [
@@ -30,7 +30,7 @@ export default function AboutPage() {
                 Hard Work, Integrity, and a Fresh Start
               </h1>
               <p className="text-body-text text-lg leading-relaxed mb-8">
-                UaDay Cleaning was born from a simple belief: everyone deserves a clean, healthy home — and the people providing that service deserve to be treated with respect.
+                UDAY Cleaning was born from a simple belief: everyone deserves a clean, healthy home — and the people providing that service deserve to be treated with respect.
               </p>
               <Button3D href="/get-a-quote" size="lg">Book a Clean Today</Button3D>
             </div>
@@ -38,7 +38,7 @@ export default function AboutPage() {
               {/* TODO: Replace with founder photo */}
               <Image
                 src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=500&fit=crop"
-                alt="Uthayan, founder of UaDay Cleaning"
+                alt="Uthayan, founder of UDAY Cleaning"
                 width={600}
                 height={500}
                 className="rounded-4xl shadow-2xl object-cover w-full"
@@ -98,7 +98,7 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-4">
           <h3 className="font-heading font-800 text-dark-text text-xl text-center mb-8">Accreditations & Insurance</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {['Fully Insured – Public Liability', 'Police Checked Staff', 'Eco-Certified Products', 'WorkCover Insurance', 'ABN: 12 345 678 901'].map((item) => (
+            {['Fully Insured – Public Liability', 'Police Checked Staff', 'Eco-Certified Products', 'WorkCover Insurance', 'ABN: 55 694 864 296'].map((item) => (
               <div key={item} className="flex items-center gap-2 bg-white rounded-full px-5 py-2.5 shadow-sm border border-light-border">
                 <Shield className="w-4 h-4 text-brand-green" />
                 <span className="text-dark-text text-sm font-semibold">{item}</span>

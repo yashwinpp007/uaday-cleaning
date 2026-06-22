@@ -57,7 +57,7 @@ export default function Header() {
           <Link href="/" className="flex items-center group">
             <Image
               src="/images/logo.png"
-              alt="UaDay Cleaning"
+              alt="UDAY Cleaning"
               width={200}
               height={200}
               className="h-20 w-auto object-contain group-hover:scale-105 transition-transform"
@@ -131,9 +131,9 @@ export default function Header() {
 
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
-            <a href="tel:0414375051" className="flex items-center gap-2 text-sm font-semibold text-body-text hover:text-brand-green transition-colors">
+            <a href="tel:0420203336" className="flex items-center gap-2 text-sm font-semibold text-body-text hover:text-brand-green transition-colors">
               <Phone className="w-4 h-4" />
-              0414 375 051
+              0420 203 336
             </a>
             <Button3D href="/get-a-quote" size="sm">Get a Free Quote</Button3D>
           </div>
@@ -205,9 +205,9 @@ export default function Header() {
               </nav>
 
               <div className="p-6 border-t border-light-border space-y-3">
-                <a href="tel:0414375051" className="flex items-center justify-center gap-2 w-full py-3 rounded-2xl bg-brand-green-light text-brand-green font-semibold">
+                <a href="tel:0420203336" className="flex items-center justify-center gap-2 w-full py-3 rounded-2xl bg-brand-green-light text-brand-green font-semibold">
                   <Phone className="w-4 h-4" />
-                  Call 0414 375 051
+                  Call 0420 203 336
                 </a>
                 <Button3D href="/get-a-quote" className="w-full text-center">Get a Free Quote</Button3D>
               </div>

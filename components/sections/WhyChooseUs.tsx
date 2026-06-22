@@ -43,7 +43,7 @@ export default function WhyChooseUs() {
           >
             <span className="inline-block bg-brand-green text-white font-semibold text-sm px-4 py-2 rounded-full mb-5">Why Us?</span>
             <h2 className="font-heading font-900 text-dark-text text-4xl md:text-5xl mb-10 leading-tight">
-              Why Choose<br />UaDay Cleaning?
+              Why Choose<br />UDAY Cleaning?
             </h2>
 
             <div className="space-y-6">
@@ -80,7 +80,7 @@ export default function WhyChooseUs() {
               {/* TODO: Replace with real team/cleaning photo */}
               <Image
                 src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=500&fit=crop"
-                alt="UaDay Cleaning team professionally cleaning a Melbourne home"
+                alt="UDAY Cleaning team professionally cleaning a Melbourne home"
                 width={600}
                 height={500}
                 className="w-full object-cover"

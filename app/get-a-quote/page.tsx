@@ -3,10 +3,10 @@ import { Shield, Star, CheckCircle, Phone } from 'lucide-react'
 import HubSpotForm from '@/components/ui/HubSpotForm'
 
 export const metadata: Metadata = {
-  title: 'Get a Free Quote | UaDay Cleaning Deanside',
+  title: 'Get a Free Quote | UDAY Cleaning Deanside',
   description:
-    'Get a free, no-obligation cleaning quote from UaDay Cleaning. Residential, commercial and end of lease cleaning in Deanside and surrounding suburbs.',
-  alternates: { canonical: 'https://uadaycleaning.com.au/get-a-quote' },
+    'Get a free, no-obligation cleaning quote from UDAY Cleaning. Residential, commercial and end of lease cleaning in Deanside and surrounding suburbs.',
+  alternates: { canonical: 'https://udaycleaning.com.au/get-a-quote' },
 }
 
 export default function GetAQuotePage() {
@@ -28,7 +28,7 @@ export default function GetAQuotePage() {
           <div className="space-y-5">
             {/* Trust badges */}
             <div className="bg-white rounded-4xl p-6 shadow-card">
-              <h3 className="font-heading font-800 text-dark-text text-lg mb-4">Why UaDay?</h3>
+              <h3 className="font-heading font-800 text-dark-text text-lg mb-4">Why UDAY?</h3>
               <ul className="space-y-3">
                 {[
                   { icon: Shield, text: 'Fully Insured & Police Checked' },
@@ -47,8 +47,8 @@ export default function GetAQuotePage() {
 
             <div className="bg-brand-green-light rounded-4xl p-6">
               <p className="font-heading font-800 text-dark-text text-lg mb-2">Prefer to Call?</p>
-              <a href="tel:0414375051" className="flex items-center gap-2 text-brand-green font-semibold text-xl">
-                <Phone className="w-5 h-5" /> 0414 375 051
+              <a href="tel:0420203336" className="flex items-center gap-2 text-brand-green font-semibold text-xl">
+                <Phone className="w-5 h-5" /> 0420 203 336
               </a>
               <p className="text-body-text text-xs mt-2">Mon–Sun: 8am – 10pm</p>
             </div>

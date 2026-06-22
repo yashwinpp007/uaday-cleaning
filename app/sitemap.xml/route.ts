@@ -1,6 +1,6 @@
 import { getAllPosts } from '@/lib/blog'
 
-const BASE_URL = 'https://uadaycleaning.com.au'
+const BASE_URL = 'https://udaycleaning.com.au'
 
 const staticPages = [
   { url: '/', priority: '1.0', changefreq: 'weekly' },

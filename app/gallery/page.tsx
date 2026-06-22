@@ -43,7 +43,7 @@ export default function GalleryPage() {
           <span className="inline-block bg-brand-green text-white font-semibold text-sm px-4 py-2 rounded-full mb-5">Our Work</span>
           <h1 className="font-heading font-900 text-dark-text text-5xl md:text-6xl mb-5">Cleaning Gallery</h1>
           <p className="text-body-text text-xl max-w-2xl mx-auto mb-8">
-            Real results from real jobs — see the UaDay difference across Melbourne and surrounding suburbs.
+            Real results from real jobs — see the UDAY difference across Melbourne and surrounding suburbs.
           </p>
         </div>
       </section>
@@ -56,8 +56,8 @@ export default function GalleryPage() {
           <BeforeAfterSlider
             beforeSrc="/images/gallery/oven-before.jpg"
             afterSrc="/images/gallery/oven-after.jpg"
-            beforeAlt="Oven before UaDay deep clean"
-            afterAlt="Oven after UaDay deep clean — spotless"
+            beforeAlt="Oven before UDAY deep clean"
+            afterAlt="Oven after UDAY deep clean — spotless"
           />
         </div>
       </section>

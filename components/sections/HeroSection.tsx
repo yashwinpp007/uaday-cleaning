@@ -57,11 +57,11 @@ export default function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center gap-4">
               <Button3D href="/get-a-quote" size="lg">Get a Free Quote</Button3D>
-              <a href="tel:0414375051" className="flex items-center gap-2 text-brand-green font-semibold text-lg hover:text-brand-green-dark transition-colors group">
+              <a href="tel:0420203336" className="flex items-center gap-2 text-brand-green font-semibold text-lg hover:text-brand-green-dark transition-colors group">
                 <div className="w-12 h-12 bg-brand-green-light rounded-2xl flex items-center justify-center group-hover:bg-brand-green group-hover:text-white transition-colors">
                   <Phone className="w-5 h-5 text-brand-green group-hover:text-white" />
                 </div>
-                0414 375 051
+                0420 203 336
               </a>
             </div>
           </motion.div>

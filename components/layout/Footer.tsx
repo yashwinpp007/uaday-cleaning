@@ -41,7 +41,7 @@ export default function Footer() {
               <div className="bg-white rounded-2xl px-3 py-2 inline-block">
                 <Image
                   src="/images/logo.png"
-                  alt="UaDay Cleaning"
+                  alt="UDAY Cleaning"
                   width={160}
                   height={70}
                   className="h-14 w-auto object-contain"
@@ -98,15 +98,15 @@ export default function Footer() {
             <h3 className="font-heading font-800 text-white text-lg mb-5">Contact</h3>
             <ul className="space-y-4">
               <li>
-                <a href="tel:0414375051" className="flex items-start gap-3 text-white/70 hover:text-white transition-colors group">
+                <a href="tel:0420203336" className="flex items-start gap-3 text-white/70 hover:text-white transition-colors group">
                   <Phone className="w-4 h-4 mt-0.5 flex-shrink-0 text-brand-green group-hover:text-brand-yellow" />
-                  <span className="text-sm">0414 375 051</span>
+                  <span className="text-sm">0420 203 336</span>
                 </a>
               </li>
               <li>
-                <a href="mailto:uadaycleaning@gmail.com" className="flex items-start gap-3 text-white/70 hover:text-white transition-colors group">
+                <a href="mailto:udaycleaning@gmail.com" className="flex items-start gap-3 text-white/70 hover:text-white transition-colors group">
                   <Mail className="w-4 h-4 mt-0.5 flex-shrink-0 text-brand-green group-hover:text-brand-yellow" />
-                  <span className="text-sm">uadaycleaning@gmail.com</span>
+                  <span className="text-sm">udaycleaning@gmail.com</span>
                 </a>
               </li>
               <li>
@@ -141,7 +141,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-white/50 text-sm text-center sm:text-left">
-            © {new Date().getFullYear()} UaDay Cleaning. All rights reserved.
+            © {new Date().getFullYear()} UDAY Cleaning. All rights reserved. ABN: 55 694 864 296
           </div>
           <div className="flex items-center gap-4">
             <Link href="/privacy-policy" className="text-white/50 text-sm hover:text-white transition-colors">Privacy Policy</Link>

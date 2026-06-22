@@ -84,15 +84,15 @@ export default function ThankYouPage() {
         >
           <Button3D href="/" size="md">← Back to Home</Button3D>
           <a
-            href="https://g.page/r/uaday-cleaning/review"
+            href="https://g.page/r/uday-cleaning/review"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-brand-yellow text-dark-text font-heading font-900 px-7 py-4 rounded-3xl shadow-3d-yellow hover:bg-yellow-400 transition-colors"
           >
             <Star className="w-5 h-5" /> Leave Us a Review
           </a>
-          <a href="tel:0414375051" className="flex items-center gap-2 text-brand-green font-semibold">
-            <Phone className="w-5 h-5" /> 0414 375 051
+          <a href="tel:0420203336" className="flex items-center gap-2 text-brand-green font-semibold">
+            <Phone className="w-5 h-5" /> 0420 203 336
           </a>
         </motion.div>
 
@@ -103,7 +103,7 @@ export default function ThankYouPage() {
           className="mt-10 text-body-text text-sm"
         >
           Need something urgent? Call us directly on{' '}
-          <a href="tel:0414375051" className="text-brand-green font-semibold">0414 375 051</a>
+          <a href="tel:0420203336" className="text-brand-green font-semibold">0420 203 336</a>
         </motion.p>
       </div>
     </div>

@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: 'Are you fully insured?',
-    answer: 'Absolutely. UaDay Cleaning is fully insured with public liability coverage. You can have complete peace of mind knowing your property and belongings are protected during every clean.',
+    answer: 'Absolutely. UDAY Cleaning is fully insured with public liability coverage. You can have complete peace of mind knowing your property and belongings are protected during every clean.',
   },
   {
     question: 'Do you offer a bond-back guarantee for end of lease cleaning?',
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: 'How do I get a quote?',
-    answer: 'Getting a quote is easy. You can fill out our online quote form, call us on 0414 375 051, or email us. We\'ll get back to you within the hour with a transparent, no-obligation price.',
+    answer: 'Getting a quote is easy. You can fill out our online quote form, call us on 0420 203 336, or email us. We\'ll get back to you within the hour with a transparent, no-obligation price.',
   },
   {
     question: 'Can I book a same-day clean?',

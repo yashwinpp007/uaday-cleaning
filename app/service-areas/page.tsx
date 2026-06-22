@@ -5,10 +5,10 @@ import Button3D from '@/components/ui/Button3D'
 import FinalCTA from '@/components/sections/FinalCTA'
 
 export const metadata: Metadata = {
-  title: 'Cleaning Services Across Western Melbourne | UaDay Cleaning',
+  title: 'Cleaning Services Across Western Melbourne | UDAY Cleaning',
   description:
     'Professional cleaning services in Truganina, Hoppers Crossing, Werribee, Tarneit, Point Cook, Laverton and more. Based in Deanside, servicing all of Western Melbourne.',
-  alternates: { canonical: 'https://uadaycleaning.com.au/service-areas' },
+  alternates: { canonical: 'https://udaycleaning.com.au/service-areas' },
 }
 
 const linkedSuburbs = [
@@ -57,7 +57,7 @@ export default function ServiceAreasPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="UaDay Cleaning service areas map"
+              title="UDAY Cleaning service areas map"
             />
           </div>
         </div>
@@ -108,9 +108,9 @@ export default function ServiceAreasPage() {
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="font-heading font-900 text-dark-text text-2xl mb-4">Professional Cleaning Across Western Melbourne</h2>
           <div className="text-body-text leading-relaxed space-y-4">
-            <p>UaDay Cleaning, based in Deanside, provides professional residential, commercial, and end of lease cleaning services throughout Western Melbourne, Victoria.</p>
+            <p>UDAY Cleaning, based in Deanside, provides professional residential, commercial, and end of lease cleaning services throughout Western Melbourne, Victoria.</p>
             <p>Our service area covers the rapidly growing corridors of Tarneit, Truganina, and Hoppers Crossing in Melbourne&apos;s outer west, through to established suburbs like Werribee, Point Cook, and Altona Meadows. We also service the inner-west suburbs of Footscray, Yarraville, and Williamstown.</p>
-            <p>Whether you&apos;re in a new estate in Williams Landing, a family home in Laverton, or a commercial property in Sunshine — UaDay Cleaning brings the same level of professionalism, eco-friendly products, and guaranteed results to every clean.</p>
+            <p>Whether you&apos;re in a new estate in Williams Landing, a family home in Laverton, or a commercial property in Sunshine — UDAY Cleaning brings the same level of professionalism, eco-friendly products, and guaranteed results to every clean.</p>
           </div>
         </div>
       </section>

@@ -20,7 +20,7 @@ Allow: /
 User-agent: CCBot
 Disallow: /
 
-Sitemap: https://uadaycleaning.com.au/sitemap.xml
+Sitemap: https://udaycleaning.com.au/sitemap.xml
 `
 
   return new Response(body, {

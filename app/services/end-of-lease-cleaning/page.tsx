@@ -9,10 +9,10 @@ import FAQSchema from '@/components/schema/FAQSchema'
 import ServiceSchema from '@/components/schema/ServiceSchema'
 
 export const metadata: Metadata = {
-  title: 'End of Lease Cleaning Deanside — Bond Back Guaranteed | UaDay',
+  title: 'End of Lease Cleaning Deanside — Bond Back Guaranteed | UDAY',
   description:
     'End of lease cleaning in Deanside with a 100% bond-back guarantee. REIV-aligned checklists, carpet steam add-on available. Book at least 48hrs before inspection.',
-  alternates: { canonical: 'https://uadaycleaning.com.au/services/end-of-lease-cleaning' },
+  alternates: { canonical: 'https://udaycleaning.com.au/services/end-of-lease-cleaning' },
 }
 
 const checklist = [
@@ -45,7 +45,7 @@ export default function EndOfLeasePage() {
       <ServiceSchema
         name="End of Lease Cleaning Deanside"
         description="Bond-back guaranteed end of lease cleaning in Deanside. REIV-aligned checklists."
-        url="https://uadaycleaning.com.au/services/end-of-lease-cleaning"
+        url="https://udaycleaning.com.au/services/end-of-lease-cleaning"
       />
       <FAQSchema items={faqs} />
 
@@ -74,8 +74,8 @@ export default function EndOfLeasePage() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button3D href="/get-a-quote" size="lg">Book Now</Button3D>
-                <a href="tel:0414375051" className="flex items-center gap-2 text-brand-green font-semibold">
-                  <Phone className="w-5 h-5" /> 0414 375 051
+                <a href="tel:0420203336" className="flex items-center gap-2 text-brand-green font-semibold">
+                  <Phone className="w-5 h-5" /> 0420 203 336
                 </a>
               </div>
             </div>

@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 import { readFileSync } from 'fs'
 import { join } from 'path'
 
-export const alt = 'UaDay Cleaning — Melbourne Professional Cleaning Service'
+export const alt = 'UDAY Cleaning — Melbourne Professional Cleaning Service'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -15,7 +15,7 @@ export default async function Image() {
     logoSrc = `data:image/png;base64,${buf.toString('base64')}`
   } catch {
     // Fallback to production URL if filesystem read fails
-    logoSrc = 'https://uadaycleaning.com.au/images/logo.png'
+    logoSrc = 'https://udaycleaning.com.au/images/logo.png'
   }
 
   return new ImageResponse(
@@ -74,7 +74,7 @@ export default async function Image() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={logoSrc}
-            alt="UaDay Cleaning Logo"
+            alt="UDAY Cleaning Logo"
             width={280}
             height={120}
             style={{ objectFit: 'contain', display: 'block' }}

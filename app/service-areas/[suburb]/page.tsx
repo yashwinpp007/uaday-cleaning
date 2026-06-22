@@ -9,7 +9,7 @@ const suburbs: Record<string, { name: string; postcode: string; blurb: string; t
   'truganina': {
     name: 'Truganina',
     postcode: '3029',
-    blurb: 'Truganina is one of Melbourne\'s fastest-growing suburbs, with many new homes and young families. UaDay Cleaning provides professional residential, commercial, and end of lease cleaning services throughout Truganina. Whether you\'re moving in, moving out, or just need a regular clean, we\'re here to help.',
+    blurb: 'Truganina is one of Melbourne\'s fastest-growing suburbs, with many new homes and young families. UDAY Cleaning provides professional residential, commercial, and end of lease cleaning services throughout Truganina. Whether you\'re moving in, moving out, or just need a regular clean, we\'re here to help.',
     testimonial: { name: 'Anna K.', quote: 'The deep clean they did before Christmas was outstanding. Even the oven looked brand new. Absolutely brilliant service in Truganina!' },
   },
   'hoppers-crossing': {
@@ -33,8 +33,8 @@ const suburbs: Record<string, { name: string; postcode: string; blurb: string; t
   'point-cook': {
     name: 'Point Cook',
     postcode: '3030',
-    blurb: 'Point Cook is a popular family suburb on Melbourne\'s Werribee coast. UaDay Cleaning serves the Point Cook community with professional residential cleaning, end of lease cleaning, and commercial services.',
-    testimonial: { name: 'James L.', quote: 'Used UaDay for our end of lease clean and got our full bond back first try. Incredible attention to detail in Point Cook!' },
+    blurb: 'Point Cook is a popular family suburb on Melbourne\'s Werribee coast. UDAY Cleaning serves the Point Cook community with professional residential cleaning, end of lease cleaning, and commercial services.',
+    testimonial: { name: 'James L.', quote: 'Used UDAY for our end of lease clean and got our full bond back first try. Incredible attention to detail in Point Cook!' },
   },
   'laverton': {
     name: 'Laverton',
@@ -52,7 +52,7 @@ const suburbs: Record<string, { name: string; postcode: string; blurb: string; t
     name: 'Williams Landing',
     postcode: '3027',
     blurb: 'Williams Landing is a modern suburb centred around the Williams Landing town centre. Our professional cleaning team serves the Williams Landing community with residential, commercial, and end of lease cleaning.',
-    testimonial: { name: 'Tom B.', quote: 'Got my bond back both times using UaDay. The checklist they follow is incredibly thorough. Couldn\'t recommend more for Williams Landing!' },
+    testimonial: { name: 'Tom B.', quote: 'Got my bond back both times using UDAY. The checklist they follow is incredibly thorough. Couldn\'t recommend more for Williams Landing!' },
   },
 }
 
@@ -69,9 +69,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!data) return {}
 
   return {
-    title: `Cleaning Services in ${data.name} | UaDay Cleaning`,
+    title: `Cleaning Services in ${data.name} | UDAY Cleaning`,
     description: `Professional residential, commercial and end of lease cleaning in ${data.name}, VIC ${data.postcode}. Eco-friendly, fully insured. Get a free quote today.`,
-    alternates: { canonical: `https://uadaycleaning.com.au/service-areas/${params.suburb}` },
+    alternates: { canonical: `https://udaycleaning.com.au/service-areas/${params.suburb}` },
   }
 }
 
@@ -82,9 +82,9 @@ export default function SuburbPage({ params }: Props) {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: 'UaDay Cleaning',
-    url: `https://uadaycleaning.com.au/service-areas/${params.suburb}`,
-    telephone: '+61412345678',
+    name: 'UDAY Cleaning',
+    url: `https://udaycleaning.com.au/service-areas/${params.suburb}`,
+    telephone: '+61420203336',
     areaServed: {
       '@type': 'City',
       name: data.name,
@@ -118,8 +118,8 @@ export default function SuburbPage({ params }: Props) {
           <p className="text-body-text text-xl leading-relaxed mb-8 max-w-2xl">{data.blurb}</p>
           <div className="flex flex-wrap gap-4">
             <Button3D href="/get-a-quote" size="lg">Get a Free Quote</Button3D>
-            <a href="tel:0414375051" className="flex items-center gap-2 text-brand-green font-semibold">
-              <Phone className="w-5 h-5" /> 0414 375 051
+            <a href="tel:0420203336" className="flex items-center gap-2 text-brand-green font-semibold">
+              <Phone className="w-5 h-5" /> 0420 203 336
             </a>
           </div>
         </div>

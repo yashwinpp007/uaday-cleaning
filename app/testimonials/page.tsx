@@ -3,21 +3,21 @@ import { Star, Quote, ExternalLink } from 'lucide-react'
 import FinalCTA from '@/components/sections/FinalCTA'
 
 export const metadata: Metadata = {
-  title: 'Customer Testimonials & Reviews | UaDay Cleaning Deanside',
+  title: 'Customer Testimonials & Reviews | UDAY Cleaning Deanside',
   description:
-    'Read real customer reviews for UaDay Cleaning. 4.9/5 rating from 500+ clients across Deanside. See why families and businesses trust us.',
-  alternates: { canonical: 'https://uadaycleaning.com.au/testimonials' },
+    'Read real customer reviews for UDAY Cleaning. 4.9/5 rating from 500+ clients across Deanside. See why families and businesses trust us.',
+  alternates: { canonical: 'https://udaycleaning.com.au/testimonials' },
 }
 
 const testimonials = [
   { name: 'Sarah M.', suburb: 'Tarneit', stars: 5, service: 'End of Lease', quote: 'Absolutely amazing service! Got our full bond back with no issues. The team was punctual, thorough, and so professional. Highly recommend to anyone moving out.' },
-  { name: 'James L.', suburb: 'Point Cook', stars: 5, service: 'End of Lease', quote: 'Used UaDay for our end of lease clean and got our full bond back first try. The attention to detail was incredible — they even cleaned the tracks of the sliding doors!' },
+  { name: 'James L.', suburb: 'Point Cook', stars: 5, service: 'End of Lease', quote: 'Used UDAY for our end of lease clean and got our full bond back first try. The attention to detail was incredible — they even cleaned the tracks of the sliding doors!' },
   { name: 'Emily R.', suburb: 'Werribee', stars: 5, service: 'Residential', quote: 'I love that they use eco-friendly products. My kids and pets are safe, and the house smells fresh without harsh chemicals. Best cleaning service in Werribee!' },
   { name: 'Michael T.', suburb: 'Hoppers Crossing', stars: 5, service: 'Residential', quote: 'Regular fortnightly clean and they never miss a spot. Reliable, trustworthy, and always on time. We\'ve been with them for 3 years now.' },
   { name: 'Anna K.', suburb: 'Truganina', stars: 5, service: 'Deep Clean', quote: 'The deep clean they did before Christmas was outstanding. Even the oven looked brand new. I had no idea how dirty it had gotten — now it\'s spotless!' },
   { name: 'David W.', suburb: 'Laverton', stars: 5, service: 'Commercial', quote: 'Professional, thorough, and incredibly friendly. Our office has never looked better — staff morale has genuinely improved. Worth every dollar.' },
   { name: 'Lisa P.', suburb: 'Altona Meadows', stars: 5, service: 'Residential', quote: 'Same-day booking was a lifesaver. They arrived within 2 hours and left the place spotless. I was hosting guests that evening and they saved me completely.' },
-  { name: 'Tom B.', suburb: 'Williams Landing', stars: 5, service: 'End of Lease', quote: 'Second time using UaDay for end of lease. Got my bond back both times! The checklist they follow is incredibly thorough. Wouldn\'t use anyone else.' },
+  { name: 'Tom B.', suburb: 'Williams Landing', stars: 5, service: 'End of Lease', quote: 'Second time using UDAY for end of lease. Got my bond back both times! The checklist they follow is incredibly thorough. Wouldn\'t use anyone else.' },
   { name: 'Grace N.', suburb: 'Deer Park', stars: 5, service: 'Residential', quote: 'Such a lovely team of cleaners. They go above and beyond every single time. My house is always gleaming when they\'re done. I genuinely look forward to cleaning day!' },
   { name: 'Sivananthakumar J.', suburb: 'Melbourne', stars: 5, service: 'Residential', quote: 'We hired this people for our house cleaning. They did really a good job. I would recommend for their service and the owner Uthay is very easy to communicate and reliable guy.' },
   { name: 'Ben Walsh', suburb: 'Melbourne', stars: 5, service: 'Residential', quote: 'Reliable and trustworthy people. Highly recommended.' },
@@ -26,7 +26,7 @@ const testimonials = [
 const aggregateSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'UaDay Cleaning',
+  name: 'UDAY Cleaning',
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
@@ -107,7 +107,7 @@ export default function TestimonialsPage() {
             <h2 className="font-heading font-900 text-dark-text text-3xl mb-4">Happy with Our Service?</h2>
             <p className="text-body-text mb-6">We&apos;d be so grateful if you shared your experience. Your review helps other Deanside families find trusted cleaners.</p>
             <a
-              href="https://g.page/r/uaday-cleaning/review"
+              href="https://g.page/r/uday-cleaning/review"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-brand-green text-white font-heading font-800 px-7 py-4 rounded-3xl shadow-3d-green hover:bg-brand-green-dark transition-colors"

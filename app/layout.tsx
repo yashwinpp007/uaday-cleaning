@@ -20,8 +20,8 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "UaDay Cleaning | Melbourne's Professional Cleaning Service",
-    template: '%s | UaDay Cleaning',
+    default: "UDAY Cleaning | Melbourne's Professional Cleaning Service",
+    template: '%s | UDAY Cleaning',
   },
   description:
     "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed. Serving Deanside, Tarneit, Point Cook, Werribee & surrounds. Get a free quote today!",
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     'office cleaning melbourne',
     'spring cleaning melbourne',
   ],
-  authors: [{ name: 'UaDay Cleaning' }],
-  creator: 'UaDay Cleaning',
-  metadataBase: new URL('https://uadaycleaning.com.au'),
+  authors: [{ name: 'UDAY Cleaning' }],
+  creator: 'UDAY Cleaning',
+  metadataBase: new URL('https://udaycleaning.com.au'),
   icons: {
     icon: '/icon.png',
     apple: '/icon.png',
@@ -51,15 +51,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_AU',
-    url: 'https://uadaycleaning.com.au',
-    siteName: 'UaDay Cleaning',
-    title: "UaDay Cleaning | Melbourne's Professional Cleaning Service",
+    url: 'https://udaycleaning.com.au',
+    siteName: 'UDAY Cleaning',
+    title: "UDAY Cleaning | Melbourne's Professional Cleaning Service",
     description:
       "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed. Serving Deanside, Tarneit, Point Cook, Werribee & surrounds.",
   },
   twitter: {
     card: 'summary_large_image',
-    title: "UaDay Cleaning | Melbourne's Professional Cleaning Service",
+    title: "UDAY Cleaning | Melbourne's Professional Cleaning Service",
     description: "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed.",
   },
   robots: {

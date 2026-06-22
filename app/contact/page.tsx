@@ -3,9 +3,9 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import HubSpotForm from '@/components/ui/HubSpotForm'
 
 export const metadata: Metadata = {
-  title: 'Contact UaDay Cleaning | Deanside VIC',
-  description: 'Get in touch with UaDay Cleaning. Call, email or send us a message. Servicing Deanside and surrounding suburbs.',
-  alternates: { canonical: 'https://uadaycleaning.com.au/contact' },
+  title: 'Contact UDAY Cleaning | Deanside VIC',
+  description: 'Get in touch with UDAY Cleaning. Call, email or send us a message. Servicing Deanside and surrounding suburbs.',
+  alternates: { canonical: 'https://udaycleaning.com.au/contact' },
 }
 
 const hours = [
@@ -44,23 +44,23 @@ export default function ContactPage() {
                 <h3 className="font-heading font-800 text-dark-text text-xl mb-5">Contact Information</h3>
                 <ul className="space-y-4">
                   <li>
-                    <a href="tel:0414375051" className="flex items-center gap-3 text-body-text hover:text-brand-green transition-colors group">
+                    <a href="tel:0420203336" className="flex items-center gap-3 text-body-text hover:text-brand-green transition-colors group">
                       <div className="w-10 h-10 bg-brand-green rounded-xl flex items-center justify-center">
                         <Phone className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <p className="font-semibold text-dark-text">0414 375 051</p>
+                        <p className="font-semibold text-dark-text">0420 203 336</p>
                         <p className="text-xs">Call or SMS</p>
                       </div>
                     </a>
                   </li>
                   <li>
-                    <a href="mailto:uadaycleaning@gmail.com" className="flex items-center gap-3 text-body-text hover:text-brand-green transition-colors">
+                    <a href="mailto:udaycleaning@gmail.com" className="flex items-center gap-3 text-body-text hover:text-brand-green transition-colors">
                       <div className="w-10 h-10 bg-brand-green rounded-xl flex items-center justify-center">
                         <Mail className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <p className="font-semibold text-dark-text">uadaycleaning@gmail.com</p>
+                        <p className="font-semibold text-dark-text">udaycleaning@gmail.com</p>
                         <p className="text-xs">We reply within the hour</p>
                       </div>
                     </a>
@@ -107,7 +107,7 @@ export default function ContactPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="UaDay Cleaning location in Deanside"
+              title="UDAY Cleaning location in Deanside"
             />
           </div>
         </div>

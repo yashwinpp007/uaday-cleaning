@@ -59,11 +59,11 @@ export default function HowItWorks() {
                 className="flex flex-col items-center text-center relative"
               >
                 {/* Numbered circle */}
-                <div className="relative mb-6">
+                <div className="relative mb-6 overflow-visible">
                   <div className="w-16 h-16 bg-brand-green rounded-full flex items-center justify-center shadow-lg relative z-10">
                     <step.icon className="w-8 h-8 text-white" />
                   </div>
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-brand-yellow rounded-full flex items-center justify-center text-dark-text font-heading font-900 text-xs shadow">
+                  <div className="absolute -top-3 -right-3 w-9 h-9 bg-brand-yellow rounded-full flex items-center justify-center text-dark-text font-heading font-900 text-xs shadow-md z-20">
                     {step.number}
                   </div>
                 </div>

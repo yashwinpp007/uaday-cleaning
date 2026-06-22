@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.description,
-    alternates: { canonical: `https://uadaycleaning.com.au/blog/${post.slug}` },
+    alternates: { canonical: `https://udaycleaning.com.au/blog/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
@@ -55,8 +55,8 @@ export default function BlogPostPage({ params }: Props) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'UaDay Cleaning',
-      url: 'https://uadaycleaning.com.au',
+      name: 'UDAY Cleaning',
+      url: 'https://udaycleaning.com.au',
     },
   }
 
@@ -64,9 +64,9 @@ export default function BlogPostPage({ params }: Props) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://uadaycleaning.com.au' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://uadaycleaning.com.au/blog' },
-      { '@type': 'ListItem', position: 3, name: post.title, item: `https://uadaycleaning.com.au/blog/${post.slug}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://udaycleaning.com.au' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://udaycleaning.com.au/blog' },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `https://udaycleaning.com.au/blog/${post.slug}` },
     ],
   }
 
@@ -135,7 +135,7 @@ export default function BlogPostPage({ params }: Props) {
               </div>
               <div>
                 <p className="font-heading font-800 text-dark-text text-lg">{post.author}</p>
-                <p className="text-body-text text-sm">UaDay Cleaning Team | Deanside&apos;s trusted cleaning professionals since 2014.</p>
+                <p className="text-body-text text-sm">UDAY Cleaning Team | Deanside&apos;s trusted cleaning professionals since 2014.</p>
               </div>
             </div>
           </article>
