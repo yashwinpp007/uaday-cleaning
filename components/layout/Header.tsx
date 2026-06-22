@@ -60,7 +60,7 @@ export default function Header() {
               alt="UDAY Cleaning"
               width={200}
               height={200}
-              className="h-20 w-auto object-contain group-hover:scale-105 transition-transform"
+              className="h-20 w-auto object-contain group-hover:scale-105 transition-transform mix-blend-multiply"
               priority
             />
           </Link>

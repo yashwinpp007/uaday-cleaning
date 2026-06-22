@@ -38,15 +38,13 @@ export default function Footer() {
           {/* Brand Column */}
           <div>
             <Link href="/" className="inline-block mb-5">
-              <div className="bg-white rounded-2xl px-3 py-2 inline-block">
-                <Image
-                  src="/images/logo.png"
-                  alt="UDAY Cleaning"
-                  width={160}
-                  height={70}
-                  className="h-14 w-auto object-contain"
-                />
-              </div>
+              <Image
+                src="/images/logo.png"
+                alt="UDAY Cleaning"
+                width={160}
+                height={70}
+                className="h-14 w-auto object-contain mix-blend-multiply"
+              />
             </Link>
             <p className="text-white/70 text-sm leading-relaxed">
               Deanside&apos;s trusted cleaning professionals. Eco-friendly, fully insured, and dedicated to making your space sparkle.
