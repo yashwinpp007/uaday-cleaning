@@ -41,9 +41,9 @@ export default function Footer() {
               <Image
                 src="/images/logo.png"
                 alt="UDAY Cleaning"
-                width={160}
-                height={70}
-                className="h-14 w-auto object-contain mix-blend-multiply"
+                width={480}
+                height={210}
+                className="h-[10.5rem] w-auto object-contain mix-blend-multiply"
               />
             </Link>
             <p className="text-white/70 text-sm leading-relaxed">
