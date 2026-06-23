@@ -56,6 +56,7 @@ export const metadata: Metadata = {
     title: "UDAY Cleaning | Melbourne's Professional Cleaning Service",
     description:
       "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed. Serving Deanside, Tarneit, Point Cook, Werribee & surrounds.",
+    images: [{ url: '/opengraph-image?v=2', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
