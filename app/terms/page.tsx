@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Terms & Conditions | UDAY Cleaning',
+  title: 'Terms & Conditions',
   description: 'UDAY Cleaning terms and conditions of service.',
   alternates: { canonical: 'https://udaycleaning.com.au/terms' },
   robots: { index: false },
@@ -73,7 +74,7 @@ export default function TermsPage() {
           <p>We use certified eco-friendly cleaning products. Clients with specific allergies or product preferences must notify us at the time of booking. We cannot be held liable for reactions to products where no prior notice was given.</p>
 
           <h2>10. Privacy</h2>
-          <p>Personal information is collected and used in accordance with our <a href="/privacy-policy">Privacy Policy</a>.</p>
+          <p>Personal information is collected and used in accordance with our <Link href="/privacy-policy">Privacy Policy</Link>.</p>
 
           <h2>11. Governing Law</h2>
           <p>These Terms and Conditions are governed by the laws of Victoria, Australia. Any disputes shall be subject to the exclusive jurisdiction of the courts of Victoria.</p>

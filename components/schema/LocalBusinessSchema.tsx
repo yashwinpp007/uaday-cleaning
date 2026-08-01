@@ -1,18 +1,20 @@
+import { SITE_URL, BUSINESS_PHONE_E164, BUSINESS_EMAIL, BUSINESS_STREET_ADDRESS } from '@/lib/site'
+
 export default function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'LocalBusiness',
-        '@id': 'https://udaycleaning.com.au/#business',
+        '@id': `${SITE_URL}/#business`,
         name: 'UDAY Cleaning',
         description: 'Professional residential, commercial and end of lease cleaning services in Deanside, VIC.',
-        url: 'https://udaycleaning.com.au',
-        telephone: '+61420203336',
-        email: 'support@udaycleaning.com.au',
+        url: SITE_URL,
+        telephone: BUSINESS_PHONE_E164,
+        email: BUSINESS_EMAIL,
         address: {
           '@type': 'PostalAddress',
-          streetAddress: 'Deanside',
+          streetAddress: BUSINESS_STREET_ADDRESS,
           addressLocality: 'Deanside',
           addressRegion: 'VIC',
           postalCode: '3336',

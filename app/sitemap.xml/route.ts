@@ -1,6 +1,8 @@
 import { getAllPosts } from '@/lib/blog'
+import { suburbs } from '@/lib/suburbs'
+import { SITE_URL } from '@/lib/site'
 
-const BASE_URL = 'https://udaycleaning.com.au'
+const BASE_URL = SITE_URL
 
 const staticPages = [
   { url: '/', priority: '1.0', changefreq: 'weekly' },
@@ -13,14 +15,11 @@ const staticPages = [
   { url: '/gallery', priority: '0.7', changefreq: 'weekly' },
   { url: '/testimonials', priority: '0.7', changefreq: 'weekly' },
   { url: '/service-areas', priority: '0.8', changefreq: 'monthly' },
-  { url: '/service-areas/truganina', priority: '0.7', changefreq: 'monthly' },
-  { url: '/service-areas/hoppers-crossing', priority: '0.7', changefreq: 'monthly' },
-  { url: '/service-areas/werribee', priority: '0.7', changefreq: 'monthly' },
-  { url: '/service-areas/tarneit', priority: '0.7', changefreq: 'monthly' },
-  { url: '/service-areas/point-cook', priority: '0.7', changefreq: 'monthly' },
-  { url: '/service-areas/laverton', priority: '0.7', changefreq: 'monthly' },
-  { url: '/service-areas/altona-meadows', priority: '0.7', changefreq: 'monthly' },
-  { url: '/service-areas/williams-landing', priority: '0.7', changefreq: 'monthly' },
+  ...Object.keys(suburbs).map((slug) => ({
+    url: `/service-areas/${slug}`,
+    priority: '0.7',
+    changefreq: 'monthly' as const,
+  })),
   { url: '/blog', priority: '0.8', changefreq: 'weekly' },
   { url: '/get-a-quote', priority: '0.9', changefreq: 'monthly' },
   { url: '/contact', priority: '0.8', changefreq: 'monthly' },

@@ -110,7 +110,7 @@ export default function Footer() {
               <li>
                 <div className="flex items-start gap-3 text-white/70">
                   <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-brand-green" />
-                  <span className="text-sm">Deanside, VIC 3336</span>
+                  <span className="text-sm">32 Adenmore Cct, Deanside, VIC 3336</span>
                 </div>
               </li>
               <li>

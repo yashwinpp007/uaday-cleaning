@@ -5,7 +5,7 @@ import Button3D from '@/components/ui/Button3D'
 import FinalCTA from '@/components/sections/FinalCTA'
 
 export const metadata: Metadata = {
-  title: 'About UDAY Cleaning | Deanside Cleaning Company',
+  title: 'About Us | Deanside Cleaning Company',
   description:
     'Learn about UDAY Cleaning — Deanside\'s trusted family-owned cleaning business. Our story, values, and commitment to the community.',
   alternates: { canonical: 'https://udaycleaning.com.au/about' },

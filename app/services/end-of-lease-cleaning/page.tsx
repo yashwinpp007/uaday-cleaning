@@ -7,9 +7,10 @@ import Accordion from '@/components/ui/Accordion'
 import FinalCTA from '@/components/sections/FinalCTA'
 import FAQSchema from '@/components/schema/FAQSchema'
 import ServiceSchema from '@/components/schema/ServiceSchema'
+import BreadcrumbSchema from '@/components/schema/BreadcrumbSchema'
 
 export const metadata: Metadata = {
-  title: 'End of Lease Cleaning Deanside — Bond Back Guaranteed | UDAY',
+  title: 'End of Lease Cleaning Deanside — Bond Back Guaranteed',
   description:
     'End of lease cleaning in Deanside with a 100% bond-back guarantee. REIV-aligned checklists, carpet steam add-on available. Book at least 48hrs before inspection.',
   alternates: { canonical: 'https://udaycleaning.com.au/services/end-of-lease-cleaning' },
@@ -48,6 +49,13 @@ export default function EndOfLeasePage() {
         url="https://udaycleaning.com.au/services/end-of-lease-cleaning"
       />
       <FAQSchema items={faqs} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', path: '/' },
+          { name: 'Services', path: '/services' },
+          { name: 'End of Lease Cleaning', path: '/services/end-of-lease-cleaning' },
+        ]}
+      />
 
       {/* Hero */}
       <section className="pt-40 pb-16 bg-gradient-to-br from-brand-green-light to-white overflow-hidden">

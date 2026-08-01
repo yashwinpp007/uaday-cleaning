@@ -7,6 +7,7 @@ import { getAllPosts, getPostBySlug, getRelatedPosts } from '@/lib/blog'
 import Button3D from '@/components/ui/Button3D'
 import FinalCTA from '@/components/sections/FinalCTA'
 import BlogContent from '@/components/blog/BlogContent'
+import FAQSchema from '@/components/schema/FAQSchema'
 
 interface Props {
   params: { slug: string }
@@ -28,9 +29,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: post.title,
       description: post.description,
-      images: [{ url: post.image }],
+      images: [{ url: post.image, width: 800, height: 400 }],
       type: 'article',
       publishedTime: post.date,
+      modifiedTime: post.updatedDate,
       authors: [post.author],
     },
   }
@@ -49,6 +51,7 @@ export default function BlogPostPage({ params }: Props) {
     description: post.description,
     image: post.image,
     datePublished: post.date,
+    dateModified: post.updatedDate,
     author: {
       '@type': 'Person',
       name: post.author,
@@ -74,6 +77,7 @@ export default function BlogPostPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {post.faqs.length > 0 && <FAQSchema items={post.faqs} />}
 
       {/* Hero */}
       <section className="pt-40 pb-0">

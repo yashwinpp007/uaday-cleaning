@@ -6,7 +6,7 @@ import FinalCTA from '@/components/sections/FinalCTA'
 import ServiceSchema from '@/components/schema/ServiceSchema'
 
 export const metadata: Metadata = {
-  title: 'Cleaning Services in Deanside | UDAY Cleaning',
+  title: 'Cleaning Services in Deanside',
   description:
     'Professional residential, commercial, end of lease and deep cleaning services in Deanside. Eco-friendly, fully insured. View pricing and get a free quote.',
   alternates: { canonical: 'https://udaycleaning.com.au/services' },

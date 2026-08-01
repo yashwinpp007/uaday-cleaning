@@ -7,9 +7,10 @@ import Accordion from '@/components/ui/Accordion'
 import FinalCTA from '@/components/sections/FinalCTA'
 import FAQSchema from '@/components/schema/FAQSchema'
 import ServiceSchema from '@/components/schema/ServiceSchema'
+import BreadcrumbSchema from '@/components/schema/BreadcrumbSchema'
 
 export const metadata: Metadata = {
-  title: 'Commercial Cleaning Deanside | UDAY Cleaning',
+  title: 'Commercial Cleaning Deanside',
   description:
     'Professional commercial cleaning in Deanside. Offices, retail, medical centres & childcare. Flexible scheduling, fully insured. Get a free quote today.',
   alternates: { canonical: 'https://udaycleaning.com.au/services/commercial-cleaning' },
@@ -40,6 +41,13 @@ export default function CommercialCleaningPage() {
         url="https://udaycleaning.com.au/services/commercial-cleaning"
       />
       <FAQSchema items={faqs} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', path: '/' },
+          { name: 'Services', path: '/services' },
+          { name: 'Commercial Cleaning', path: '/services/commercial-cleaning' },
+        ]}
+      />
 
       {/* Hero */}
       <section className="pt-40 pb-16 bg-gradient-to-br from-purple-50 to-white overflow-hidden">

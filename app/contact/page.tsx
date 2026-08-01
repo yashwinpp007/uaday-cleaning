@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import HubSpotForm from '@/components/ui/HubSpotForm'
 
 export const metadata: Metadata = {
-  title: 'Contact UDAY Cleaning | Deanside VIC',
+  title: 'Contact Us | Deanside VIC',
   description: 'Get in touch with UDAY Cleaning. Call, email or send us a message. Servicing Deanside and surrounding suburbs.',
   alternates: { canonical: 'https://udaycleaning.com.au/contact' },
 }
@@ -70,7 +70,7 @@ export default function ContactPage() {
                       <MapPin className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-dark-text">Deanside, VIC 3336</p>
+                      <p className="font-semibold text-dark-text">32 Adenmore Cct, Deanside, VIC 3336</p>
                       <p className="text-xs">Servicing all of Western Melbourne</p>
                     </div>
                   </li>
@@ -100,7 +100,7 @@ export default function ContactPage() {
           {/* Map */}
           <div className="mt-12 rounded-4xl overflow-hidden shadow-lg border border-light-border">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.123456789!2d144.729!3d-37.683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6778e3e8a4dcb%3A0x1a2b3c4d5e6f7a8b!2sDeanside%20VIC%203336!5e0!3m2!1sen!2sau!4v1234567890"
+              src="https://www.google.com/maps?q=32+Adenmore+Cct,+Deanside+VIC+3336&output=embed"
               width="100%"
               height="350"
               style={{ border: 0 }}

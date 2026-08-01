@@ -5,15 +5,22 @@ import readingTime from 'reading-time'
 
 const BLOG_DIR = path.join(process.cwd(), 'content/blog')
 
+export interface BlogFaq {
+  question: string
+  answer: string
+}
+
 export interface BlogPost {
   slug: string
   title: string
   date: string
+  updatedDate: string
   category: string
   description: string
   image: string
   author: string
   tags: string[]
+  faqs: BlogFaq[]
   readingTime: string
   content: string
 }
@@ -34,11 +41,13 @@ export function getAllPosts(): BlogPost[] {
       slug,
       title: data.title ?? 'Untitled',
       date: data.date ?? new Date().toISOString().split('T')[0],
+      updatedDate: data.updated ?? data.date ?? new Date().toISOString().split('T')[0],
       category: data.category ?? 'General',
       description: data.description ?? '',
       image: data.image ?? 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop',
       author: data.author ?? 'UDAY Cleaning Team',
       tags: data.tags ?? [],
+      faqs: data.faqs ?? [],
       readingTime: rt.text,
       content,
     } as BlogPost
@@ -62,11 +71,13 @@ export function getPostBySlug(slug: string): BlogPost | null {
     slug,
     title: data.title ?? 'Untitled',
     date: data.date ?? new Date().toISOString().split('T')[0],
+    updatedDate: data.updated ?? data.date ?? new Date().toISOString().split('T')[0],
     category: data.category ?? 'General',
     description: data.description ?? '',
     image: data.image ?? 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop',
     author: data.author ?? 'UDAY Cleaning Team',
     tags: data.tags ?? [],
+    faqs: data.faqs ?? [],
     readingTime: rt.text,
     content,
   }

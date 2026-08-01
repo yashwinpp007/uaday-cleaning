@@ -3,7 +3,7 @@ import { Shield, Star, CheckCircle, Phone } from 'lucide-react'
 import HubSpotForm from '@/components/ui/HubSpotForm'
 
 export const metadata: Metadata = {
-  title: 'Get a Free Quote | UDAY Cleaning Deanside',
+  title: 'Get a Free Quote | Deanside',
   description:
     'Get a free, no-obligation cleaning quote from UDAY Cleaning. Residential, commercial and end of lease cleaning in Deanside and surrounding suburbs.',
   alternates: { canonical: 'https://udaycleaning.com.au/get-a-quote' },

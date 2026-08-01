@@ -1,8 +1,9 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Raleway, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import { SITE_URL } from '@/lib/site'
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'UDAY Cleaning' }],
   creator: 'UDAY Cleaning',
-  metadataBase: new URL('https://udaycleaning.com.au'),
+  metadataBase: new URL(SITE_URL),
   icons: {
     icon: '/icon.png',
     apple: '/icon.png',
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_AU',
-    url: 'https://udaycleaning.com.au',
+    url: SITE_URL,
     siteName: 'UDAY Cleaning',
     title: "UDAY Cleaning | Melbourne's Professional Cleaning Service",
     description:
@@ -66,7 +67,20 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
   },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#5da832',
 }
 
 export default function RootLayout({

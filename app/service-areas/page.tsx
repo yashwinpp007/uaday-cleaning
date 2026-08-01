@@ -5,7 +5,7 @@ import Button3D from '@/components/ui/Button3D'
 import FinalCTA from '@/components/sections/FinalCTA'
 
 export const metadata: Metadata = {
-  title: 'Cleaning Services Across Western Melbourne | UDAY Cleaning',
+  title: 'Cleaning Services Across Western Melbourne',
   description:
     'Professional cleaning services in Truganina, Hoppers Crossing, Werribee, Tarneit, Point Cook, Laverton and more. Based in Deanside, servicing all of Western Melbourne.',
   alternates: { canonical: 'https://udaycleaning.com.au/service-areas' },

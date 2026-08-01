@@ -3,7 +3,7 @@ import { Star, Quote, ExternalLink } from 'lucide-react'
 import FinalCTA from '@/components/sections/FinalCTA'
 
 export const metadata: Metadata = {
-  title: 'Customer Testimonials & Reviews | UDAY Cleaning Deanside',
+  title: 'Customer Testimonials & Reviews | Deanside',
   description:
     'Read real customer reviews for UDAY Cleaning. 4.9/5 rating from 500+ clients across Deanside. See why families and businesses trust us.',
   alternates: { canonical: 'https://udaycleaning.com.au/testimonials' },

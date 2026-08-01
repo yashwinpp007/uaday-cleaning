@@ -4,9 +4,10 @@ import Link from 'next/link'
 import { Calendar, Clock, Tag } from 'lucide-react'
 import { getAllPosts } from '@/lib/blog'
 import FinalCTA from '@/components/sections/FinalCTA'
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Cleaning Tips & Blog | UDAY Cleaning Deanside',
+  title: 'Cleaning Tips & Blog | Deanside',
   description:
     'Expert cleaning tips, end of lease guides, and home care advice from Deanside\'s professional cleaners. Read the UDAY Cleaning blog.',
   alternates: { canonical: 'https://udaycleaning.com.au/blog' },
@@ -14,13 +15,36 @@ export const metadata: Metadata = {
 
 const categories = ['All', 'Residential', 'End of Lease', 'Cleaning Tips', 'Commercial']
 
-export default function BlogPage() {
-  const posts = getAllPosts()
+const toSlug = (cat: string) => cat.toLowerCase().replace(/\s+/g, '-')
+
+export default function BlogPage({ searchParams }: { searchParams?: { category?: string } }) {
+  const activeSlug = searchParams?.category
+  const activeCategory = activeSlug ? categories.find((c) => toSlug(c) === activeSlug) : undefined
+
+  const allPosts = getAllPosts()
+  const posts = activeCategory ? allPosts.filter((p) => toSlug(p.category) === activeSlug) : allPosts
   const featured = posts[0]
   const rest = posts.slice(1)
 
+  const blogSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'UDAY Cleaning Blog',
+    url: `${SITE_URL}/blog`,
+    blogPost: allPosts.map((post) => ({
+      '@type': 'BlogPosting',
+      headline: post.title,
+      description: post.description,
+      url: `${SITE_URL}/blog/${post.slug}`,
+      datePublished: post.date,
+      image: post.image,
+    })),
+  }
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }} />
+
       {/* Hero */}
       <section className="pt-40 pb-16 bg-gradient-to-br from-brand-green-light to-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
@@ -38,15 +62,20 @@ export default function BlogPage() {
       <section className="py-8 bg-white border-b border-light-border sticky top-20 z-30">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-wrap gap-3 justify-center">
-            {categories.map((cat) => (
-              <Link
-                key={cat}
-                href={cat === 'All' ? '/blog' : `/blog?category=${cat.toLowerCase().replace(' ', '-')}`}
-                className="px-5 py-2 rounded-full font-semibold text-sm bg-brand-green-light text-brand-green hover:bg-brand-green hover:text-white transition-colors border border-brand-green/20"
-              >
-                {cat}
-              </Link>
-            ))}
+            {categories.map((cat) => {
+              const isActive = cat === 'All' ? !activeCategory : activeCategory === cat
+              return (
+                <Link
+                  key={cat}
+                  href={cat === 'All' ? '/blog' : `/blog?category=${toSlug(cat)}`}
+                  className={`px-5 py-2 rounded-full font-semibold text-sm transition-colors border border-brand-green/20 ${
+                    isActive ? 'bg-brand-green text-white' : 'bg-brand-green-light text-brand-green hover:bg-brand-green hover:text-white'
+                  }`}
+                >
+                  {cat}
+                </Link>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -125,7 +154,9 @@ export default function BlogPage() {
 
           {posts.length === 0 && (
             <div className="text-center py-20">
-              <p className="text-body-text text-lg">No blog posts yet. Check back soon!</p>
+              <p className="text-body-text text-lg">
+                {activeCategory ? `No posts in "${activeCategory}" yet.` : 'No blog posts yet. Check back soon!'}
+              </p>
             </div>
           )}
         </div>

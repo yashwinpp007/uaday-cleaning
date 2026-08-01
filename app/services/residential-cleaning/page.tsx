@@ -7,9 +7,10 @@ import Accordion from '@/components/ui/Accordion'
 import FinalCTA from '@/components/sections/FinalCTA'
 import FAQSchema from '@/components/schema/FAQSchema'
 import ServiceSchema from '@/components/schema/ServiceSchema'
+import BreadcrumbSchema from '@/components/schema/BreadcrumbSchema'
 
 export const metadata: Metadata = {
-  title: 'Residential Cleaning Services Deanside | UDAY Cleaning',
+  title: 'Residential Cleaning Services Deanside',
   description:
     'Professional residential cleaning services in Deanside. Regular weekly, fortnightly & one-off cleans. Eco-friendly products, fully insured. Book online today.',
   alternates: { canonical: 'https://udaycleaning.com.au/services/residential-cleaning' },
@@ -44,6 +45,13 @@ export default function ResidentialCleaningPage() {
         url="https://udaycleaning.com.au/services/residential-cleaning"
       />
       <FAQSchema items={faqs} />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', path: '/' },
+          { name: 'Services', path: '/services' },
+          { name: 'Residential Cleaning', path: '/services/residential-cleaning' },
+        ]}
+      />
 
       {/* Hero */}
       <section className="pt-40 pb-16 bg-gradient-to-br from-brand-green-light to-white overflow-hidden relative">

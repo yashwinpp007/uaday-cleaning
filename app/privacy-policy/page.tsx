@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | UDAY Cleaning',
+  title: 'Privacy Policy',
   description: 'UDAY Cleaning privacy policy — how we collect, use, and protect your personal information.',
   alternates: { canonical: 'https://udaycleaning.com.au/privacy-policy' },
   robots: { index: false },
