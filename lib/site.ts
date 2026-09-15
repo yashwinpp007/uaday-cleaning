@@ -8,3 +8,9 @@ export const BUSINESS_SUBURB = 'Deanside'
 export const BUSINESS_STATE = 'VIC'
 export const BUSINESS_POSTCODE = '3336'
 export const BUSINESS_FULL_ADDRESS = '32 Adenmore Cct, Deanside, VIC 3336'
+
+// Sourced from the live Google Business Profile — verify and update this
+// whenever a batch of new reviews comes in (don't round up/estimate).
+export const BUSINESS_RATING = '5.0'
+export const BUSINESS_REVIEW_COUNT = '17'
+export const GOOGLE_REVIEW_URL = 'https://search.google.com/local/writereview?placeid=ChIJUeNu6EwEvU8RE1ebbrNTeJ0'

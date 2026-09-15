@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Shield, Star, CheckCircle, Phone } from 'lucide-react'
 import HubSpotForm from '@/components/ui/HubSpotForm'
+import { BUSINESS_RATING, BUSINESS_REVIEW_COUNT } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Get a Free Quote | Deanside',
@@ -33,7 +34,7 @@ export default function GetAQuotePage() {
                 {[
                   { icon: Shield, text: 'Fully Insured & Police Checked' },
                   { icon: CheckCircle, text: 'Bond-Back Guarantee' },
-                  { icon: Star, text: '4.9/5 Rating — 500+ Reviews' },
+                  { icon: Star, text: `${BUSINESS_RATING}/5 Rating — ${BUSINESS_REVIEW_COUNT}+ Reviews` },
                   { icon: CheckCircle, text: 'Eco-Friendly Products' },
                   { icon: CheckCircle, text: 'No Lock-In Contracts' },
                 ].map((item) => (

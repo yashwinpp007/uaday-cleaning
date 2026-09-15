@@ -3,12 +3,13 @@
 import { motion } from 'framer-motion'
 import AnimatedCounter from '@/components/ui/AnimatedCounter'
 import { Users, Clock, Shield, Star, Leaf } from 'lucide-react'
+import { BUSINESS_RATING } from '@/lib/site'
 
 const stats = [
   { icon: Users, label: 'Happy Clients', value: 500, suffix: '+' },
   { icon: Clock, label: 'Years Experience', value: 10, suffix: '' },
   { icon: Shield, label: 'Fully Insured', value: 100, suffix: '%' },
-  { icon: Star, label: 'Rating', value: 49, suffix: '/5', display: '4.9/5' },
+  { icon: Star, label: 'Rating', value: 50, suffix: '/5', display: `${BUSINESS_RATING}/5` },
   { icon: Leaf, label: 'Eco-Friendly', value: 100, suffix: '%' },
 ]
 

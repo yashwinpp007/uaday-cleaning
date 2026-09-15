@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import { Star, Quote, ExternalLink } from 'lucide-react'
 import FinalCTA from '@/components/sections/FinalCTA'
+import { BUSINESS_RATING, BUSINESS_REVIEW_COUNT, GOOGLE_REVIEW_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Customer Testimonials & Reviews | Deanside',
-  description:
-    'Read real customer reviews for UDAY Cleaning. 4.9/5 rating from 500+ clients across Deanside. See why families and businesses trust us.',
+  description: `Read real customer reviews for UDAY Cleaning. ${BUSINESS_RATING}/5 rating from ${BUSINESS_REVIEW_COUNT}+ Google reviews across Deanside. See why families and businesses trust us.`,
   alternates: { canonical: 'https://udaycleaning.com.au/testimonials' },
 }
 
@@ -29,8 +29,8 @@ const aggregateSchema = {
   name: 'UDAY Cleaning',
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '500',
+    ratingValue: BUSINESS_RATING,
+    reviewCount: BUSINESS_REVIEW_COUNT,
     bestRating: '5',
     worstRating: '1',
   },
@@ -50,7 +50,7 @@ export default function TestimonialsPage() {
       {/* Hero */}
       <section className="pt-40 pb-16 bg-gradient-to-br from-brand-green-light to-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <span className="inline-block bg-brand-green text-white font-semibold text-sm px-4 py-2 rounded-full mb-5">⭐ Trusted by 500+ Clients</span>
+          <span className="inline-block bg-brand-green text-white font-semibold text-sm px-4 py-2 rounded-full mb-5">⭐ {BUSINESS_RATING}-Star Rated on Google</span>
           <h1 className="font-heading font-900 text-dark-text text-5xl md:text-6xl mb-5">
             What Our Clients Say
           </h1>
@@ -62,10 +62,10 @@ export default function TestimonialsPage() {
                 <Star key={i} className="w-8 h-8 text-brand-yellow fill-brand-yellow" />
               ))}
             </div>
-            <span className="font-heading font-900 text-dark-text text-5xl">4.9</span>
+            <span className="font-heading font-900 text-dark-text text-5xl">{BUSINESS_RATING}</span>
             <span className="text-body-text text-lg">/ 5</span>
           </div>
-          <p className="text-body-text text-lg">Based on 500+ verified reviews from Deanside families and businesses</p>
+          <p className="text-body-text text-lg">Based on {BUSINESS_REVIEW_COUNT}+ verified Google reviews from Deanside families and businesses</p>
         </div>
       </section>
 
@@ -107,7 +107,7 @@ export default function TestimonialsPage() {
             <h2 className="font-heading font-900 text-dark-text text-3xl mb-4">Happy with Our Service?</h2>
             <p className="text-body-text mb-6">We&apos;d be so grateful if you shared your experience. Your review helps other Deanside families find trusted cleaners.</p>
             <a
-              href="https://g.page/r/uday-cleaning/review"
+              href={GOOGLE_REVIEW_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-brand-green text-white font-heading font-800 px-7 py-4 rounded-3xl shadow-3d-green hover:bg-brand-green-dark transition-colors"

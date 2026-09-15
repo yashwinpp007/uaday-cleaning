@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { CheckCircle, Clock, Phone, Star } from 'lucide-react'
 import Button3D from '@/components/ui/Button3D'
+import { GOOGLE_REVIEW_URL } from '@/lib/site'
 
 const steps = [
   { icon: CheckCircle, title: 'Quote Received', desc: 'We\'ve received your quote request and will review the details.' },
@@ -84,7 +85,7 @@ export default function ThankYouPage() {
         >
           <Button3D href="/" size="md">← Back to Home</Button3D>
           <a
-            href="https://g.page/r/uday-cleaning/review"
+            href={GOOGLE_REVIEW_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-brand-yellow text-dark-text font-heading font-900 px-7 py-4 rounded-3xl shadow-3d-yellow hover:bg-yellow-400 transition-colors"

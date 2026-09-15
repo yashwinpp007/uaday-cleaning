@@ -6,6 +6,7 @@ import Button3D from '@/components/ui/Button3D'
 import FloatingBlobs from '@/components/ui/FloatingBlobs'
 import DotPattern from '@/components/ui/DotPattern'
 import { CheckCircle, Star, Phone } from 'lucide-react'
+import { BUSINESS_RATING, BUSINESS_REVIEW_COUNT } from '@/lib/site'
 
 export default function HeroSection() {
   return (
@@ -104,8 +105,8 @@ export default function HeroSection() {
                   <Star className="w-6 h-6 text-white fill-white" />
                 </div>
                 <div>
-                  <p className="font-heading font-800 text-dark-text text-xl leading-none">4.9/5</p>
-                  <p className="text-body-text text-xs">500+ Reviews</p>
+                  <p className="font-heading font-800 text-dark-text text-xl leading-none">{BUSINESS_RATING}/5</p>
+                  <p className="text-body-text text-xs">{BUSINESS_REVIEW_COUNT}+ Reviews</p>
                 </div>
               </div>
               <div className="flex gap-1 mt-2">

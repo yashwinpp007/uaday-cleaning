@@ -5,6 +5,7 @@ import { MapPin, CheckCircle, Star, Phone } from 'lucide-react'
 import Button3D from '@/components/ui/Button3D'
 import FinalCTA from '@/components/sections/FinalCTA'
 import BreadcrumbSchema from '@/components/schema/BreadcrumbSchema'
+import FAQSchema from '@/components/schema/FAQSchema'
 import { suburbs } from '@/lib/suburbs'
 import { SITE_URL, BUSINESS_PHONE_E164 } from '@/lib/site'
 
@@ -31,6 +32,21 @@ export default function SuburbPage({ params }: Props) {
   const data = suburbs[params.suburb]
   if (!data) notFound()
 
+  const suburbFaqs = [
+    {
+      question: `Does UDAY Cleaning service ${data.name}?`,
+      answer: `Yes — UDAY Cleaning provides residential, commercial, end of lease and deep cleaning services throughout ${data.name}, VIC ${data.postcode}, as part of our regular Western Melbourne service area.`,
+    },
+    {
+      question: `How do I book a cleaner in ${data.name}?`,
+      answer: `Get a free quote through our online form or call 0420 203 336. We typically respond within an hour during business hours and can often arrange same-day cleaning in ${data.name} depending on availability.`,
+    },
+    {
+      question: `Is UDAY Cleaning insured for jobs in ${data.name}?`,
+      answer: `Yes — every clean in ${data.name} is carried out by fully insured, police-checked cleaners using eco-friendly products.`,
+    },
+  ]
+
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
@@ -49,6 +65,7 @@ export default function SuburbPage({ params }: Props) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <FAQSchema items={suburbFaqs} />
       <BreadcrumbSchema
         items={[
           { name: 'Home', path: '/' },
@@ -124,6 +141,21 @@ export default function SuburbPage({ params }: Props) {
                 <p className="text-body-text text-xs">{data.name} resident</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 bg-off-white">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="font-heading font-900 text-dark-text text-3xl mb-8">{data.name} FAQs</h2>
+          <div className="space-y-6">
+            {suburbFaqs.map((faq) => (
+              <div key={faq.question} className="bg-white rounded-4xl p-6 shadow-card">
+                <h3 className="font-heading font-800 text-dark-text text-lg mb-2">{faq.question}</h3>
+                <p className="text-body-text leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

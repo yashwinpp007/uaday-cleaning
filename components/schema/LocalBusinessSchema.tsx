@@ -1,4 +1,4 @@
-import { SITE_URL, BUSINESS_PHONE_E164, BUSINESS_EMAIL, BUSINESS_STREET_ADDRESS } from '@/lib/site'
+import { SITE_URL, BUSINESS_PHONE_E164, BUSINESS_EMAIL, BUSINESS_STREET_ADDRESS, BUSINESS_RATING, BUSINESS_REVIEW_COUNT } from '@/lib/site'
 
 export default function LocalBusinessSchema() {
   const schema = {
@@ -33,8 +33,8 @@ export default function LocalBusinessSchema() {
         sameAs: ['https://facebook.com/udaycleaning', 'https://instagram.com/udaycleaning'],
         aggregateRating: {
           '@type': 'AggregateRating',
-          ratingValue: '4.9',
-          reviewCount: '500',
+          ratingValue: BUSINESS_RATING,
+          reviewCount: BUSINESS_REVIEW_COUNT,
           bestRating: '5',
           worstRating: '1',
         },
