@@ -8,6 +8,7 @@ import Button3D from '@/components/ui/Button3D'
 import FinalCTA from '@/components/sections/FinalCTA'
 import BlogContent from '@/components/blog/BlogContent'
 import FAQSchema from '@/components/schema/FAQSchema'
+import Accordion from '@/components/ui/Accordion'
 
 interface Props {
   params: { slug: string }
@@ -116,6 +117,14 @@ export default function BlogPostPage({ params }: Props) {
           <article>
             {/* Mid-article CTA */}
             <BlogContent content={post.content} />
+
+            {/* FAQ — structured to match the schema exactly, one source of truth */}
+            {post.faqs.length > 0 && (
+              <div className="mt-10">
+                <h2 className="font-heading font-800 text-dark-text text-2xl md:text-3xl mb-5">Frequently Asked Questions</h2>
+                <Accordion items={post.faqs} />
+              </div>
+            )}
 
             <div className="my-10 bg-brand-green-light rounded-4xl p-7 border border-brand-green/20">
               <p className="font-heading font-800 text-dark-text text-xl mb-2">Need a Professional Cleaner?</p>
