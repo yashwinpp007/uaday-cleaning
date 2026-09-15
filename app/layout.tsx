@@ -3,6 +3,9 @@ import { Raleway, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import ChatWidget from '@/components/chat/ChatWidget'
+import WhatsAppButton from '@/components/widgets/WhatsAppButton'
+import CallButton from '@/components/widgets/CallButton'
 import { SITE_URL } from '@/lib/site'
 
 const raleway = Raleway({
@@ -98,6 +101,9 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
+        <CallButton />
+        <ChatWidget />
       </body>
     </html>
   )

@@ -10,7 +10,7 @@ import { BUSINESS_RATING, BUSINESS_REVIEW_COUNT } from '@/lib/site'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center bg-gradient-to-br from-brand-green-light via-white to-white overflow-hidden pt-36 pb-16">
+    <section className="relative min-h-screen flex items-center bg-gradient-to-br from-brand-green-light via-white to-white overflow-hidden pt-28 pb-16 sm:pt-36">
       <DotPattern />
       <FloatingBlobs />
 
