@@ -16,6 +16,8 @@ const areas = [
   { name: 'Tarneit', href: '/service-areas/tarneit' },
   { name: 'Point Cook', href: '/service-areas/point-cook' },
   { name: 'Laverton', href: '/service-areas/laverton' },
+  { name: 'Melton', href: '/service-areas/melton' },
+  { name: 'Sunshine', href: '/service-areas/sunshine' },
 ]
 
 const company = [

@@ -8,10 +8,12 @@ import SectionWrapper from '@/components/ui/SectionWrapper'
 const suburbs = [
   'Truganina', 'Hoppers Crossing', 'Werribee', 'Tarneit',
   'Point Cook', 'Laverton', 'Altona Meadows', 'Williams Landing',
-  'Deer Park', 'Sunshine', 'Footscray', 'Yarraville',
-  'Williamstown', 'Newport', 'Altona', 'Brooklyn',
+  'Melton', 'Caroline Springs', 'Sunshine', 'St Albans',
+  'Sydenham', 'Taylors Hill', 'Hillside', 'Deer Park',
+  'Watergardens', 'Sunbury', 'Keilor Downs', 'Taylors Lakes',
+  'Rockbank', 'Cobblebank', 'Airport West', 'Tullamarine',
   'Melbourne CBD', 'Toorak', 'South Yarra', 'Brunswick',
-  'Epping', 'Thomastown', 'Tullamarine',
+  'Epping', 'Thomastown',
 ]
 
 const suburbSlugs: Record<string, string> = {
@@ -23,6 +25,22 @@ const suburbSlugs: Record<string, string> = {
   'Laverton': 'laverton',
   'Altona Meadows': 'altona-meadows',
   'Williams Landing': 'williams-landing',
+  'Melton': 'melton',
+  'Caroline Springs': 'caroline-springs',
+  'Sunshine': 'sunshine',
+  'St Albans': 'st-albans',
+  'Sydenham': 'sydenham',
+  'Taylors Hill': 'taylors-hill',
+  'Hillside': 'hillside',
+  'Deer Park': 'deer-park',
+  'Watergardens': 'watergardens',
+  'Sunbury': 'sunbury',
+  'Keilor Downs': 'keilor-downs',
+  'Taylors Lakes': 'taylors-lakes',
+  'Rockbank': 'rockbank',
+  'Cobblebank': 'cobblebank',
+  'Airport West': 'airport-west',
+  'Tullamarine': 'tullamarine',
 }
 
 export default function ServiceAreas() {

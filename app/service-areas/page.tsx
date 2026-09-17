@@ -5,11 +5,12 @@ import Button3D from '@/components/ui/Button3D'
 import FinalCTA from '@/components/sections/FinalCTA'
 import FAQSchema from '@/components/schema/FAQSchema'
 import { BUSINESS_FULL_ADDRESS } from '@/lib/site'
+import { suburbs } from '@/lib/suburbs'
 
 const areaFaqs = [
   {
     question: 'What suburbs does UDAY Cleaning service?',
-    answer: 'UDAY Cleaning is based in Deanside and services Truganina, Hoppers Crossing, Werribee, Tarneit, Point Cook, Laverton, Altona Meadows and Williams Landing, plus nearby suburbs including Deer Park, Sunshine, Footscray, Yarraville and Williamstown.',
+    answer: 'UDAY Cleaning is based in Deanside and services over 70 suburbs across Melbourne\'s west and north-west, from Melton and Sunbury through to Caroline Springs, St Albans, Sunshine, Werribee, Point Cook and Williams Landing — see the full list below.',
   },
   {
     question: 'Is there an extra charge for cleaning outside Deanside?',
@@ -28,22 +29,15 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://udaycleaning.com.au/service-areas' },
 }
 
-const linkedSuburbs = [
-  { name: 'Truganina', slug: 'truganina', postcode: '3029' },
-  { name: 'Hoppers Crossing', slug: 'hoppers-crossing', postcode: '3029' },
-  { name: 'Werribee', slug: 'werribee', postcode: '3030' },
-  { name: 'Tarneit', slug: 'tarneit', postcode: '3029' },
-  { name: 'Point Cook', slug: 'point-cook', postcode: '3030' },
-  { name: 'Laverton', slug: 'laverton', postcode: '3028' },
-  { name: 'Altona Meadows', slug: 'altona-meadows', postcode: '3028' },
-  { name: 'Williams Landing', slug: 'williams-landing', postcode: '3027' },
-]
+const linkedSuburbs = Object.entries(suburbs)
+  .map(([slug, data]) => ({ name: data.name, slug, postcode: data.postcode }))
+  .sort((a, b) => a.name.localeCompare(b.name))
 
 const otherSuburbs = [
-  'Deer Park', 'Sunshine', 'Footscray', 'Yarraville', 'Williamstown',
-  'Newport', 'Altona', 'Brooklyn', 'Laverton North', 'Derrimut',
+  'Footscray', 'Yarraville', 'Williamstown', 'Newport', 'Altona',
+  'Derrimut', 'Werribee South', 'Wyndham Vale', 'Mambourin',
   'Melbourne CBD', 'Toorak', 'South Yarra', 'Brunswick',
-  'Epping', 'Thomastown', 'Tullamarine',
+  'Epping', 'Thomastown', 'Essendon',
 ]
 
 export default function ServiceAreasPage() {
