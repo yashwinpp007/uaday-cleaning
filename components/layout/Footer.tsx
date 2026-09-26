@@ -66,6 +66,12 @@ export default function Footer() {
                 </li>
               ))}
               <li>
+                <Link href="/services" className="text-white/70 text-sm hover:text-white transition-colors flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 bg-brand-green rounded-full flex-shrink-0" />
+                  All Services
+                </Link>
+              </li>
+              <li>
                 <Link href="/get-a-quote" className="text-brand-yellow text-sm font-semibold hover:text-white transition-colors">
                   → Get a Free Quote
                 </Link>

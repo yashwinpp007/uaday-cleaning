@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Home, Building2, Key, Sparkles, CheckCircle, ArrowRight, Plus } from 'lucide-react'
 import Button3D from '@/components/ui/Button3D'
 import FinalCTA from '@/components/sections/FinalCTA'
+import { services as allServices, categoryLabels, categoryOrder } from '@/lib/data/services'
+import { serviceIcons } from '@/lib/data/service-icons'
 import ServiceSchema from '@/components/schema/ServiceSchema'
 
 export const metadata: Metadata = {
@@ -128,6 +130,45 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* All services by category */}
+      <section className="py-16 bg-off-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="font-heading font-900 text-dark-text text-3xl md:text-4xl mb-3">More Cleaning Services</h2>
+            <p className="text-body-text">Specialist cleaning for homes, businesses, healthcare and the community.</p>
+          </div>
+          {categoryOrder.map((cat) => {
+            const items = allServices.filter((sv) => sv.category === cat && !sv.customPage)
+            if (items.length === 0) return null
+            return (
+              <div key={cat} className="mb-12 last:mb-0">
+                <h3 className="font-heading font-800 text-dark-text text-xl mb-5">{categoryLabels[cat]}</h3>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {items.map((sv) => {
+                    const SvIcon = serviceIcons[sv.icon]
+                    return (
+                      <Link
+                        key={sv.slug}
+                        href={`/services/${sv.slug}`}
+                        className="group flex items-start gap-4 bg-white border border-light-border rounded-3xl p-5 hover:border-brand-green hover:shadow-card-hover transition-all"
+                      >
+                        <div className="w-11 h-11 bg-brand-green-light rounded-2xl flex items-center justify-center flex-shrink-0">
+                          <SvIcon className="w-5 h-5 text-brand-green" />
+                        </div>
+                        <div>
+                          <h4 className="font-heading font-700 text-dark-text mb-1">{sv.name}</h4>
+                          <p className="text-body-text text-sm">{sv.tagline}</p>
+                        </div>
+                      </Link>
+                    )
+                  })}
+                </div>
+              </div>
+            )
+          })}
         </div>
       </section>
 

@@ -1,6 +1,7 @@
 import { getAllPosts } from '@/lib/blog'
 import { suburbs } from '@/lib/suburbs'
 import { SITE_URL } from '@/lib/site'
+import { services } from '@/lib/data/services'
 
 const BASE_URL = SITE_URL
 
@@ -12,6 +13,10 @@ const staticPages = [
   { url: '/services/commercial-cleaning', priority: '0.9', changefreq: 'weekly' },
   { url: '/services/end-of-lease-cleaning', priority: '0.9', changefreq: 'weekly' },
   { url: '/services/deep-cleaning', priority: '0.8', changefreq: 'weekly' },
+  // Template-rendered service pages; the hand-written ones are listed above.
+  ...services
+    .filter((s) => !s.customPage)
+    .map((s) => ({ url: `/services/${s.slug}`, priority: '0.8', changefreq: 'monthly' as const })),
   { url: '/gallery', priority: '0.7', changefreq: 'weekly' },
   { url: '/testimonials', priority: '0.7', changefreq: 'weekly' },
   { url: '/service-areas', priority: '0.8', changefreq: 'monthly' },

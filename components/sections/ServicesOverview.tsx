@@ -94,6 +94,11 @@ export default function ServicesOverview() {
             </motion.div>
           ))}
         </div>
+        <div className="text-center mt-10">
+          <Link href="/services" className="inline-flex items-center gap-2 text-brand-green font-semibold hover:gap-3 transition-all">
+            View all cleaning services <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
       </div>
     </SectionWrapper>
   )
