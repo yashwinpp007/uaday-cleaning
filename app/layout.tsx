@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: '%s | UDAY Cleaning',
   },
   description:
-    "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed. Serving Deanside, Tarneit, Point Cook, Werribee & surrounds. Get a free quote today!",
+    "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed. Serving Tarneit, Point Cook, Werribee & surrounds. Get a free quote today!",
   keywords: [
     'cleaning services melbourne',
     'cleaning services west melbourne',
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     siteName: 'UDAY Cleaning',
     title: "UDAY Cleaning | Melbourne's Professional Cleaning Service",
     description:
-      "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed. Serving Deanside, Tarneit, Point Cook, Werribee & surrounds.",
+      "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed. Serving Tarneit, Point Cook, Werribee & surrounds.",
     images: [{ url: '/opengraph-image?v=2', width: 1200, height: 630 }],
   },
   twitter: {

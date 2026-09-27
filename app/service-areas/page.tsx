@@ -10,10 +10,10 @@ import { suburbs } from '@/lib/suburbs'
 const areaFaqs = [
   {
     question: 'What suburbs does UDAY Cleaning service?',
-    answer: 'UDAY Cleaning is based in Deanside and services over 70 suburbs across Melbourne\'s west and north-west, from Melton and Sunbury through to Caroline Springs, St Albans, Sunshine, Werribee, Point Cook and Williams Landing — see the full list below.',
+    answer: 'UDAY Cleaning covers over 70 suburbs across Melbourne\'s west and north-west, from Melton and Sunbury through to Caroline Springs, St Albans, Sunshine, Werribee, Point Cook and Williams Landing — see the full list below.',
   },
   {
-    question: 'Is there an extra charge for cleaning outside Deanside?',
+    question: 'Is there an extra charge depending on my suburb?',
     answer: 'No — quotes are based on the size and type of clean, not distance, for all suburbs within our standard Western Melbourne service area.',
   },
   {
@@ -25,7 +25,7 @@ const areaFaqs = [
 export const metadata: Metadata = {
   title: 'Cleaning Services Across Western Melbourne',
   description:
-    'Professional cleaning services in Truganina, Hoppers Crossing, Werribee, Tarneit, Point Cook, Laverton and more. Based in Deanside, servicing all of Western Melbourne.',
+    'Professional cleaning services in Truganina, Hoppers Crossing, Werribee, Tarneit, Point Cook, Laverton and more. Servicing all of Western Melbourne.',
   alternates: { canonical: 'https://udaycleaning.com.au/service-areas' },
 }
 
@@ -51,7 +51,7 @@ export default function ServiceAreasPage() {
             Cleaning Services Across Western Melbourne
           </h1>
           <p className="text-body-text text-xl max-w-2xl mx-auto mb-8">
-            We service Deanside and all surrounding suburbs. Professional residential, commercial and end of lease cleaning wherever you are.
+            We service Melbourne and all surrounding suburbs. Professional residential, commercial and end of lease cleaning wherever you are.
           </p>
           <Button3D href="/get-a-quote" size="lg">Get a Free Quote</Button3D>
         </div>
@@ -120,7 +120,7 @@ export default function ServiceAreasPage() {
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="font-heading font-900 text-dark-text text-2xl mb-4">Professional Cleaning Across Western Melbourne</h2>
           <div className="text-body-text leading-relaxed space-y-4">
-            <p>UDAY Cleaning, based in Deanside, provides professional residential, commercial, and end of lease cleaning services throughout Western Melbourne, Victoria.</p>
+            <p>UDAY Cleaning provides professional residential, commercial, and end of lease cleaning services throughout Western Melbourne, Victoria.</p>
             <p>Our service area covers the rapidly growing corridors of Tarneit, Truganina, and Hoppers Crossing in Melbourne&apos;s outer west, through to established suburbs like Werribee, Point Cook, and Altona Meadows. We also service the inner-west suburbs of Footscray, Yarraville, and Williamstown.</p>
             <p>Whether you&apos;re in a new estate in Williams Landing, a family home in Laverton, or a commercial property in Sunshine — UDAY Cleaning brings the same level of professionalism, eco-friendly products, and guaranteed results to every clean.</p>
           </div>

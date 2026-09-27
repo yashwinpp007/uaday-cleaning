@@ -71,7 +71,7 @@ export const suburbs: Record<string, SuburbData> = {
   'fraser-rise': {
     name: 'Fraser Rise',
     postcode: '3336',
-    blurb: 'As a new suburb near the Grand Central precinct and Watergardens, popular with young families moving into brand-new builds, Fraser Rise is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As a new suburb near the Grand Central precinct and Watergardens, popular with young families moving into brand-new builds, Fraser Rise is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[0],
   },
   'bonnie-brook': {
@@ -95,7 +95,7 @@ export const suburbs: Record<string, SuburbData> = {
   'thornhill-park': {
     name: 'Thornhill Park',
     postcode: '3335',
-    blurb: 'As a growth-corridor suburb close to the Western Freeway, with a steady stream of new-build handovers needing a thorough first clean, Thornhill Park is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As a growth-corridor suburb close to the Western Freeway, with a steady stream of new-build handovers needing a thorough first clean, Thornhill Park is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[4],
   },
   'fieldstone': {
@@ -119,7 +119,7 @@ export const suburbs: Record<string, SuburbData> = {
   'burnside-heights': {
     name: 'Burnside Heights',
     postcode: '3023',
-    blurb: 'As an established residential suburb next to Burnside and Caroline Springs, Burnside Heights is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As an established residential suburb next to Burnside and Caroline Springs, Burnside Heights is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[8],
   },
   'brookfield': {
@@ -143,7 +143,7 @@ export const suburbs: Record<string, SuburbData> = {
   'melton-south': {
     name: 'Melton South',
     postcode: '3338',
-    blurb: 'As an established residential suburb forming the southern half of the Melton township, Melton South is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As an established residential suburb forming the southern half of the Melton township, Melton South is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[2],
   },
   'weir-views': {
@@ -167,7 +167,7 @@ export const suburbs: Record<string, SuburbData> = {
   'taylors-lakes': {
     name: 'Taylors Lakes',
     postcode: '3038',
-    blurb: 'As a well-established family suburb around Taylors Lakes Village, Taylors Lakes is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As a well-established family suburb around Taylors Lakes Village, Taylors Lakes is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[6],
   },
   'watergardens': {
@@ -191,7 +191,7 @@ export const suburbs: Record<string, SuburbData> = {
   'delahey': {
     name: 'Delahey',
     postcode: '3037',
-    blurb: 'As an established family suburb centred on the Delahey Community Centre, Delahey is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As an established family suburb centred on the Delahey Community Centre, Delahey is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[0],
   },
   'hillside': {
@@ -215,7 +215,7 @@ export const suburbs: Record<string, SuburbData> = {
   'kurunjang': {
     name: 'Kurunjang',
     postcode: '3337',
-    blurb: 'As an established residential pocket within Melton, Kurunjang is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As an established residential pocket within Melton, Kurunjang is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[4],
   },
   'melton': {
@@ -239,7 +239,7 @@ export const suburbs: Record<string, SuburbData> = {
   'cairnlea': {
     name: 'Cairnlea',
     postcode: '3023',
-    blurb: 'As a master-planned suburb built around Cairnlea Park and its lake, Cairnlea is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As a master-planned suburb built around Cairnlea Park and its lake, Cairnlea is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[8],
   },
   'caroline-springs': {
@@ -263,7 +263,7 @@ export const suburbs: Record<string, SuburbData> = {
   'albanvale': {
     name: 'Albanvale',
     postcode: '3021',
-    blurb: 'As an established, multicultural residential suburb near St Albans, Albanvale is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As an established, multicultural residential suburb near St Albans, Albanvale is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[2],
   },
   'kealba': {
@@ -287,7 +287,7 @@ export const suburbs: Record<string, SuburbData> = {
   'harkness': {
     name: 'Harkness',
     postcode: '3337',
-    blurb: 'As one of Melton\'s newest master-planned communities, Harkness is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As one of Melton\'s newest master-planned communities, Harkness is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[6],
   },
   'keilor': {
@@ -311,7 +311,7 @@ export const suburbs: Record<string, SuburbData> = {
   'laverton-north': {
     name: 'Laverton North',
     postcode: '3026',
-    blurb: 'As a mixed industrial and residential suburb in Melbourne\'s west, Laverton North is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As a mixed industrial and residential suburb in Melbourne\'s west, Laverton North is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[0],
   },
   'albion': {
@@ -335,7 +335,7 @@ export const suburbs: Record<string, SuburbData> = {
   'sunshine-north': {
     name: 'Sunshine North',
     postcode: '3020',
-    blurb: 'As an established residential suburb north of the Sunshine town centre, Sunshine North is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As an established residential suburb north of the Sunshine town centre, Sunshine North is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[4],
   },
   'sunshine-west': {
@@ -359,7 +359,7 @@ export const suburbs: Record<string, SuburbData> = {
   'keilor-park': {
     name: 'Keilor Park',
     postcode: '3042',
-    blurb: 'As an established residential suburb near Keilor East, Keilor Park is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As an established residential suburb near Keilor East, Keilor Park is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[8],
   },
   'niddrie': {
@@ -383,7 +383,7 @@ export const suburbs: Record<string, SuburbData> = {
   'braybrook': {
     name: 'Braybrook',
     postcode: '3019',
-    blurb: 'As an established, multicultural suburb near the Maribyrnong River, Braybrook is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As an established, multicultural suburb near the Maribyrnong River, Braybrook is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[2],
   },
   'manor-lakes': {
@@ -407,7 +407,7 @@ export const suburbs: Record<string, SuburbData> = {
   'kingsville': {
     name: 'Kingsville',
     postcode: '3012',
-    blurb: 'As a heritage suburb near Yarraville and Seddon, Kingsville is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As a heritage suburb near Yarraville and Seddon, Kingsville is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[6],
   },
   'maidstone': {
@@ -431,7 +431,7 @@ export const suburbs: Record<string, SuburbData> = {
   'gowanbrae': {
     name: 'Gowanbrae',
     postcode: '3043',
-    blurb: 'As a newer suburb near Gladstone Park built around a golf course community, Gowanbrae is one of the growing number of Western Melbourne suburbs we service directly from our Deanside base. Residential, commercial, end of lease and deep cleaning — all covered.',
+    blurb: 'As a newer suburb near Gladstone Park built around a golf course community, Gowanbrae is one of the growing number of Western Melbourne suburbs we service directly from our Melbourne base. Residential, commercial, end of lease and deep cleaning — all covered.',
     testimonial: reviews[0],
   },
   'tullamarine': {

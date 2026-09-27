@@ -128,7 +128,7 @@ export default function BlogPostPage({ params }: Props) {
 
             <div className="my-10 bg-brand-green-light rounded-4xl p-7 border border-brand-green/20">
               <p className="font-heading font-800 text-dark-text text-xl mb-2">Need a Professional Cleaner?</p>
-              <p className="text-body-text mb-5">Get a free, no-obligation quote from Deanside&apos;s trusted cleaning team.</p>
+              <p className="text-body-text mb-5">Get a free, no-obligation quote from Melbourne&apos;s trusted cleaning team.</p>
               <Button3D href="/get-a-quote" size="sm">Get a Free Quote →</Button3D>
             </div>
 
@@ -148,7 +148,7 @@ export default function BlogPostPage({ params }: Props) {
               </div>
               <div>
                 <p className="font-heading font-800 text-dark-text text-lg">{post.author}</p>
-                <p className="text-body-text text-sm">UDAY Cleaning Team | Deanside&apos;s trusted cleaning professionals since 2014.</p>
+                <p className="text-body-text text-sm">UDAY Cleaning Team | Melbourne&apos;s trusted cleaning professionals since 2014.</p>
               </div>
             </div>
           </article>
@@ -158,7 +158,7 @@ export default function BlogPostPage({ params }: Props) {
             {/* CTA Card */}
             <div className="bg-brand-green rounded-4xl p-6 text-white">
               <p className="font-heading font-800 text-xl mb-2">Book a Clean</p>
-              <p className="text-white/80 text-sm mb-4">Get a free quote from Deanside&apos;s top-rated cleaners.</p>
+              <p className="text-white/80 text-sm mb-4">Get a free quote from Melbourne&apos;s top-rated cleaners.</p>
               <Button3D href="/get-a-quote" variant="yellow" size="sm">Get a Quote</Button3D>
             </div>
 

@@ -20,7 +20,7 @@ const images = [
   { id: 7,  src: '/images/gallery/bathroom-clean-1.jpg',    alt: 'End of lease bathroom — bond back ready',       category: 'End of Lease', location: 'Laverton',         service: 'End of Lease' },
   { id: 8,  src: '/images/gallery/bathroom-clean-2.jpg',    alt: 'Sparkling bathroom after end of lease clean',   category: 'End of Lease', location: 'Altona Meadows',   service: 'End of Lease' },
   { id: 9,  src: '/images/gallery/balcony-clean.jpg',       alt: 'CBD apartment balcony cleaned for inspection',  category: 'End of Lease', location: 'Melbourne CBD',    service: 'End of Lease' },
-  { id: 10, src: '/images/gallery/oven-clean-2.jpg',        alt: 'Thoroughly cleaned oven interior',              category: 'Deep Clean',   location: 'Deanside',         service: 'Oven Deep Clean' },
+  { id: 10, src: '/images/gallery/oven-clean-2.jpg',        alt: 'Thoroughly cleaned oven interior',              category: 'Deep Clean',   location: 'Melbourne',         service: 'Oven Deep Clean' },
   { id: 11, src: '/images/gallery/timber-floor.jpg',        alt: 'Polished timber floors gleaming after clean',   category: 'Residential',  location: 'Williamstown',     service: 'Deep Clean' },
 ]
 

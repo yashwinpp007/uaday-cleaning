@@ -8,7 +8,7 @@ export default function LocalBusinessSchema() {
         '@type': 'LocalBusiness',
         '@id': `${SITE_URL}/#business`,
         name: 'UDAY Cleaning',
-        description: 'Professional residential, commercial and end of lease cleaning services in Deanside, VIC.',
+        description: 'Professional residential, commercial and end of lease cleaning services in Melbourne, VIC.',
         url: SITE_URL,
         telephone: BUSINESS_PHONE_E164,
         email: BUSINESS_EMAIL,
@@ -40,7 +40,7 @@ export default function LocalBusinessSchema() {
         },
         areaServed: [
           'Truganina', 'Hoppers Crossing', 'Werribee', 'Tarneit', 'Point Cook',
-          'Laverton', 'Altona Meadows', 'Williams Landing', 'Deanside',
+          'Laverton', 'Altona Meadows', 'Williams Landing', 'Melbourne',
         ],
         hasOfferCatalog: {
           '@type': 'OfferCatalog',

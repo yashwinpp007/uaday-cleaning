@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: 'What areas do you service?',
-    answer: 'We service all of Deanside and surrounding suburbs including Truganina, Hoppers Crossing, Werribee, Tarneit, Point Cook, Laverton, Altona Meadows, Williams Landing, and more.',
+    answer: 'We service all of Melbourne and surrounding suburbs including Truganina, Hoppers Crossing, Werribee, Tarneit, Point Cook, Laverton, Altona Meadows, Williams Landing, and more.',
   },
 ]
 

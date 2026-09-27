@@ -30,7 +30,7 @@ export default function FinalCTA() {
             Ready for a<br />Spotless Home?
           </h2>
           <p className="text-white/80 text-lg mb-10 max-w-xl mx-auto">
-            Join 500+ satisfied customers across Deanside. Get your free, no-obligation quote today.
+            Join 500+ satisfied customers across Melbourne. Get your free, no-obligation quote today.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-5">

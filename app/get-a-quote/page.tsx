@@ -4,9 +4,9 @@ import HubSpotForm from '@/components/ui/HubSpotForm'
 import { BUSINESS_RATING, BUSINESS_REVIEW_COUNT } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Get a Free Quote | Deanside',
+  title: 'Get a Free Quote | Melbourne',
   description:
-    'Get a free, no-obligation cleaning quote from UDAY Cleaning. Residential, commercial and end of lease cleaning in Deanside and surrounding suburbs.',
+    'Get a free, no-obligation cleaning quote from UDAY Cleaning. Residential, commercial and end of lease cleaning in Melbourne and surrounding suburbs.',
   alternates: { canonical: 'https://udaycleaning.com.au/get-a-quote' },
 }
 

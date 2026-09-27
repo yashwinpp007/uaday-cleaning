@@ -3,8 +3,8 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import HubSpotForm from '@/components/ui/HubSpotForm'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Deanside VIC',
-  description: 'Get in touch with UDAY Cleaning. Call, email or send us a message. Servicing Deanside and surrounding suburbs.',
+  title: 'Contact Us | Melbourne VIC',
+  description: 'Get in touch with UDAY Cleaning. Call, email or send us a message. Servicing Melbourne and surrounding suburbs.',
   alternates: { canonical: 'https://udaycleaning.com.au/contact' },
 }
 
@@ -107,7 +107,7 @@ export default function ContactPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="UDAY Cleaning location in Deanside"
+              title="UDAY Cleaning location in Melbourne"
             />
           </div>
         </div>

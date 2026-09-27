@@ -5,8 +5,8 @@ import { reviews } from '@/lib/data/reviews'
 import { BUSINESS_RATING, BUSINESS_REVIEW_COUNT, GOOGLE_REVIEW_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Customer Testimonials & Reviews | Deanside',
-  description: `Read real customer reviews for UDAY Cleaning. ${BUSINESS_RATING}/5 rating from ${BUSINESS_REVIEW_COUNT} Google reviews across Deanside. See why families and businesses trust us.`,
+  title: 'Customer Testimonials & Reviews | Melbourne',
+  description: `Read real customer reviews for UDAY Cleaning. ${BUSINESS_RATING}/5 rating from ${BUSINESS_REVIEW_COUNT} Google reviews across Melbourne. See why families and businesses trust us.`,
   alternates: { canonical: 'https://udaycleaning.com.au/testimonials' },
 }
 
@@ -54,7 +54,7 @@ export default function TestimonialsPage() {
             <span className="font-heading font-900 text-dark-text text-5xl">{BUSINESS_RATING}</span>
             <span className="text-body-text text-lg">/ 5</span>
           </div>
-          <p className="text-body-text text-lg">Based on {BUSINESS_REVIEW_COUNT} verified Google reviews from Deanside families and businesses</p>
+          <p className="text-body-text text-lg">Based on {BUSINESS_REVIEW_COUNT} verified Google reviews from Melbourne families and businesses</p>
         </div>
       </section>
 
@@ -96,7 +96,7 @@ export default function TestimonialsPage() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <div className="bg-brand-green-light rounded-5xl p-10">
             <h2 className="font-heading font-900 text-dark-text text-3xl mb-4">Happy with Our Service?</h2>
-            <p className="text-body-text mb-6">We&apos;d be so grateful if you shared your experience. Your review helps other Deanside families find trusted cleaners.</p>
+            <p className="text-body-text mb-6">We&apos;d be so grateful if you shared your experience. Your review helps other Melbourne families find trusted cleaners.</p>
             <a
               href={GOOGLE_REVIEW_URL}
               target="_blank"

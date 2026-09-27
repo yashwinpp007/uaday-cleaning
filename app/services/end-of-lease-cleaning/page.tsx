@@ -10,9 +10,9 @@ import ServiceSchema from '@/components/schema/ServiceSchema'
 import BreadcrumbSchema from '@/components/schema/BreadcrumbSchema'
 
 export const metadata: Metadata = {
-  title: 'End of Lease Cleaning Deanside — Bond Back Guaranteed',
+  title: 'End of Lease Cleaning Melbourne — Bond Back Guaranteed',
   description:
-    'End of lease cleaning in Deanside with a 100% bond-back guarantee. REIV-aligned checklists, carpet steam add-on available. Book at least 48hrs before inspection.',
+    'End of lease cleaning in Melbourne with a 100% bond-back guarantee. REIV-aligned checklists, carpet steam add-on available. Book at least 48hrs before inspection.',
   alternates: { canonical: 'https://udaycleaning.com.au/services/end-of-lease-cleaning' },
 }
 
@@ -44,8 +44,8 @@ export default function EndOfLeasePage() {
   return (
     <>
       <ServiceSchema
-        name="End of Lease Cleaning Deanside"
-        description="Bond-back guaranteed end of lease cleaning in Deanside. REIV-aligned checklists."
+        name="End of Lease Cleaning Melbourne"
+        description="Bond-back guaranteed end of lease cleaning in Melbourne. REIV-aligned checklists."
         url="https://udaycleaning.com.au/services/end-of-lease-cleaning"
       />
       <FAQSchema items={faqs} />
@@ -75,7 +75,7 @@ export default function EndOfLeasePage() {
               </div>
 
               <h1 className="font-heading font-900 text-dark-text text-5xl md:text-6xl mb-5 leading-tight">
-                End of Lease Cleaning Deanside — Bond Back Guaranteed
+                End of Lease Cleaning Melbourne — Bond Back Guaranteed
               </h1>
               <p className="text-body-text text-lg leading-relaxed mb-8">
                 Moving out? Our REIV-aligned end of lease cleaning service ensures your property meets every inspection standard — or we re-clean for free until you get your full bond back.
@@ -91,7 +91,7 @@ export default function EndOfLeasePage() {
               {/* TODO: Replace with real EOL cleaning photo */}
               <Image
                 src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600&h=500&fit=crop"
-                alt="End of lease cleaning service Deanside"
+                alt="End of lease cleaning service Melbourne"
                 width={600}
                 height={500}
                 className="rounded-4xl shadow-2xl object-cover w-full"

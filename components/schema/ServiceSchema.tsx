@@ -17,7 +17,7 @@ export default function ServiceSchema({ name, description, url, areaServed }: Se
       name: 'UDAY Cleaning',
       url: 'https://udaycleaning.com.au',
     },
-    areaServed: areaServed ?? ['Deanside', 'Truganina', 'Hoppers Crossing', 'Werribee', 'Tarneit', 'Point Cook'],
+    areaServed: areaServed ?? ['Melbourne', 'Truganina', 'Hoppers Crossing', 'Werribee', 'Tarneit', 'Point Cook'],
     serviceType: 'Cleaning Service',
   }
 

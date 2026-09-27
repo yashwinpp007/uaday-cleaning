@@ -55,7 +55,7 @@ export default function ServiceAreas() {
         >
           <span className="inline-block bg-brand-green-light text-brand-green font-semibold text-sm px-4 py-2 rounded-full mb-4">Coverage Area</span>
           <h2 className="font-heading font-900 text-dark-text text-4xl md:text-5xl mb-4">
-            Serving Deanside<br />& Surrounding Suburbs
+            Serving Melbourne<br />& Surrounding Suburbs
           </h2>
         </motion.div>
 
@@ -75,7 +75,7 @@ export default function ServiceAreas() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="UDAY Cleaning service areas in Deanside"
+              title="UDAY Cleaning service areas in Melbourne"
             />
           </motion.div>
 

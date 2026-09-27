@@ -7,9 +7,9 @@ import FinalCTA from '@/components/sections/FinalCTA'
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Cleaning Tips & Blog | Deanside',
+  title: 'Cleaning Tips & Blog | Melbourne',
   description:
-    'Expert cleaning tips, end of lease guides, and home care advice from Deanside\'s professional cleaners. Read the UDAY Cleaning blog.',
+    'Expert cleaning tips, end of lease guides, and home care advice from Melbourne\'s professional cleaners. Read the UDAY Cleaning blog.',
   alternates: { canonical: 'https://udaycleaning.com.au/blog' },
 }
 

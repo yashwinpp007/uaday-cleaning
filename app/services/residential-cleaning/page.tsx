@@ -10,9 +10,9 @@ import ServiceSchema from '@/components/schema/ServiceSchema'
 import BreadcrumbSchema from '@/components/schema/BreadcrumbSchema'
 
 export const metadata: Metadata = {
-  title: 'Residential Cleaning Services Deanside',
+  title: 'Residential Cleaning Services Melbourne',
   description:
-    'Professional residential cleaning services in Deanside. Regular weekly, fortnightly & one-off cleans. Eco-friendly products, fully insured. Book online today.',
+    'Professional residential cleaning services in Melbourne. Regular weekly, fortnightly & one-off cleans. Eco-friendly products, fully insured. Book online today.',
   alternates: { canonical: 'https://udaycleaning.com.au/services/residential-cleaning' },
 }
 
@@ -40,8 +40,8 @@ export default function ResidentialCleaningPage() {
   return (
     <>
       <ServiceSchema
-        name="Residential Cleaning Deanside"
-        description="Professional residential cleaning services in Deanside. Regular weekly, fortnightly and one-off cleans with eco-friendly products."
+        name="Residential Cleaning Melbourne"
+        description="Professional residential cleaning services in Melbourne. Regular weekly, fortnightly and one-off cleans with eco-friendly products."
         url="https://udaycleaning.com.au/services/residential-cleaning"
       />
       <FAQSchema items={faqs} />
@@ -65,10 +65,10 @@ export default function ResidentialCleaningPage() {
               </div>
               <span className="inline-flex items-center gap-2 bg-brand-green-light border border-brand-green/20 rounded-full px-4 py-2 mb-5">
                 <span className="w-2 h-2 bg-brand-green rounded-full" />
-                <span className="text-brand-green font-semibold text-sm">Deanside&apos;s #1 Home Cleaners</span>
+                <span className="text-brand-green font-semibold text-sm">Melbourne&apos;s #1 Home Cleaners</span>
               </span>
               <h1 className="font-heading font-900 text-dark-text text-5xl md:text-6xl mb-5 leading-tight">
-                Residential Cleaning Services Deanside
+                Residential Cleaning Services Melbourne
               </h1>
               <p className="text-body-text text-lg leading-relaxed mb-8">
                 We offer professional residential cleaning services tailored to your home and lifestyle. Whether you need a regular clean to keep on top of things, or a one-off tidy before guests arrive — our trusted, insured team has you covered.
@@ -84,7 +84,7 @@ export default function ResidentialCleaningPage() {
               {/* TODO: Replace with real residential clean photo */}
               <Image
                 src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=500&fit=crop"
-                alt="Professionally cleaned home in Deanside"
+                alt="Professionally cleaned home in Melbourne"
                 width={600}
                 height={500}
                 className="rounded-4xl shadow-2xl object-cover w-full"

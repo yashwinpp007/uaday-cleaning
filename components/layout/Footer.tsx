@@ -49,7 +49,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-white/70 text-sm leading-relaxed">
-              Deanside&apos;s trusted cleaning professionals. Eco-friendly, fully insured, and dedicated to making your space sparkle.
+              Melbourne&apos;s trusted cleaning professionals. Eco-friendly, fully insured, and dedicated to making your space sparkle.
             </p>
           </div>
 

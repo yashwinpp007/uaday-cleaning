@@ -10,9 +10,9 @@ import ServiceSchema from '@/components/schema/ServiceSchema'
 import BreadcrumbSchema from '@/components/schema/BreadcrumbSchema'
 
 export const metadata: Metadata = {
-  title: 'Deep Cleaning Service Deanside',
+  title: 'Deep Cleaning Service Melbourne',
   description:
-    'Professional deep cleaning services in Deanside. Thorough room-by-room cleans, eco-friendly products. Perfect for spring cleans, post-renovation or pre-sale. Book online.',
+    'Professional deep cleaning services in Melbourne. Thorough room-by-room cleans, eco-friendly products. Perfect for spring cleans, post-renovation or pre-sale. Book online.',
   alternates: { canonical: 'https://udaycleaning.com.au/services/deep-cleaning' },
 }
 
@@ -46,8 +46,8 @@ export default function DeepCleaningPage() {
   return (
     <>
       <ServiceSchema
-        name="Deep Cleaning Service Deanside"
-        description="Professional deep cleaning services in Deanside. Thorough room-by-room cleans with eco-friendly products."
+        name="Deep Cleaning Service Melbourne"
+        description="Professional deep cleaning services in Melbourne. Thorough room-by-room cleans with eco-friendly products."
         url="https://udaycleaning.com.au/services/deep-cleaning"
       />
       <FAQSchema items={faqs} />
@@ -74,7 +74,7 @@ export default function DeepCleaningPage() {
                 <span className="text-amber-700 font-semibold text-sm">The Ultimate Spring Clean</span>
               </span>
               <h1 className="font-heading font-900 text-dark-text text-5xl md:text-6xl mb-5 leading-tight">
-                Deep Cleaning Service Deanside
+                Deep Cleaning Service Melbourne
               </h1>
               <p className="text-body-text text-lg leading-relaxed mb-4">
                 A deep clean is a thorough, top-to-bottom cleaning service that goes far beyond a standard maintenance clean. Our team works room-by-room to tackle built-up grime, appliance interiors, grout lines, and hard-to-reach areas — leaving your home completely refreshed.
@@ -93,7 +93,7 @@ export default function DeepCleaningPage() {
               {/* TODO: Replace with real deep clean photo */}
               <Image
                 src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=500&fit=crop"
-                alt="Professional deep spring cleaning service Deanside"
+                alt="Professional deep spring cleaning service Melbourne"
                 width={600}
                 height={500}
                 className="rounded-4xl shadow-2xl object-cover w-full"
