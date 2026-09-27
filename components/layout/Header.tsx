@@ -5,15 +5,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, ChevronDown, Home, Building2, Key, Sparkles, Phone } from 'lucide-react'
+import { Menu, X, ChevronDown, Phone } from 'lucide-react'
 import Button3D from '@/components/ui/Button3D'
-
-const services = [
-  { name: 'Residential Cleaning', href: '/services/residential-cleaning', icon: Home, desc: 'Regular home cleaning services' },
-  { name: 'Commercial Cleaning', href: '/services/commercial-cleaning', icon: Building2, desc: 'Office & business cleaning' },
-  { name: 'End of Lease Cleaning', href: '/services/end-of-lease-cleaning', icon: Key, desc: 'Bond-back guaranteed cleans' },
-  { name: 'Deep Cleaning', href: '/services/deep-cleaning', icon: Sparkles, desc: 'Thorough spring cleans' },
-]
+import { serviceMenu } from '@/lib/data/service-menu'
+import { serviceIcons } from '@/lib/data/service-icons'
 
 const navLinks = [
   { name: 'Home', href: '/' },
@@ -29,6 +24,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
+  const [mobileCategory, setMobileCategory] = useState<string | null>(null)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -51,7 +47,7 @@ export default function Header() {
         <div
           className={`bg-white/90 backdrop-blur-xl border border-light-border transition-all duration-300 ${
             scrolled ? 'rounded-2xl shadow-lg' : 'rounded-3xl shadow-md'
-          } px-6 py-2 flex items-center justify-between`}
+          } relative px-6 py-2 flex items-center justify-between`}
         >
           {/* Logo */}
           <Link href="/" className="flex items-center group">
@@ -71,7 +67,6 @@ export default function Header() {
               link.hasDropdown ? (
                 <div
                   key={link.name}
-                  className="relative"
                   onMouseEnter={() => setServicesOpen(true)}
                   onMouseLeave={() => setServicesOpen(false)}
                 >
@@ -85,31 +80,56 @@ export default function Header() {
                   <AnimatePresence>
                     {servicesOpen && (
                       <motion.div
-                        initial={{ opacity: 0, y: 8, scale: 0.95 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        exit={{ opacity: 0, y: 8, scale: 0.95 }}
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 8 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 bg-white rounded-3xl shadow-card-hover border border-light-border p-3 z-50"
+                        className="absolute top-full left-0 right-0 pt-3 z-50"
                       >
-                        {services.map((service) => (
-                          <Link
-                            key={service.href}
-                            href={service.href}
-                            className="flex items-center gap-3 p-3 rounded-2xl hover:bg-brand-green-light group transition-colors"
-                          >
-                            <div className="w-10 h-10 bg-brand-green-light rounded-xl flex items-center justify-center group-hover:bg-brand-green group-hover:text-white transition-colors">
-                              <service.icon className="w-5 h-5 text-brand-green group-hover:text-white" />
-                            </div>
-                            <div>
-                              <p className="text-sm font-semibold text-dark-text">{service.name}</p>
-                              <p className="text-xs text-body-text">{service.desc}</p>
-                            </div>
-                          </Link>
-                        ))}
-                        <div className="mt-2 pt-2 border-t border-light-border">
-                          <Link href="/services" className="flex items-center justify-center gap-2 p-2 rounded-xl text-sm font-semibold text-brand-green hover:bg-brand-green-light transition-colors">
-                            View All Services →
-                          </Link>
+                        <div className="bg-white rounded-3xl shadow-card-hover border border-light-border p-6 max-h-[calc(100vh-8rem)] overflow-y-auto">
+                          <div className="grid grid-cols-4 gap-6">
+                            {serviceMenu.map((cat) => (
+                              <div key={cat.key}>
+                                <Link
+                                  href="/services"
+                                  className="block font-heading font-800 text-dark-text text-sm uppercase tracking-wide pb-2 mb-3 border-b-2 border-brand-green hover:text-brand-green transition-colors"
+                                >
+                                  {cat.label}
+                                </Link>
+                                <div className="space-y-4">
+                                  {cat.subCategories.map((sub) => (
+                                    <div key={sub.label}>
+                                      <p className="px-2 mb-1 text-xs font-semibold uppercase tracking-wider text-brand-green-dark">
+                                        {sub.label}
+                                      </p>
+                                      <ul>
+                                        {sub.services.map((sv) => {
+                                          const Icon = serviceIcons[sv.icon]
+                                          return (
+                                            <li key={sv.slug}>
+                                              <Link
+                                                href={`/services/${sv.slug}`}
+                                                onClick={() => setServicesOpen(false)}
+                                                className="flex items-center gap-2 px-2 py-1.5 rounded-lg text-sm text-body-text hover:bg-brand-green-light hover:text-brand-green transition-colors"
+                                              >
+                                                <Icon className="w-4 h-4 shrink-0 text-brand-green" />
+                                                {sv.name}
+                                              </Link>
+                                            </li>
+                                          )
+                                        })}
+                                      </ul>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                          <div className="mt-5 pt-3 border-t border-light-border text-center">
+                            <Link href="/services" onClick={() => setServicesOpen(false)} className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold text-brand-green hover:bg-brand-green-light transition-colors">
+                              View All Services →
+                            </Link>
+                          </div>
                         </div>
                       </motion.div>
                     )}
@@ -188,16 +208,45 @@ export default function Header() {
                     </Link>
                     {link.hasDropdown && (
                       <div className="ml-4 mt-1 space-y-1">
-                        {services.map((s) => (
-                          <Link
-                            key={s.href}
-                            href={s.href}
-                            className="flex items-center gap-3 px-4 py-2 rounded-xl text-sm text-body-text hover:text-brand-green hover:bg-brand-green-light transition-colors"
-                          >
-                            <s.icon className="w-4 h-4" />
-                            {s.name}
-                          </Link>
-                        ))}
+                        {serviceMenu.map((cat) => {
+                          const open = mobileCategory === cat.key
+                          return (
+                            <div key={cat.key}>
+                              <button
+                                onClick={() => setMobileCategory(open ? null : cat.key)}
+                                aria-expanded={open}
+                                className="flex w-full items-center justify-between px-4 py-2 rounded-xl text-sm font-semibold text-dark-text hover:bg-brand-green-light transition-colors"
+                              >
+                                {cat.label}
+                                <ChevronDown className={`w-4 h-4 transition-transform ${open ? 'rotate-180' : ''}`} />
+                              </button>
+                              {open && (
+                                <div className="ml-2 mb-2 space-y-2">
+                                  {cat.subCategories.map((sub) => (
+                                    <div key={sub.label}>
+                                      <p className="px-4 pt-1 text-xs font-semibold uppercase tracking-wider text-brand-green-dark">
+                                        {sub.label}
+                                      </p>
+                                      {sub.services.map((sv) => {
+                                        const Icon = serviceIcons[sv.icon]
+                                        return (
+                                          <Link
+                                            key={sv.slug}
+                                            href={`/services/${sv.slug}`}
+                                            className="flex items-center gap-3 px-4 py-2 rounded-xl text-sm text-body-text hover:text-brand-green hover:bg-brand-green-light transition-colors"
+                                          >
+                                            <Icon className="w-4 h-4 shrink-0" />
+                                            {sv.name}
+                                          </Link>
+                                        )
+                                      })}
+                                    </div>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
+                          )
+                        })}
                       </div>
                     )}
                   </div>
