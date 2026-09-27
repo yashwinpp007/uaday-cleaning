@@ -1,27 +1,16 @@
 import type { Metadata } from 'next'
 import { Star, Quote, ExternalLink } from 'lucide-react'
 import FinalCTA from '@/components/sections/FinalCTA'
+import { reviews } from '@/lib/data/reviews'
 import { BUSINESS_RATING, BUSINESS_REVIEW_COUNT, GOOGLE_REVIEW_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Customer Testimonials & Reviews | Deanside',
-  description: `Read real customer reviews for UDAY Cleaning. ${BUSINESS_RATING}/5 rating from ${BUSINESS_REVIEW_COUNT}+ Google reviews across Deanside. See why families and businesses trust us.`,
+  description: `Read real customer reviews for UDAY Cleaning. ${BUSINESS_RATING}/5 rating from ${BUSINESS_REVIEW_COUNT} Google reviews across Deanside. See why families and businesses trust us.`,
   alternates: { canonical: 'https://udaycleaning.com.au/testimonials' },
 }
 
-const testimonials = [
-  { name: 'Sarah M.', suburb: 'Tarneit', stars: 5, service: 'End of Lease', quote: 'Absolutely amazing service! Got our full bond back with no issues. The team was punctual, thorough, and so professional. Highly recommend to anyone moving out.' },
-  { name: 'James L.', suburb: 'Point Cook', stars: 5, service: 'End of Lease', quote: 'Used UDAY for our end of lease clean and got our full bond back first try. The attention to detail was incredible — they even cleaned the tracks of the sliding doors!' },
-  { name: 'Emily R.', suburb: 'Werribee', stars: 5, service: 'Residential', quote: 'I love that they use eco-friendly products. My kids and pets are safe, and the house smells fresh without harsh chemicals. Best cleaning service in Werribee!' },
-  { name: 'Michael T.', suburb: 'Hoppers Crossing', stars: 5, service: 'Residential', quote: 'Regular fortnightly clean and they never miss a spot. Reliable, trustworthy, and always on time. We\'ve been with them for 3 years now.' },
-  { name: 'Anna K.', suburb: 'Truganina', stars: 5, service: 'Deep Clean', quote: 'The deep clean they did before Christmas was outstanding. Even the oven looked brand new. I had no idea how dirty it had gotten — now it\'s spotless!' },
-  { name: 'David W.', suburb: 'Laverton', stars: 5, service: 'Commercial', quote: 'Professional, thorough, and incredibly friendly. Our office has never looked better — staff morale has genuinely improved. Worth every dollar.' },
-  { name: 'Lisa P.', suburb: 'Altona Meadows', stars: 5, service: 'Residential', quote: 'Same-day booking was a lifesaver. They arrived within 2 hours and left the place spotless. I was hosting guests that evening and they saved me completely.' },
-  { name: 'Tom B.', suburb: 'Williams Landing', stars: 5, service: 'End of Lease', quote: 'Second time using UDAY for end of lease. Got my bond back both times! The checklist they follow is incredibly thorough. Wouldn\'t use anyone else.' },
-  { name: 'Grace N.', suburb: 'Deer Park', stars: 5, service: 'Residential', quote: 'Such a lovely team of cleaners. They go above and beyond every single time. My house is always gleaming when they\'re done. I genuinely look forward to cleaning day!' },
-  { name: 'Sivananthakumar J.', suburb: 'Melbourne', stars: 5, service: 'Residential', quote: 'We hired this people for our house cleaning. They did really a good job. I would recommend for their service and the owner Uthay is very easy to communicate and reliable guy.' },
-  { name: 'Ben Walsh', suburb: 'Melbourne', stars: 5, service: 'Residential', quote: 'Reliable and trustworthy people. Highly recommended.' },
-]
+const testimonials = reviews
 
 const aggregateSchema = {
   '@context': 'https://schema.org',
@@ -65,7 +54,7 @@ export default function TestimonialsPage() {
             <span className="font-heading font-900 text-dark-text text-5xl">{BUSINESS_RATING}</span>
             <span className="text-body-text text-lg">/ 5</span>
           </div>
-          <p className="text-body-text text-lg">Based on {BUSINESS_REVIEW_COUNT}+ verified Google reviews from Deanside families and businesses</p>
+          <p className="text-body-text text-lg">Based on {BUSINESS_REVIEW_COUNT} verified Google reviews from Deanside families and businesses</p>
         </div>
       </section>
 
@@ -89,10 +78,12 @@ export default function TestimonialsPage() {
                     </div>
                     <div>
                       <p className="font-heading font-700 text-dark-text text-sm">{t.name}</p>
-                      <p className="text-body-text text-xs">{t.suburb}</p>
+                      <p className="text-body-text text-xs">Google Review</p>
                     </div>
                   </div>
-                  <span className="bg-brand-green-light text-brand-green text-xs font-semibold px-3 py-1 rounded-full">{t.service}</span>
+                  {t.service && (
+                    <span className="bg-brand-green-light text-brand-green text-xs font-semibold px-3 py-1 rounded-full">{t.service}</span>
+                  )}
                 </div>
               </div>
             ))}

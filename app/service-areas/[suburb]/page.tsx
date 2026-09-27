@@ -138,7 +138,7 @@ export default function SuburbPage({ params }: Props) {
               </div>
               <div>
                 <p className="font-heading font-700 text-dark-text">{data.testimonial.name}</p>
-                <p className="text-body-text text-xs">{data.name} resident</p>
+                <p className="text-body-text text-xs">Google Review</p>
               </div>
             </div>
           </div>

@@ -106,7 +106,7 @@ export default function HeroSection() {
                 </div>
                 <div>
                   <p className="font-heading font-800 text-dark-text text-xl leading-none">{BUSINESS_RATING}/5</p>
-                  <p className="text-body-text text-xs">{BUSINESS_REVIEW_COUNT}+ Reviews</p>
+                  <p className="text-body-text text-xs">{BUSINESS_REVIEW_COUNT} Reviews</p>
                 </div>
               </div>
               <div className="flex gap-1 mt-2">

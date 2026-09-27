@@ -4,18 +4,9 @@ import { useRef } from 'react'
 import { motion } from 'framer-motion'
 import { Star, Quote } from 'lucide-react'
 import SectionWrapper from '@/components/ui/SectionWrapper'
+import { reviews } from '@/lib/data/reviews'
 
-const testimonials = [
-  { name: 'Sarah M.', suburb: 'Tarneit', stars: 5, quote: 'Absolutely amazing service! Our home has never looked this clean. The team was punctual, thorough, and so professional.' },
-  { name: 'James L.', suburb: 'Point Cook', stars: 5, quote: 'Used UDAY for our end of lease clean and got our full bond back. The attention to detail was incredible — worth every cent.' },
-  { name: 'Emily R.', suburb: 'Werribee', stars: 5, quote: 'I love that they use eco-friendly products. My kids and pets are safe and the house smells fresh without harsh chemicals.' },
-  { name: 'Michael T.', suburb: 'Hoppers Crossing', stars: 5, quote: 'Regular fortnightly clean and they never miss a spot. Reliable, trustworthy, and always on time. Highly recommend!' },
-  { name: 'Anna K.', suburb: 'Truganina', stars: 5, quote: 'The deep clean they did before Christmas was outstanding. Even the oven looked brand new. Will definitely book again.' },
-  { name: 'David W.', suburb: 'Laverton', stars: 5, quote: 'Professional, thorough, and incredibly friendly. Our office has never been cleaner — staff morale has genuinely improved!' },
-  { name: 'Lisa P.', suburb: 'Altona Meadows', stars: 5, quote: 'Same-day booking was a lifesaver. They arrived within 2 hours and left the place spotless. Brilliant service!' },
-  { name: 'Sivananthakumar J.', suburb: 'Melbourne', stars: 5, quote: 'We hired this people for our house cleaning. They did really a good job. The owner Uthay is very easy to communicate and reliable.' },
-  { name: 'Ben Walsh', suburb: 'Melbourne', stars: 5, quote: 'Reliable and trustworthy people. Highly recommended.' },
-]
+const testimonials = reviews
 
 function StarRating({ count }: { count: number }) {
   return (
@@ -66,7 +57,7 @@ export default function TestimonialsCarousel() {
             viewport={{ once: true }}
             transition={{ delay: (i % testimonials.length) * 0.1 }}
             whileHover={{ scale: 1.02, y: -4 }}
-            className="flex-shrink-0 w-80 bg-white rounded-5xl p-7 shadow-card"
+            className="flex-shrink-0 w-80 md:w-96 bg-white rounded-5xl p-7 shadow-card"
           >
             <StarRating count={t.stars} />
             <Quote className="w-8 h-8 text-brand-green/20 mt-3 mb-2" />
@@ -77,7 +68,7 @@ export default function TestimonialsCarousel() {
               </div>
               <div>
                 <p className="font-heading font-700 text-dark-text text-sm">{t.name}</p>
-                <p className="text-body-text text-xs">{t.suburb}</p>
+                <p className="text-body-text text-xs">Google Review</p>
               </div>
             </div>
           </motion.div>

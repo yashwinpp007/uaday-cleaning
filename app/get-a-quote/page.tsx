@@ -34,7 +34,7 @@ export default function GetAQuotePage() {
                 {[
                   { icon: Shield, text: 'Fully Insured & Police Checked' },
                   { icon: CheckCircle, text: 'Bond-Back Guarantee' },
-                  { icon: Star, text: `${BUSINESS_RATING}/5 Rating — ${BUSINESS_REVIEW_COUNT}+ Reviews` },
+                  { icon: Star, text: `${BUSINESS_RATING}/5 Rating — ${BUSINESS_REVIEW_COUNT} Reviews` },
                   { icon: CheckCircle, text: 'Eco-Friendly Products' },
                   { icon: CheckCircle, text: 'No Lock-In Contracts' },
                 ].map((item) => (
