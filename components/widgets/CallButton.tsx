@@ -7,7 +7,7 @@ export default function CallButton() {
   return (
     <a
       href={`tel:${BUSINESS_PHONE_E164}`}
-      aria-label={`Call UDAY Cleaning on ${BUSINESS_PHONE}`}
+      aria-label={`Call Uday Cleaning on ${BUSINESS_PHONE}`}
       title={`Call ${BUSINESS_PHONE}`}
       className="fixed bottom-5 right-[5.75rem] z-50 flex items-center justify-center w-14 h-14 rounded-full bg-brand-green text-white shadow-card hover:bg-brand-green-dark transition-colors active:scale-95"
     >

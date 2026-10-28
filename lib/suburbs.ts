@@ -11,7 +11,7 @@ export const suburbs: Record<string, SuburbData> = {
   'truganina': {
     name: 'Truganina',
     postcode: '3029',
-    blurb: 'Truganina is one of Melbourne\'s fastest-growing suburbs, with many new homes and young families. UDAY Cleaning provides professional residential, commercial, and end of lease cleaning services throughout Truganina. Whether you\'re moving in, moving out, or just need a regular clean, we\'re here to help.',
+    blurb: 'Truganina is one of Melbourne\'s fastest-growing suburbs, with many new homes and young families. Uday Cleaning provides professional residential, commercial, and end of lease cleaning services throughout Truganina. Whether you\'re moving in, moving out, or just need a regular clean, we\'re here to help.',
     testimonial: reviews[0],
   },
   'hoppers-crossing': {
@@ -35,7 +35,7 @@ export const suburbs: Record<string, SuburbData> = {
   'point-cook': {
     name: 'Point Cook',
     postcode: '3030',
-    blurb: 'Point Cook is a popular family suburb on Melbourne\'s Werribee coast. UDAY Cleaning serves the Point Cook community with professional residential cleaning, end of lease cleaning, and commercial services.',
+    blurb: 'Point Cook is a popular family suburb on Melbourne\'s Werribee coast. Uday Cleaning serves the Point Cook community with professional residential cleaning, end of lease cleaning, and commercial services.',
     testimonial: reviews[4],
   },
   'laverton': {
@@ -59,13 +59,13 @@ export const suburbs: Record<string, SuburbData> = {
   'aintree': {
     name: 'Aintree',
     postcode: '3336',
-    blurb: 'Aintree is a newer estate suburb within the Rockbank growth corridor, part of the master-planned Grange community. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Aintree, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Aintree is a newer estate suburb within the Rockbank growth corridor, part of the master-planned Grange community. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Aintree, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[8],
   },
   'deanside': {
     name: 'Deanside',
     postcode: '3336',
-    blurb: 'Deanside is UDAY Cleaning\'s home suburb — we\'re literally around the corner, so scheduling and same-day availability here is at its best. Our fully insured team services Deanside regularly, covering everything from routine home cleans to bond-back end of lease jobs.',
+    blurb: 'Deanside is Uday Cleaning\'s home suburb — we\'re literally around the corner, so scheduling and same-day availability here is at its best. Our fully insured team services Deanside regularly, covering everything from routine home cleans to bond-back end of lease jobs.',
     testimonial: reviews[9],
   },
   'fraser-rise': {
@@ -83,7 +83,7 @@ export const suburbs: Record<string, SuburbData> = {
   'rockbank': {
     name: 'Rockbank',
     postcode: '3335',
-    blurb: 'Rockbank is a historic township turned booming growth suburb, serviced by Rockbank railway station and surrounded by new housing estates. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Rockbank, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Rockbank is a historic township turned booming growth suburb, serviced by Rockbank railway station and surrounded by new housing estates. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Rockbank, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[2],
   },
   'grangefields': {
@@ -107,7 +107,7 @@ export const suburbs: Record<string, SuburbData> = {
   'cobblebank': {
     name: 'Cobblebank',
     postcode: '3338',
-    blurb: 'Cobblebank is a fast-growing suburb centred around Cobblebank railway station in the Melton growth corridor. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Cobblebank, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Cobblebank is a fast-growing suburb centred around Cobblebank railway station in the Melton growth corridor. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Cobblebank, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[6],
   },
   'strathtulloh': {
@@ -131,7 +131,7 @@ export const suburbs: Record<string, SuburbData> = {
   'exford': {
     name: 'Exford',
     postcode: '3338',
-    blurb: 'Exford is a semi-rural residential area near Melton with larger blocks and acreage properties. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Exford, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Exford is a semi-rural residential area near Melton with larger blocks and acreage properties. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Exford, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[0],
   },
   'eynesbury': {
@@ -155,7 +155,7 @@ export const suburbs: Record<string, SuburbData> = {
   'keilor-downs': {
     name: 'Keilor Downs',
     postcode: '3038',
-    blurb: 'Keilor Downs is an established suburb centred around Keilor Downs Village shopping centre. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Keilor Downs, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Keilor Downs is an established suburb centred around Keilor Downs Village shopping centre. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Keilor Downs, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[4],
   },
   'keilor-lodge': {
@@ -179,7 +179,7 @@ export const suburbs: Record<string, SuburbData> = {
   'diggers-rest': {
     name: 'Diggers Rest',
     postcode: '3427',
-    blurb: 'Diggers Rest is a historic railway township on Melbourne\'s outer north-western fringe. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Diggers Rest, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Diggers Rest is a historic railway township on Melbourne\'s outer north-western fringe. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Diggers Rest, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[8],
   },
   'calder-park': {
@@ -203,7 +203,7 @@ export const suburbs: Record<string, SuburbData> = {
   'sydenham': {
     name: 'Sydenham',
     postcode: '3037',
-    blurb: 'Sydenham is a suburb built around Sydenham railway station, one of the west\'s major regional rail hubs. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Sydenham, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Sydenham is a suburb built around Sydenham railway station, one of the west\'s major regional rail hubs. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Sydenham, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[2],
   },
   'taylors-hill': {
@@ -227,7 +227,7 @@ export const suburbs: Record<string, SuburbData> = {
   'melton-west': {
     name: 'Melton West',
     postcode: '3337',
-    blurb: 'Melton West is the residential area west of Melton\'s town centre. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Melton West, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Melton West is the residential area west of Melton\'s town centre. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Melton West, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[6],
   },
   'burnside': {
@@ -251,7 +251,7 @@ export const suburbs: Record<string, SuburbData> = {
   'deer-park': {
     name: 'Deer Park',
     postcode: '3023',
-    blurb: 'Deer Park is an established suburb with its own shopping centre and train station. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Deer Park, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Deer Park is an established suburb with its own shopping centre and train station. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Deer Park, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[0],
   },
   'ravenhall': {
@@ -275,7 +275,7 @@ export const suburbs: Record<string, SuburbData> = {
   'kings-park': {
     name: 'Kings Park',
     postcode: '3021',
-    blurb: 'Kings Park is an established residential suburb in Melbourne\'s western suburbs. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Kings Park, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Kings Park is an established residential suburb in Melbourne\'s western suburbs. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Kings Park, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[4],
   },
   'st-albans': {
@@ -299,7 +299,7 @@ export const suburbs: Record<string, SuburbData> = {
   'keilor-north': {
     name: 'Keilor North',
     postcode: '3036',
-    blurb: 'Keilor North is a residential suburb just north of the historic Keilor village. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Keilor North, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Keilor North is a residential suburb just north of the historic Keilor village. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Keilor North, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[8],
   },
   'ardeer': {
@@ -323,7 +323,7 @@ export const suburbs: Record<string, SuburbData> = {
   'glengala': {
     name: 'Glengala',
     postcode: '3020',
-    blurb: 'Glengala is a residential locality within the Sunshine West area. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Glengala, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Glengala is a residential locality within the Sunshine West area. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Glengala, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[2],
   },
   'sunshine': {
@@ -347,7 +347,7 @@ export const suburbs: Record<string, SuburbData> = {
   'keilor-east': {
     name: 'Keilor East',
     postcode: '3033',
-    blurb: 'Keilor East is a leafy, established suburb along the Maribyrnong River. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Keilor East, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Keilor East is a leafy, established suburb along the Maribyrnong River. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Keilor East, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[6],
   },
   'airport-west': {
@@ -371,7 +371,7 @@ export const suburbs: Record<string, SuburbData> = {
   'avondale-heights': {
     name: 'Avondale Heights',
     postcode: '3034',
-    blurb: 'Avondale Heights is an established suburb set along the Maribyrnong River. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Avondale Heights, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Avondale Heights is an established suburb set along the Maribyrnong River. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Avondale Heights, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[0],
   },
   'sunbury': {
@@ -395,7 +395,7 @@ export const suburbs: Record<string, SuburbData> = {
   'bulla': {
     name: 'Bulla',
     postcode: '3428',
-    blurb: 'Bulla is a small historic township on the Maribyrnong River. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Bulla, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Bulla is a small historic township on the Maribyrnong River. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Bulla, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[4],
   },
   'brooklyn': {
@@ -419,7 +419,7 @@ export const suburbs: Record<string, SuburbData> = {
   'west-footscray': {
     name: 'West Footscray',
     postcode: '3012',
-    blurb: 'West Footscray is an established, multicultural suburb with its own train station. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout West Footscray, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'West Footscray is an established, multicultural suburb with its own train station. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout West Footscray, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[8],
   },
   'gladstone-park': {
@@ -443,7 +443,7 @@ export const suburbs: Record<string, SuburbData> = {
   'seabrook': {
     name: 'Seabrook',
     postcode: '3028',
-    blurb: 'Seabrook is a residential suburb neighbouring Altona Meadows. UDAY Cleaning provides residential, commercial, end of lease and deep cleaning throughout Seabrook, with the same eco-friendly, fully insured service we bring to every job.',
+    blurb: 'Seabrook is a residential suburb neighbouring Altona Meadows. Uday Cleaning provides residential, commercial, end of lease and deep cleaning throughout Seabrook, with the same eco-friendly, fully insured service we bring to every job.',
     testimonial: reviews[2],
   },
 }

@@ -8,7 +8,7 @@ import FAQSchema from '@/components/schema/FAQSchema'
 const categories = ['All', 'General', 'Pricing', 'End of Lease', 'Products', 'Booking']
 
 const faqs = [
-  { category: 'General', question: 'Are you fully insured?', answer: 'Yes. UDAY Cleaning carries full public liability insurance. All team members are police-checked and insured. We can provide copies of certificates on request. Learn more on our <a href="/about" class="text-brand-green underline">About page</a>.', link: '/about' },
+  { category: 'General', question: 'Are you fully insured?', answer: 'Yes. Uday Cleaning carries full public liability insurance. All team members are police-checked and insured. We can provide copies of certificates on request. Learn more on our <a href="/about" class="text-brand-green underline">About page</a>.', link: '/about' },
   { category: 'General', question: 'What areas do you service?', answer: 'We service Melbourne and surrounding suburbs including Truganina, Hoppers Crossing, Werribee, Tarneit, Point Cook, Laverton, Altona Meadows, Williams Landing, and more. See our <a href="/service-areas" class="text-brand-green underline">Service Areas page</a> for the full list.', link: '/service-areas' },
   { category: 'General', question: 'Do you bring your own products and equipment?', answer: 'Yes! We bring all necessary professional-grade equipment and eco-certified cleaning products to every job. You don\'t need to supply anything — just let us in.', link: null },
   { category: 'Pricing', question: 'How much does a standard clean cost?', answer: 'Residential cleans start from $80 for smaller properties, while commercial and end of lease jobs start from $120–$250 depending on size. Get an accurate quote using our <a href="/get-a-quote" class="text-brand-green underline">online quote form</a>.', link: '/get-a-quote' },
@@ -46,7 +46,7 @@ export default function FAQPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <span className="inline-block bg-brand-green text-white font-semibold text-sm px-4 py-2 rounded-full mb-5">FAQ</span>
           <h1 className="font-heading font-900 text-dark-text text-5xl md:text-6xl mb-5">Frequently Asked Questions</h1>
-          <p className="text-body-text text-xl mb-8">Everything you need to know about UDAY Cleaning services.</p>
+          <p className="text-body-text text-xl mb-8">Everything you need to know about Uday Cleaning services.</p>
 
           {/* Search */}
           <div className="relative max-w-xl mx-auto">

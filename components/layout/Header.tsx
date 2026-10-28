@@ -53,7 +53,7 @@ export default function Header() {
           <Link href="/" className="flex items-center group">
             <Image
               src="/images/logo.png"
-              alt="UDAY Cleaning"
+              alt="Uday Cleaning"
               width={200}
               height={200}
               className="h-20 w-auto object-contain group-hover:scale-105 transition-transform mix-blend-multiply"

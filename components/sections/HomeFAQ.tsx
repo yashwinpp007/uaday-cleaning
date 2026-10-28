@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: 'Are you fully insured?',
-    answer: 'Absolutely. UDAY Cleaning is fully insured with public liability coverage. You can have complete peace of mind knowing your property and belongings are protected during every clean.',
+    answer: 'Absolutely. Uday Cleaning is fully insured with public liability coverage. You can have complete peace of mind knowing your property and belongings are protected during every clean.',
   },
   {
     question: 'Do you offer a bond-back guarantee for end of lease cleaning?',

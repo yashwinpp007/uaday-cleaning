@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Thank You',
-  description: 'Thank you for your quote request. UDAY Cleaning will be in touch within 1 hour during business hours.',
+  description: 'Thank you for your quote request. Uday Cleaning will be in touch within 1 hour during business hours.',
   robots: { index: false, follow: true },
 }
 

@@ -169,6 +169,19 @@ export default function CommercialCleaningPage() {
         </div>
       </section>
 
+      {/* Melbourne CBD cross-links */}
+      <section className="py-8 bg-off-white">
+        <div className="max-w-4xl mx-auto px-4 text-center text-sm text-body-text">
+          <p className="mb-2">Business in the city? We clean offices, gyms, shops and cafes in Melbourne CBD, Docklands and Southbank.</p>
+          <p>
+            <Link href="/commercial-cleaning-melbourne-cbd" className="text-brand-green font-semibold hover:underline">Commercial cleaning Melbourne CBD</Link> &middot;
+            <Link href="/services/gyms-fitness-cleaning" className="text-brand-green font-semibold hover:underline">Gym cleaning</Link> &middot;
+            <Link href="/services/retail-shop-cleaning" className="text-brand-green font-semibold hover:underline">Retail shop cleaning</Link> &middot;
+            <Link href="/services/cafe-restaurant-cleaning" className="text-brand-green font-semibold hover:underline">Cafe and restaurant cleaning</Link>
+          </p>
+        </div>
+      </section>
+
       <FinalCTA />
     </>
   )

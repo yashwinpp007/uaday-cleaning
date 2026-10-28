@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'UDAY Cleaning privacy policy — how we collect, use, and protect your personal information.',
+  description: 'Uday Cleaning privacy policy — how we collect, use, and protect your personal information.',
   alternates: { canonical: 'https://udaycleaning.com.au/privacy-policy' },
   robots: { index: false },
 }
@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
 
         <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-dark-text prose-p:text-body-text prose-p:leading-relaxed prose-a:text-brand-green">
           <h2>1. About This Policy</h2>
-          <p>UDAY Cleaning (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is committed to protecting your privacy in accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs). This policy explains how we collect, use, disclose, and manage your personal information.</p>
+          <p>Uday Cleaning (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) is committed to protecting your privacy in accordance with the <em>Privacy Act 1988</em> (Cth) and the Australian Privacy Principles (APPs). This policy explains how we collect, use, disclose, and manage your personal information.</p>
 
           <h2>2. What Information We Collect</h2>
           <p>We collect personal information that is necessary to provide our cleaning services, including:</p>

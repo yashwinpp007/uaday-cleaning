@@ -6,7 +6,7 @@ import { BUSINESS_RATING, BUSINESS_REVIEW_COUNT, GOOGLE_REVIEW_URL } from '@/lib
 
 export const metadata: Metadata = {
   title: 'Customer Testimonials & Reviews | Melbourne',
-  description: `Read real customer reviews for UDAY Cleaning. ${BUSINESS_RATING}/5 rating from ${BUSINESS_REVIEW_COUNT} Google reviews across Melbourne. See why families and businesses trust us.`,
+  description: `Read real customer reviews for Uday Cleaning. ${BUSINESS_RATING}/5 rating from ${BUSINESS_REVIEW_COUNT} Google reviews across Melbourne. See why families and businesses trust us.`,
   alternates: { canonical: 'https://udaycleaning.com.au/testimonials' },
 }
 
@@ -15,7 +15,7 @@ const testimonials = reviews
 const aggregateSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'UDAY Cleaning',
+  name: 'Uday Cleaning',
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: BUSINESS_RATING,

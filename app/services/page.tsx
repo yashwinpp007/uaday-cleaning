@@ -225,6 +225,17 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Melbourne CBD cross-links */}
+      <section className="py-8 bg-off-white">
+        <div className="max-w-4xl mx-auto px-4 text-center text-sm text-body-text">
+          <p className="mb-2">Looking for city coverage?</p>
+          <p>
+            <Link href="/end-of-lease-cleaning-melbourne-cbd" className="text-brand-green font-semibold hover:underline">End of lease cleaning Melbourne CBD</Link> &middot;
+            <Link href="/commercial-cleaning-melbourne-cbd" className="text-brand-green font-semibold hover:underline">Commercial cleaning Melbourne CBD</Link>
+          </p>
+        </div>
+      </section>
+
       <FinalCTA />
     </>
   )

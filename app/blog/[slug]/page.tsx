@@ -59,7 +59,7 @@ export default function BlogPostPage({ params }: Props) {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'UDAY Cleaning',
+      name: 'Uday Cleaning',
       url: 'https://udaycleaning.com.au',
     },
   }
@@ -148,7 +148,7 @@ export default function BlogPostPage({ params }: Props) {
               </div>
               <div>
                 <p className="font-heading font-800 text-dark-text text-lg">{post.author}</p>
-                <p className="text-body-text text-sm">UDAY Cleaning Team | Melbourne&apos;s trusted cleaning professionals since 2014.</p>
+                <p className="text-body-text text-sm">Uday Cleaning Team | Melbourne&apos;s trusted cleaning professionals since 2014.</p>
               </div>
             </div>
           </article>

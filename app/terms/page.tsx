@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions',
-  description: 'UDAY Cleaning terms and conditions of service.',
+  description: 'Uday Cleaning terms and conditions of service.',
   alternates: { canonical: 'https://udaycleaning.com.au/terms' },
   robots: { index: false },
 }
@@ -17,17 +17,17 @@ export default function TermsPage() {
 
         <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-dark-text prose-p:text-body-text prose-p:leading-relaxed prose-a:text-brand-green">
           <h2>1. Agreement to Terms</h2>
-          <p>By engaging UDAY Cleaning (&quot;the Company&quot;) for any cleaning services, you (&quot;the Client&quot;) agree to be bound by these Terms and Conditions. These terms apply to all bookings, whether made online, by phone, or in person.</p>
+          <p>By engaging Uday Cleaning (&quot;the Company&quot;) for any cleaning services, you (&quot;the Client&quot;) agree to be bound by these Terms and Conditions. These terms apply to all bookings, whether made online, by phone, or in person.</p>
 
           <h2>2. Services</h2>
-          <p>UDAY Cleaning provides professional cleaning services including residential cleaning, commercial cleaning, end of lease cleaning, and deep cleaning. All services are provided as agreed at the time of booking.</p>
+          <p>Uday Cleaning provides professional cleaning services including residential cleaning, commercial cleaning, end of lease cleaning, and deep cleaning. All services are provided as agreed at the time of booking.</p>
 
           <h2>3. Bookings and Quotes</h2>
           <ul>
             <li>All quotes are estimates based on the information provided at the time of booking.</li>
             <li>Final pricing may vary if the property condition differs significantly from what was described.</li>
             <li>We reserve the right to adjust pricing with notice if additional work is required.</li>
-            <li>A confirmed booking constitutes a contract between UDAY Cleaning and the Client.</li>
+            <li>A confirmed booking constitutes a contract between Uday Cleaning and the Client.</li>
           </ul>
 
           <h2>4. Payment</h2>
@@ -64,7 +64,7 @@ export default function TermsPage() {
 
           <h2>8. Liability</h2>
           <ul>
-            <li>UDAY Cleaning carries public liability insurance covering accidental damage caused by our team.</li>
+            <li>Uday Cleaning carries public liability insurance covering accidental damage caused by our team.</li>
             <li>Claims must be reported within 24 hours of the service.</li>
             <li>We are not liable for pre-existing damage, normal wear and tear, or damage caused by faulty products or appliances.</li>
             <li>Our liability is limited to the cost of the cleaning service provided.</li>

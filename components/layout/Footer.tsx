@@ -7,6 +7,8 @@ const services = [
   { name: 'Commercial Cleaning', href: '/services/commercial-cleaning' },
   { name: 'End of Lease Cleaning', href: '/services/end-of-lease-cleaning' },
   { name: 'Deep / Spring Cleaning', href: '/services/deep-cleaning' },
+  { name: 'End of Lease Melbourne CBD', href: '/end-of-lease-cleaning-melbourne-cbd' },
+  { name: 'Commercial Cleaning CBD', href: '/commercial-cleaning-melbourne-cbd' },
 ]
 
 const areas = [
@@ -42,7 +44,7 @@ export default function Footer() {
             <Link href="/" className="inline-block mb-5">
               <Image
                 src="/images/logo.png"
-                alt="UDAY Cleaning"
+                alt="Uday Cleaning"
                 width={480}
                 height={210}
                 className="h-[10.5rem] w-auto object-contain mix-blend-multiply"
@@ -147,7 +149,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-4 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="text-white/50 text-sm text-center sm:text-left">
-            © {new Date().getFullYear()} UDAY Cleaning. All rights reserved. ABN: 55 694 864 296
+            © {new Date().getFullYear()} Uday Cleaning. All rights reserved. ABN: 55 694 864 296
           </div>
           <div className="flex items-center gap-4">
             <Link href="/privacy-policy" className="text-white/50 text-sm hover:text-white transition-colors">Privacy Policy</Link>

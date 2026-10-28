@@ -2,7 +2,7 @@ import { BUSINESS_PHONE_E164 } from '@/lib/site'
 
 // wa.me needs the number with no "+", spaces, or leading zeros.
 const WHATSAPP_NUMBER = BUSINESS_PHONE_E164.replace('+', '')
-const PREFILLED_MESSAGE = "Hi UDAY Cleaning, I'd like to ask about your cleaning services."
+const PREFILLED_MESSAGE = "Hi Uday Cleaning, I'd like to ask about your cleaning services."
 const WHATSAPP_HREF = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(PREFILLED_MESSAGE)}`
 
 export default function WhatsAppButton() {
@@ -11,7 +11,7 @@ export default function WhatsAppButton() {
       href={WHATSAPP_HREF}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat with UDAY Cleaning on WhatsApp"
+      aria-label="Chat with Uday Cleaning on WhatsApp"
       title="Chat on WhatsApp"
       className="fixed bottom-5 left-5 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-card hover:brightness-95 transition-all active:scale-95"
     >

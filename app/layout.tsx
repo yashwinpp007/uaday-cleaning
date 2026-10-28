@@ -5,6 +5,7 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import WhatsAppButton from '@/components/widgets/WhatsAppButton'
 import CallButton from '@/components/widgets/CallButton'
+import ClickTracker from '@/components/analytics/ClickTracker'
 import { SITE_URL } from '@/lib/site'
 
 const raleway = Raleway({
@@ -23,15 +24,19 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "UDAY Cleaning | Melbourne's Professional Cleaning Service",
-    template: '%s | UDAY Cleaning',
+    default: "Uday Cleaning | Melbourne's Professional Cleaning Service",
+    template: '%s | Uday Cleaning',
   },
   description:
-    "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed. Serving Tarneit, Point Cook, Werribee & surrounds. Get a free quote today!",
+    "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed. Serving Melbourne CBD, Tarneit, Point Cook, Werribee & surrounds. Get a free quote today!",
   keywords: [
     'cleaning services melbourne',
     'cleaning services west melbourne',
     'end of lease cleaning melbourne',
+    'end of lease cleaning melbourne cbd',
+    'commercial cleaning melbourne cbd',
+    'gym cleaning melbourne',
+    'shop cleaning melbourne',
     'residential cleaning melbourne',
     'commercial cleaning melbourne',
     'bond back cleaning',
@@ -44,8 +49,8 @@ export const metadata: Metadata = {
     'office cleaning melbourne',
     'spring cleaning melbourne',
   ],
-  authors: [{ name: 'UDAY Cleaning' }],
-  creator: 'UDAY Cleaning',
+  authors: [{ name: 'Uday Cleaning' }],
+  creator: 'Uday Cleaning',
   metadataBase: new URL(SITE_URL),
   icons: {
     icon: '/icon.png',
@@ -55,15 +60,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_AU',
     url: SITE_URL,
-    siteName: 'UDAY Cleaning',
-    title: "UDAY Cleaning | Melbourne's Professional Cleaning Service",
+    siteName: 'Uday Cleaning',
+    title: "Uday Cleaning | Melbourne's Professional Cleaning Service",
     description:
       "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed. Serving Tarneit, Point Cook, Werribee & surrounds.",
     images: [{ url: '/opengraph-image?v=2', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "UDAY Cleaning | Melbourne's Professional Cleaning Service",
+    title: "Uday Cleaning | Melbourne's Professional Cleaning Service",
     description: "Top-rated residential, commercial & end of lease cleaning across Melbourne. Fully insured, bond-back guaranteed.",
   },
   robots: {
@@ -123,6 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <Footer />
         <WhatsAppButton />
         <CallButton />
+        <ClickTracker />
       </body>
     </html>
   )

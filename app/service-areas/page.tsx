@@ -9,8 +9,8 @@ import { suburbs } from '@/lib/suburbs'
 
 const areaFaqs = [
   {
-    question: 'What suburbs does UDAY Cleaning service?',
-    answer: 'UDAY Cleaning covers over 70 suburbs across Melbourne\'s west and north-west, from Melton and Sunbury through to Caroline Springs, St Albans, Sunshine, Werribee, Point Cook and Williams Landing — see the full list below.',
+    question: 'What suburbs does Uday Cleaning service?',
+    answer: 'Uday Cleaning covers over 70 suburbs across Melbourne\'s west and north-west, from Melton and Sunbury through to Caroline Springs, St Albans, Sunshine, Werribee, Point Cook and Williams Landing — see the full list below.',
   },
   {
     question: 'Is there an extra charge depending on my suburb?',
@@ -69,7 +69,7 @@ export default function ServiceAreasPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="UDAY Cleaning service areas map"
+              title="Uday Cleaning service areas map"
             />
           </div>
         </div>
@@ -120,9 +120,9 @@ export default function ServiceAreasPage() {
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="font-heading font-900 text-dark-text text-2xl mb-4">Professional Cleaning Across Western Melbourne</h2>
           <div className="text-body-text leading-relaxed space-y-4">
-            <p>UDAY Cleaning provides professional residential, commercial, and end of lease cleaning services throughout Western Melbourne, Victoria.</p>
+            <p>Uday Cleaning provides professional residential, commercial, and end of lease cleaning services throughout Western Melbourne, Victoria.</p>
             <p>Our service area covers the rapidly growing corridors of Tarneit, Truganina, and Hoppers Crossing in Melbourne&apos;s outer west, through to established suburbs like Werribee, Point Cook, and Altona Meadows. We also service the inner-west suburbs of Footscray, Yarraville, and Williamstown.</p>
-            <p>Whether you&apos;re in a new estate in Williams Landing, a family home in Laverton, or a commercial property in Sunshine — UDAY Cleaning brings the same level of professionalism, eco-friendly products, and guaranteed results to every clean.</p>
+            <p>Whether you&apos;re in a new estate in Williams Landing, a family home in Laverton, or a commercial property in Sunshine — Uday Cleaning brings the same level of professionalism, eco-friendly products, and guaranteed results to every clean.</p>
           </div>
         </div>
       </section>

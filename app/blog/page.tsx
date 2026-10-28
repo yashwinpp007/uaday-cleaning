@@ -9,7 +9,7 @@ import { SITE_URL } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Cleaning Tips & Blog | Melbourne',
   description:
-    'Expert cleaning tips, end of lease guides, and home care advice from Melbourne\'s professional cleaners. Read the UDAY Cleaning blog.',
+    'Expert cleaning tips, end of lease guides, and home care advice from Melbourne\'s professional cleaners. Read the Uday Cleaning blog.',
   alternates: { canonical: 'https://udaycleaning.com.au/blog' },
 }
 
@@ -29,7 +29,7 @@ export default function BlogPage({ searchParams }: { searchParams?: { category?:
   const blogSchema = {
     '@context': 'https://schema.org',
     '@type': 'Blog',
-    name: 'UDAY Cleaning Blog',
+    name: 'Uday Cleaning Blog',
     url: `${SITE_URL}/blog`,
     blogPost: allPosts.map((post) => ({
       '@type': 'BlogPosting',

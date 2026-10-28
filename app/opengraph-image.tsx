@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 import { readFileSync } from 'fs'
 import { join } from 'path'
 
-export const alt = 'UDAY Cleaning — Melbourne Professional Cleaning Service'
+export const alt = 'Uday Cleaning — Melbourne Professional Cleaning Service'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -74,7 +74,7 @@ export default async function Image() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={logoSrc}
-            alt="UDAY Cleaning Logo"
+            alt="Uday Cleaning Logo"
             width={280}
             height={120}
             style={{ objectFit: 'contain', display: 'block' }}

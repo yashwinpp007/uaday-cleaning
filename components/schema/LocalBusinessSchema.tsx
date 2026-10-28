@@ -7,7 +7,7 @@ export default function LocalBusinessSchema() {
       {
         '@type': 'LocalBusiness',
         '@id': `${SITE_URL}/#business`,
-        name: 'UDAY Cleaning',
+        name: 'Uday Cleaning',
         description: 'Professional residential, commercial and end of lease cleaning services in Melbourne, VIC.',
         url: SITE_URL,
         telephone: BUSINESS_PHONE_E164,
@@ -41,6 +41,8 @@ export default function LocalBusinessSchema() {
         areaServed: [
           'Truganina', 'Hoppers Crossing', 'Werribee', 'Tarneit', 'Point Cook',
           'Laverton', 'Altona Meadows', 'Williams Landing', 'Melbourne',
+          'Melbourne CBD', 'Docklands', 'Southbank', 'Southern Cross', 'East Melbourne',
+          'West Melbourne', 'North Melbourne', 'Carlton', 'Parkville', 'Fitzroy', 'Richmond', 'South Yarra',
         ],
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
@@ -50,6 +52,10 @@ export default function LocalBusinessSchema() {
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Cleaning' } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'End of Lease Cleaning' } },
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Deep Cleaning' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'End of Lease Cleaning Melbourne CBD' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Cleaning Melbourne CBD' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Gym and Fitness Cleaning' } },
+            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Retail Shop Cleaning' } },
           ],
         },
       },
@@ -57,7 +63,7 @@ export default function LocalBusinessSchema() {
         '@type': 'WebSite',
         '@id': 'https://udaycleaning.com.au/#website',
         url: 'https://udaycleaning.com.au',
-        name: 'UDAY Cleaning',
+        name: 'Uday Cleaning',
         publisher: { '@id': 'https://udaycleaning.com.au/#business' },
       },
     ],

@@ -4,7 +4,7 @@ import HubSpotForm from '@/components/ui/HubSpotForm'
 
 export const metadata: Metadata = {
   title: 'Contact Us | Melbourne VIC',
-  description: 'Get in touch with UDAY Cleaning. Call, email or send us a message. Servicing Melbourne and surrounding suburbs.',
+  description: 'Get in touch with Uday Cleaning. Call, email or send us a message. Servicing Melbourne and surrounding suburbs.',
   alternates: { canonical: 'https://udaycleaning.com.au/contact' },
 }
 
@@ -107,7 +107,7 @@ export default function ContactPage() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="UDAY Cleaning location in Melbourne"
+              title="Uday Cleaning location in Melbourne"
             />
           </div>
         </div>

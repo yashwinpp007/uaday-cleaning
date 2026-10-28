@@ -1,5 +1,5 @@
 export const SITE_URL = 'https://udaycleaning.com.au'
-export const SITE_NAME = 'UDAY Cleaning'
+export const SITE_NAME = 'Uday Cleaning'
 export const BUSINESS_PHONE = '0420 203 336'
 export const BUSINESS_PHONE_E164 = '+61420203336'
 export const BUSINESS_EMAIL = 'support@udaycleaning.com.au'

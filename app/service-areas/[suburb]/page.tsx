@@ -34,15 +34,15 @@ export default function SuburbPage({ params }: Props) {
 
   const suburbFaqs = [
     {
-      question: `Does UDAY Cleaning service ${data.name}?`,
-      answer: `Yes — UDAY Cleaning provides residential, commercial, end of lease and deep cleaning services throughout ${data.name}, VIC ${data.postcode}, as part of our regular Western Melbourne service area.`,
+      question: `Does Uday Cleaning service ${data.name}?`,
+      answer: `Yes — Uday Cleaning provides residential, commercial, end of lease and deep cleaning services throughout ${data.name}, VIC ${data.postcode}, as part of our regular Western Melbourne service area.`,
     },
     {
       question: `How do I book a cleaner in ${data.name}?`,
       answer: `Get a free quote through our online form or call 0420 203 336. We typically respond within an hour during business hours and can often arrange same-day cleaning in ${data.name} depending on availability.`,
     },
     {
-      question: `Is UDAY Cleaning insured for jobs in ${data.name}?`,
+      question: `Is Uday Cleaning insured for jobs in ${data.name}?`,
       answer: `Yes — every clean in ${data.name} is carried out by fully insured, police-checked cleaners using eco-friendly products.`,
     },
   ]
@@ -50,7 +50,7 @@ export default function SuburbPage({ params }: Props) {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: 'UDAY Cleaning',
+    name: 'Uday Cleaning',
     url: `${SITE_URL}/service-areas/${params.suburb}`,
     telephone: BUSINESS_PHONE_E164,
     areaServed: {

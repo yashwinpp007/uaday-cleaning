@@ -170,7 +170,7 @@ export default function ServicePage({ params }: Props) {
       <section className="py-12 bg-brand-green">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="font-heading font-900 text-white text-2xl md:text-3xl text-center mb-8">
-            Every UDAY Cleaning job
+            Every Uday Cleaning job
           </h2>
           <div className="grid sm:grid-cols-3 gap-4">
             {promises.map(({ icon: PIcon, text }) => (

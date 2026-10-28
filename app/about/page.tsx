@@ -7,7 +7,7 @@ import FinalCTA from '@/components/sections/FinalCTA'
 export const metadata: Metadata = {
   title: 'About Us | Melbourne Cleaning Company',
   description:
-    'Learn about UDAY Cleaning — Melbourne\'s trusted family-owned cleaning business. Our story, values, and commitment to the community.',
+    'Learn about Uday Cleaning — Melbourne\'s trusted family-owned cleaning business. Our story, values, and commitment to the community.',
   alternates: { canonical: 'https://udaycleaning.com.au/about' },
 }
 
@@ -30,7 +30,7 @@ export default function AboutPage() {
                 Hard Work, Integrity, and a Fresh Start
               </h1>
               <p className="text-body-text text-lg leading-relaxed mb-8">
-                UDAY Cleaning was born from a simple belief: everyone deserves a clean, healthy home — and the people providing that service deserve to be treated with respect.
+                Uday Cleaning was born from a simple belief: everyone deserves a clean, healthy home — and the people providing that service deserve to be treated with respect.
               </p>
               <Button3D href="/get-a-quote" size="lg">Book a Clean Today</Button3D>
             </div>
@@ -38,7 +38,7 @@ export default function AboutPage() {
               {/* TODO: Replace with founder photo */}
               <Image
                 src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=500&fit=crop"
-                alt="Uthayan, founder of UDAY Cleaning"
+                alt="Uthayan, founder of Uday Cleaning"
                 width={600}
                 height={500}
                 className="rounded-4xl shadow-2xl object-cover w-full"
@@ -55,7 +55,7 @@ export default function AboutPage() {
           <div className="space-y-6 text-body-text leading-relaxed text-lg">
             <blockquote className="border-l-4 border-brand-green pl-6 italic text-dark-text">
               <p className="mb-4">
-                After arriving in Australia and calling this beautiful country home, I founded uaDay Cleaning with a simple mission: to provide the most reliable and meticulous cleaning service in the community.
+                After arriving in Australia and calling this beautiful country home, I founded Uday Cleaning with a simple mission: to provide the most reliable and meticulous cleaning service in the community.
               </p>
               <p className="mb-4">
                 As someone who understands the value of a fresh start, I bring that same dedication to every home I enter. We don&apos;t just clean floors and surfaces; we care for your space so you can focus on what matters most to you.

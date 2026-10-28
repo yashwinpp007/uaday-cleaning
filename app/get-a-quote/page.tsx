@@ -6,7 +6,7 @@ import { BUSINESS_RATING, BUSINESS_REVIEW_COUNT } from '@/lib/site'
 export const metadata: Metadata = {
   title: 'Get a Free Quote | Melbourne',
   description:
-    'Get a free, no-obligation cleaning quote from UDAY Cleaning. Residential, commercial and end of lease cleaning in Melbourne and surrounding suburbs.',
+    'Get a free, no-obligation cleaning quote from Uday Cleaning. Residential, commercial and end of lease cleaning in Melbourne and surrounding suburbs.',
   alternates: { canonical: 'https://udaycleaning.com.au/get-a-quote' },
 }
 
@@ -29,7 +29,7 @@ export default function GetAQuotePage() {
           <div className="space-y-5">
             {/* Trust badges */}
             <div className="bg-white rounded-4xl p-6 shadow-card">
-              <h3 className="font-heading font-800 text-dark-text text-lg mb-4">Why UDAY?</h3>
+              <h3 className="font-heading font-800 text-dark-text text-lg mb-4">Why Uday?</h3>
               <ul className="space-y-3">
                 {[
                   { icon: Shield, text: 'Fully Insured & Police Checked' },

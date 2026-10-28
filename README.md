@@ -1,6 +1,6 @@
-# UaDay Cleaning — Website
+# Uday Cleaning — Website
 
-Professional cleaning company website for **UaDay Cleaning**, Deanside, VIC.
+Professional cleaning company website for **Uday Cleaning**, Deanside, VIC.
 
 Built with Next.js 14 (App Router), TypeScript, Tailwind CSS, Framer Motion, and MDX.
 

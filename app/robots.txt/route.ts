@@ -1,26 +1,33 @@
+import { SITE_URL } from '@/lib/site'
+
+// AI search and answer-engine crawlers are explicitly allowed so the site can
+// be cited. CCBot (Common Crawl) stays blocked, as before.
+const ALLOWED_BOTS = [
+  'Googlebot',
+  'Bingbot',
+  'GPTBot',
+  'OAI-SearchBot',
+  'ChatGPT-User',
+  'ClaudeBot',
+  'Claude-SearchBot',
+  'Claude-User',
+  'PerplexityBot',
+  'Perplexity-User',
+  'Google-Extended',
+  'Applebot',
+  'Applebot-Extended',
+]
+
 export function GET() {
   const body = `User-agent: *
 Allow: /
+Disallow: /thank-you
 
-User-agent: GPTBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
+${ALLOWED_BOTS.map((bot) => `User-agent: ${bot}\nAllow: /\nDisallow: /thank-you\n`).join('\n')}
 User-agent: CCBot
 Disallow: /
 
-Sitemap: https://udaycleaning.com.au/sitemap.xml
+Sitemap: ${SITE_URL}/sitemap.xml
 `
 
   return new Response(body, {

@@ -12,7 +12,7 @@ const suburbs = [
   'Sydenham', 'Taylors Hill', 'Hillside', 'Deer Park',
   'Watergardens', 'Sunbury', 'Keilor Downs', 'Taylors Lakes',
   'Rockbank', 'Cobblebank', 'Airport West', 'Tullamarine',
-  'Melbourne CBD', 'Toorak', 'South Yarra', 'Brunswick',
+  'Melbourne CBD', 'Docklands', 'Southbank', 'Toorak', 'South Yarra', 'Brunswick',
   'Epping', 'Thomastown',
 ]
 
@@ -41,6 +41,13 @@ const suburbSlugs: Record<string, string> = {
   'Cobblebank': 'cobblebank',
   'Airport West': 'airport-west',
   'Tullamarine': 'tullamarine',
+}
+
+// CBD-area chips link to the dedicated CBD landing pages rather than suburb pages.
+const cbdHrefs: Record<string, string> = {
+  'Melbourne CBD': '/end-of-lease-cleaning-melbourne-cbd',
+  'Docklands': '/end-of-lease-cleaning-melbourne-cbd',
+  'Southbank': '/end-of-lease-cleaning-melbourne-cbd',
 }
 
 export default function ServiceAreas() {
@@ -75,7 +82,7 @@ export default function ServiceAreas() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="UDAY Cleaning service areas in Melbourne"
+              title="Uday Cleaning service areas in Melbourne"
             />
           </motion.div>
 
@@ -93,6 +100,7 @@ export default function ServiceAreas() {
             <div className="flex flex-wrap gap-3 mb-6">
               {suburbs.map((suburb, i) => {
                 const slug = suburbSlugs[suburb]
+                const cbdHref = cbdHrefs[suburb]
                 const chip = (
                   <motion.span
                     key={suburb}
@@ -101,7 +109,7 @@ export default function ServiceAreas() {
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.05 }}
                     className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-semibold border transition-colors ${
-                      slug
+                      (slug || cbdHref)
                         ? 'bg-brand-green-light border-brand-green/20 text-brand-green hover:bg-brand-green hover:text-white cursor-pointer'
                         : 'bg-off-white border-light-border text-body-text'
                     }`}
@@ -111,13 +119,21 @@ export default function ServiceAreas() {
                   </motion.span>
                 )
 
-                return slug ? (
+                return cbdHref ? (
+                  <Link key={suburb} href={cbdHref}>{chip}</Link>
+                ) : slug ? (
                   <Link key={suburb} href={`/service-areas/${slug}`}>{chip}</Link>
                 ) : chip
               })}
             </div>
             <p className="text-body-text text-sm leading-relaxed mb-5">
               Don&apos;t see your suburb? We may still service your area. Give us a call or send an enquiry and we&apos;ll let you know.
+            </p>
+            <p className="text-body-text text-sm leading-relaxed mb-5">
+              Working in the city? See{' '}
+              <Link href="/end-of-lease-cleaning-melbourne-cbd" className="text-brand-green font-semibold hover:underline">end of lease cleaning in Melbourne CBD</Link>{' '}
+              and{' '}
+              <Link href="/commercial-cleaning-melbourne-cbd" className="text-brand-green font-semibold hover:underline">commercial cleaning in Melbourne CBD</Link>.
             </p>
             <Link
               href="/service-areas"
